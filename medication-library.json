@@ -1,0 +1,22 @@
+[
+  {"name":"alprazolam","aliases":["xanax"],"score":0,"label":"AEC 0","refs":[3],"flags":["benzodiazepine"]},
+  {"name":"diazepam","aliases":["valium"],"score":1,"label":"AEC 1","refs":[3],"flags":["benzodiazepine"]},
+  {"name":"lorazepam","aliases":["ativan"],"score":0,"label":"AEC 0","refs":[3],"flags":["benzodiazepine"]},
+  {"name":"temazepam","aliases":["normison"],"score":1,"label":"AEC 1","refs":[3],"flags":["benzodiazepine"]},
+  {"name":"zolpidem","aliases":["stilnoct"],"score":0,"label":"AEC 0","refs":[3],"flags":["z-drug"]},
+  {"name":"zopiclone","aliases":["zimovane","imovane"],"score":0,"label":"Review only","refs":[2],"flags":["z-drug"]},
+  {"name":"morphine","aliases":["oramorph","sevredol","mst continus","mst","zomorph"],"score":0,"label":"AEC 0","refs":[3],"flags":["opioid"]},
+  {"name":"oxycodone","aliases":["oxynorm","oxycontin","shortec","longtec"],"score":0,"label":"Review only","refs":[2],"flags":["opioid"]},
+  {"name":"amitriptyline","aliases":["elavil"],"score":3,"label":"ACB 3 / AEC 3","refs":[1,3],"flags":["sedating antidepressant"]},
+  {"name":"mirtazapine","aliases":["remeron"],"score":1,"label":"AEC 1","refs":[3],"flags":["sedating antidepressant"]},
+  {"name":"quetiapine","aliases":["seroquel"],"score":3,"label":"ACB 3 / AEC 2","refs":[1,3],"flags":["antipsychotic"]},
+  {"name":"olanzapine","aliases":["zyprexa"],"score":3,"label":"ACB 3 / AEC 2","refs":[1,3],"flags":["antipsychotic"]},
+  {"name":"risperidone","aliases":["risperdal"],"score":1,"label":"ACB 1 / AEC 0","refs":[1,3],"flags":["antipsychotic"]},
+  {"name":"promethazine","aliases":["phenergan"],"score":3,"label":"ACB 3 / AEC 3","refs":[1,3],"flags":[]},
+  {"name":"oxybutynin","aliases":["ditropan"],"score":3,"label":"ACB 3 / AEC 3","refs":[1,3],"flags":[]},
+  {"name":"solifenacin","aliases":["vesicare"],"score":3,"label":"ACB 3 / AEC 1","refs":[1,3],"flags":[]},
+  {"name":"tolterodine","aliases":["detrusitol","detrol"],"score":2,"label":"ACB 3 / AEC 2","refs":[1,3],"flags":[]},
+  {"name":"donepezil","aliases":["aricept"],"score":0,"label":"Review only","refs":[4],"flags":[]},
+  {"name":"memantine","aliases":["ebixa"],"score":0,"label":"Review only","refs":[4],"flags":[]},
+  {"name":"sertraline","aliases":["lustral"],"score":1,"label":"AEC 1","refs":[3],"flags":[]}
+]
