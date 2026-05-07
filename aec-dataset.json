@@ -1,0 +1,495 @@
+{
+  "dataset": "aec-dataset",
+  "medicines": [
+    {
+      "name": "amitriptyline",
+      "aliases": [
+        "elavil"
+      ],
+      "scales": {
+        "aec": {
+          "score": 3
+        }
+      },
+      "categories": [],
+      "badges": [
+        "AEC"
+      ],
+      "notes": "AEC cognition-focused score.",
+      "ingredients": []
+    },
+    {
+      "name": "quetiapine",
+      "aliases": [
+        "seroquel"
+      ],
+      "scales": {
+        "aec": {
+          "score": 2
+        }
+      },
+      "categories": [],
+      "badges": [
+        "AEC"
+      ],
+      "notes": "AEC cognition-focused score.",
+      "ingredients": []
+    },
+    {
+      "name": "olanzapine",
+      "aliases": [
+        "zyprexa"
+      ],
+      "scales": {
+        "aec": {
+          "score": 2
+        }
+      },
+      "categories": [],
+      "badges": [
+        "AEC"
+      ],
+      "notes": "AEC cognition-focused score.",
+      "ingredients": []
+    },
+    {
+      "name": "lorazepam",
+      "aliases": [
+        "ativan"
+      ],
+      "scales": {
+        "aec": {
+          "score": 0
+        }
+      },
+      "categories": [],
+      "badges": [
+        "AEC"
+      ],
+      "notes": "Recognised medicine with AEC listing context.",
+      "ingredients": []
+    },
+    {
+      "name": "morphine",
+      "aliases": [
+        "oramorph",
+        "sevredol",
+        "mst",
+        "mst continus",
+        "zomorph"
+      ],
+      "scales": {
+        "aec": {
+          "score": 0
+        }
+      },
+      "categories": [],
+      "badges": [
+        "AEC"
+      ],
+      "notes": "Recognised medicine with AEC listing context.",
+      "ingredients": []
+    },
+    {
+      "name": "gabapentin",
+      "aliases": [
+        "neurontin"
+      ],
+      "scales": {
+        "aec": {
+          "score": 0
+        }
+      },
+      "categories": [],
+      "badges": [
+        "AEC"
+      ],
+      "notes": "Recognised medicine with AEC listing context.",
+      "ingredients": []
+    },
+    {
+      "name": "mirtazapine",
+      "aliases": [
+        "remeron"
+      ],
+      "scales": {
+        "aec": {
+          "score": 1
+        }
+      },
+      "categories": [
+        "local:sedating antidepressant"
+      ],
+      "badges": [
+        "AEC"
+      ],
+      "notes": "Lower AEC entry with sedation relevance.",
+      "ingredients": []
+    },
+    {
+      "name": "sertraline",
+      "aliases": [
+        "lustral"
+      ],
+      "scales": {
+        "aec": {
+          "score": 1
+        }
+      },
+      "categories": [],
+      "badges": [
+        "AEC"
+      ],
+      "notes": "Lower AEC entry.",
+      "ingredients": []
+    },
+    {
+      "name": "alprazolam",
+      "aliases": [
+        "xanax"
+      ],
+      "scales": {
+        "aec": {
+          "score": 3
+        }
+      },
+      "categories": [
+        "local:benzodiazepine"
+      ],
+      "badges": [
+        "AEC"
+      ],
+      "notes": "AEC high score example.",
+      "ingredients": []
+    },
+    {
+      "name": "cetirizine",
+      "aliases": [
+        "zyrtec"
+      ],
+      "scales": {
+        "aec": {
+          "score": 3
+        }
+      },
+      "categories": [
+        "local:sedating antihistamine"
+      ],
+      "badges": [
+        "AEC"
+      ],
+      "notes": "AEC high score example.",
+      "ingredients": []
+    },
+    {
+      "name": "chlordiazepoxide",
+      "aliases": [
+        "librium"
+      ],
+      "scales": {
+        "aec": {
+          "score": 3
+        }
+      },
+      "categories": [
+        "local:benzodiazepine"
+      ],
+      "badges": [
+        "AEC"
+      ],
+      "notes": "AEC high score example.",
+      "ingredients": []
+    },
+    {
+      "name": "diazepam",
+      "aliases": [
+        "valium"
+      ],
+      "scales": {
+        "aec": {
+          "score": 1
+        }
+      },
+      "categories": [
+        "local:benzodiazepine"
+      ],
+      "badges": [
+        "AEC"
+      ],
+      "notes": "Recognised medicine with lower AEC entry.",
+      "ingredients": []
+    },
+    {
+      "name": "temazepam",
+      "aliases": [
+        "normison"
+      ],
+      "scales": {
+        "aec": {
+          "score": 1
+        }
+      },
+      "categories": [
+        "local:benzodiazepine"
+      ],
+      "badges": [
+        "AEC"
+      ],
+      "notes": "Recognised medicine with lower AEC entry.",
+      "ingredients": []
+    },
+    {
+      "name": "codeine",
+      "aliases": [],
+      "scales": {
+        "aec": {
+          "score": 0
+        }
+      },
+      "categories": [
+        "local:opioid"
+      ],
+      "badges": [
+        "AEC"
+      ],
+      "notes": "Recognised in cognition-focused list context.",
+      "ingredients": []
+    },
+    {
+      "name": "oxycodone",
+      "aliases": [
+        "oxynorm",
+        "oxycontin",
+        "longtec",
+        "shortec"
+      ],
+      "scales": {
+        "aec": {
+          "score": 0
+        }
+      },
+      "categories": [
+        "local:opioid"
+      ],
+      "badges": [
+        "AEC"
+      ],
+      "notes": "Recognised in cognition-focused list context.",
+      "ingredients": []
+    },
+    {
+      "name": "tramadol",
+      "aliases": [
+        "zydol",
+        "zamadol"
+      ],
+      "scales": {
+        "aec": {
+          "score": 0
+        }
+      },
+      "categories": [
+        "local:opioid",
+        "local:cns depressant"
+      ],
+      "badges": [
+        "AEC"
+      ],
+      "notes": "Recognised in cognition-focused list context.",
+      "ingredients": []
+    },
+    {
+      "name": "alimemazine",
+      "aliases": [
+        "theralen"
+      ],
+      "scales": {
+        "aec": {
+          "score": 3
+        }
+      },
+      "categories": [
+        "local:sedating antihistamine"
+      ],
+      "badges": [
+        "AEC"
+      ],
+      "notes": "High AEC example relevant to older-adult psychopharmacology.",
+      "ingredients": []
+    },
+    {
+      "name": "chlorphenamine",
+      "aliases": [
+        "piriton"
+      ],
+      "scales": {
+        "aec": {
+          "score": 3
+        }
+      },
+      "categories": [
+        "local:sedating antihistamine"
+      ],
+      "badges": [
+        "AEC"
+      ],
+      "notes": "High AEC example.",
+      "ingredients": []
+    },
+    {
+      "name": "clomipramine",
+      "aliases": [
+        "anafranil"
+      ],
+      "scales": {
+        "aec": {
+          "score": 3
+        }
+      },
+      "categories": [
+        "local:sedating antidepressant"
+      ],
+      "badges": [
+        "AEC"
+      ],
+      "notes": "High AEC example.",
+      "ingredients": []
+    },
+    {
+      "name": "diphenhydramine",
+      "aliases": [
+        "nytol",
+        "benadryl allergy"
+      ],
+      "scales": {
+        "aec": {
+          "score": 3
+        }
+      },
+      "categories": [
+        "local:sedating antihistamine"
+      ],
+      "badges": [
+        "AEC"
+      ],
+      "notes": "High AEC example.",
+      "ingredients": []
+    },
+    {
+      "name": "paroxetine",
+      "aliases": [
+        "seroxat"
+      ],
+      "scales": {
+        "aec": {
+          "score": 3
+        }
+      },
+      "categories": [
+        "local:antidepressant"
+      ],
+      "badges": [
+        "AEC"
+      ],
+      "notes": "High AEC example.",
+      "ingredients": []
+    },
+    {
+      "name": "trazodone",
+      "aliases": [
+        "molipaxin"
+      ],
+      "scales": {
+        "aec": {
+          "score": 1
+        }
+      },
+      "categories": [
+        "local:sedating antidepressant"
+      ],
+      "badges": [
+        "AEC"
+      ],
+      "notes": "Lower AEC entry with sedation relevance.",
+      "ingredients": []
+    },
+    {
+      "name": "haloperidol",
+      "aliases": [
+        "serenace",
+        "haldol"
+      ],
+      "scales": {
+        "aec": {
+          "score": 1
+        }
+      },
+      "categories": [
+        "local:antipsychotic"
+      ],
+      "badges": [
+        "AEC"
+      ],
+      "notes": "Recognised for cognition-focused review context.",
+      "ingredients": []
+    },
+    {
+      "name": "risperidone",
+      "aliases": [
+        "risperdal"
+      ],
+      "scales": {
+        "aec": {
+          "score": 0
+        }
+      },
+      "categories": [
+        "local:antipsychotic"
+      ],
+      "badges": [
+        "AEC"
+      ],
+      "notes": "Recognised for cognition-focused review context.",
+      "ingredients": []
+    },
+    {
+      "name": "zolpidem",
+      "aliases": [
+        "stilnoct"
+      ],
+      "scales": {
+        "aec": {
+          "score": 0
+        }
+      },
+      "categories": [
+        "local:z-drug"
+      ],
+      "badges": [
+        "AEC"
+      ],
+      "notes": "Recognised for cognition-focused review context.",
+      "ingredients": []
+    },
+    {
+      "name": "zopiclone",
+      "aliases": [
+        "zimovane",
+        "imovane"
+      ],
+      "scales": {
+        "aec": {
+          "score": 0
+        }
+      },
+      "categories": [
+        "local:z-drug"
+      ],
+      "badges": [
+        "AEC"
+      ],
+      "notes": "Recognised for cognition-focused review context.",
+      "ingredients": []
+    }
+  ]
+}

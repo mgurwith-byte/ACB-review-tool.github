@@ -1,0 +1,401 @@
+{
+  "dataset": "uk-products",
+  "medicines": [
+    {
+      "name": "co-codamol",
+      "aliases": [
+        "solpadol",
+        "zapain",
+        "codipar"
+      ],
+      "scales": {},
+      "categories": [
+        "local:opioid",
+        "local:cns depressant",
+        "beers:delirium caution"
+      ],
+      "badges": [
+        "Local rule",
+        "Beers"
+      ],
+      "notes": "Combination product mapped to opioid-related cognition and delirium review because of codeine component.",
+      "ingredients": [
+        "codeine",
+        "paracetamol"
+      ]
+    },
+    {
+      "name": "co-dydramol",
+      "aliases": [],
+      "scales": {},
+      "categories": [
+        "local:opioid",
+        "local:cns depressant",
+        "beers:delirium caution"
+      ],
+      "badges": [
+        "Local rule",
+        "Beers"
+      ],
+      "notes": "Combination product mapped to opioid-related cognition and delirium review.",
+      "ingredients": [
+        "dihydrocodeine",
+        "paracetamol"
+      ]
+    },
+    {
+      "name": "mst continus",
+      "aliases": [
+        "mst"
+      ],
+      "scales": {},
+      "categories": [
+        "local:opioid",
+        "local:cns depressant",
+        "beers:delirium caution"
+      ],
+      "badges": [
+        "Local rule",
+        "Beers"
+      ],
+      "notes": "UK product alias mapped to morphine-related cognition and delirium review.",
+      "ingredients": [
+        "morphine"
+      ]
+    },
+    {
+      "name": "oramorph",
+      "aliases": [],
+      "scales": {},
+      "categories": [
+        "local:opioid",
+        "local:cns depressant",
+        "beers:delirium caution"
+      ],
+      "badges": [
+        "Local rule",
+        "Beers"
+      ],
+      "notes": "UK product alias mapped to morphine-related cognition and delirium review.",
+      "ingredients": [
+        "morphine"
+      ]
+    },
+    {
+      "name": "stilnoct",
+      "aliases": [],
+      "scales": {},
+      "categories": [
+        "local:z-drug",
+        "beers:dementia or cognitive impairment caution",
+        "beers:delirium caution"
+      ],
+      "badges": [
+        "Local rule",
+        "Beers"
+      ],
+      "notes": "Brand alias mapped to zolpidem-related caution.",
+      "ingredients": [
+        "zolpidem"
+      ]
+    },
+    {
+      "name": "oxynorm",
+      "aliases": [],
+      "scales": {},
+      "categories": [
+        "local:opioid",
+        "local:cns depressant",
+        "beers:delirium caution"
+      ],
+      "badges": [
+        "Local rule",
+        "Beers"
+      ],
+      "notes": "UK product alias mapped to oxycodone-related review.",
+      "ingredients": [
+        "oxycodone"
+      ]
+    },
+    {
+      "name": "oxycontin",
+      "aliases": [],
+      "scales": {},
+      "categories": [
+        "local:opioid",
+        "local:cns depressant",
+        "beers:delirium caution"
+      ],
+      "badges": [
+        "Local rule",
+        "Beers"
+      ],
+      "notes": "UK product alias mapped to oxycodone-related review.",
+      "ingredients": [
+        "oxycodone"
+      ]
+    },
+    {
+      "name": "longtec",
+      "aliases": [],
+      "scales": {},
+      "categories": [
+        "local:opioid",
+        "local:cns depressant",
+        "beers:delirium caution"
+      ],
+      "badges": [
+        "Local rule",
+        "Beers"
+      ],
+      "notes": "UK product alias mapped to oxycodone-related review.",
+      "ingredients": [
+        "oxycodone"
+      ]
+    },
+    {
+      "name": "shortec",
+      "aliases": [],
+      "scales": {},
+      "categories": [
+        "local:opioid",
+        "local:cns depressant",
+        "beers:delirium caution"
+      ],
+      "badges": [
+        "Local rule",
+        "Beers"
+      ],
+      "notes": "UK product alias mapped to oxycodone-related review.",
+      "ingredients": [
+        "oxycodone"
+      ]
+    },
+    {
+      "name": "zomorph",
+      "aliases": [],
+      "scales": {},
+      "categories": [
+        "local:opioid",
+        "local:cns depressant",
+        "beers:delirium caution"
+      ],
+      "badges": [
+        "Local rule",
+        "Beers"
+      ],
+      "notes": "UK product alias mapped to morphine-related review.",
+      "ingredients": [
+        "morphine"
+      ]
+    },
+    {
+      "name": "lyrica",
+      "aliases": [],
+      "scales": {},
+      "categories": [
+        "local:gabapentinoid",
+        "local:cns depressant"
+      ],
+      "badges": [
+        "Local rule"
+      ],
+      "notes": "UK product alias mapped to pregabalin-related review.",
+      "ingredients": [
+        "pregabalin"
+      ]
+    },
+    {
+      "name": "remeron",
+      "aliases": [],
+      "scales": {},
+      "categories": [
+        "local:sedating antidepressant"
+      ],
+      "badges": [
+        "Local rule"
+      ],
+      "notes": "Brand alias mapped to mirtazapine-related review.",
+      "ingredients": [
+        "mirtazapine"
+      ]
+    },
+    {
+      "name": "phenergan",
+      "aliases": [],
+      "scales": {},
+      "categories": [
+        "local:sedating antihistamine",
+        "local:cns depressant"
+      ],
+      "badges": [
+        "Local rule"
+      ],
+      "notes": "Brand alias mapped to promethazine-related review.",
+      "ingredients": [
+        "promethazine"
+      ]
+    },
+    {
+      "name": "aricept",
+      "aliases": [],
+      "scales": {},
+      "categories": [
+        "local:dementia treatment"
+      ],
+      "badges": [
+        "Local rule"
+      ],
+      "notes": "Brand alias mapped to donepezil.",
+      "ingredients": [
+        "donepezil"
+      ]
+    },
+    {
+      "name": "ebixa",
+      "aliases": [],
+      "scales": {},
+      "categories": [
+        "local:dementia treatment"
+      ],
+      "badges": [
+        "Local rule"
+      ],
+      "notes": "Brand alias mapped to memantine.",
+      "ingredients": [
+        "memantine"
+      ]
+    },
+    {
+      "name": "reminyl",
+      "aliases": [],
+      "scales": {},
+      "categories": [
+        "local:dementia treatment"
+      ],
+      "badges": [
+        "Local rule"
+      ],
+      "notes": "Brand alias mapped to galantamine.",
+      "ingredients": [
+        "galantamine"
+      ]
+    },
+    {
+      "name": "exelon",
+      "aliases": [],
+      "scales": {},
+      "categories": [
+        "local:dementia treatment"
+      ],
+      "badges": [
+        "Local rule"
+      ],
+      "notes": "Brand alias mapped to rivastigmine.",
+      "ingredients": [
+        "rivastigmine"
+      ]
+    },
+    {
+      "name": "haldol",
+      "aliases": [],
+      "scales": {},
+      "categories": [
+        "local:antipsychotic",
+        "beers:delirium caution"
+      ],
+      "badges": [
+        "Local rule",
+        "Beers"
+      ],
+      "notes": "Brand alias mapped to haloperidol-related review.",
+      "ingredients": [
+        "haloperidol"
+      ]
+    },
+    {
+      "name": "serenace",
+      "aliases": [],
+      "scales": {},
+      "categories": [
+        "local:antipsychotic",
+        "beers:delirium caution"
+      ],
+      "badges": [
+        "Local rule",
+        "Beers"
+      ],
+      "notes": "Brand alias mapped to haloperidol-related review.",
+      "ingredients": [
+        "haloperidol"
+      ]
+    },
+    {
+      "name": "circadin",
+      "aliases": [],
+      "scales": {},
+      "categories": [
+        "local:hypnotic review"
+      ],
+      "badges": [
+        "Local rule"
+      ],
+      "notes": "Brand alias mapped to melatonin-related review.",
+      "ingredients": [
+        "melatonin"
+      ]
+    },
+    {
+      "name": "piriton",
+      "aliases": [],
+      "scales": {},
+      "categories": [
+        "local:sedating antihistamine",
+        "beers:delirium caution"
+      ],
+      "badges": [
+        "Local rule",
+        "Beers"
+      ],
+      "notes": "Brand alias mapped to chlorphenamine-related review.",
+      "ingredients": [
+        "chlorphenamine"
+      ]
+    },
+    {
+      "name": "nytol",
+      "aliases": [],
+      "scales": {},
+      "categories": [
+        "local:sedating antihistamine",
+        "local:hypnotic review",
+        "beers:delirium caution"
+      ],
+      "badges": [
+        "Local rule",
+        "Beers"
+      ],
+      "notes": "Brand alias mapped to diphenhydramine-related review.",
+      "ingredients": [
+        "diphenhydramine"
+      ]
+    },
+    {
+      "name": "atarax",
+      "aliases": [],
+      "scales": {},
+      "categories": [
+        "local:sedating antihistamine",
+        "beers:delirium caution"
+      ],
+      "badges": [
+        "Local rule",
+        "Beers"
+      ],
+      "notes": "Brand alias mapped to hydroxyzine-related review.",
+      "ingredients": [
+        "hydroxyzine"
+      ]
+    }
+  ]
+}
