@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>STOPP/START Asset Diagnostic</title>
+<style>
+  :root {
+    --bg: #0f172a;
+    --panel: #1e293b;
+    --border: #334155;
+    --text: #e2e8f0;
+    --muted: #94a3b8;
+    --accent: #38bdf8;
+    --pass: #22c55e;
+    --fail: #ef4444;
+    --warn: #f59e0b;
+    --code-bg: #0b1220;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.5;
+    padding: 24px;
+    min-height: 100vh;
+  }
+  .wrap { max-width: 880px; margin: 0 auto; }
+  h1 { margin: 0 0 4px; font-size: 22px; }
+  .sub { color: var(--muted); font-size: 14px; margin-bottom: 20px; }
+  .panel {
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 18px;
+    margin-bottom: 16px;
+  }
+  .panel h2 {
+    margin: 0 0 12px;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--muted);
+    font-weight: 600;
+  }
+  .row {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 6px 0;
+    border-bottom: 1px dashed var(--border);
+    font-size: 14px;
+    flex-wrap: wrap;
+  }
+  .row:last-child { border-bottom: none; }
+  .row .k { color: var(--muted); flex-shrink: 0; }
+  .row .v {
+    font-family: ui-monospace, Menlo, Consolas, monospace;
+    word-break: break-all;
+    text-align: right;
+    flex: 1;
+  }
+  .status {
+    display: inline-block;
+    padding: 4px 10px;
+    border-radius: 999px;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+  .status.pass { background: rgba(34, 197, 94, 0.15); color: var(--pass); border: 1px solid var(--pass); }
+  .status.fail { background: rgba(239, 68, 68, 0.15); color: var(--fail); border: 1px solid var(--fail); }
+  .status.warn { background: rgba(245, 158, 11, 0.15); color: var(--warn); border: 1px solid var(--warn); }
+  .status.pending { background: rgba(148, 163, 184, 0.15); color: var(--muted); border: 1px solid var(--muted); }
+  .verdict {
+    padding: 16px;
+    border-radius: 8px;
+    margin-bottom: 12px;
+    font-weight: 600;
+  }
+  .verdict.pass { background: rgba(34, 197, 94, 0.1); border: 1px solid var(--pass); color: var(--pass); }
+  .verdict.fail { background: rgba(239, 68, 68, 0.1); border: 1px solid var(--fail); color: var(--fail); }
+  .verdict.pending { background: rgba(148, 163, 184, 0.1); border: 1px solid var(--muted); color: var(--muted); }
+  ul.causes { margin: 8px 0 0; padding-left: 20px; color: var(--text); font-weight: 400; }
+  ul.causes li { margin-bottom: 6px; font-size: 14px; }
+  ul.causes code {
+    background: var(--code-bg);
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 13px;
+  }
+  pre {
+    background: var(--code-bg);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 12px;
+    overflow-x: auto;
+    font-size: 12px;
+    max-height: 240px;
+    margin: 0;
+  }
+  button {
+    background: var(--accent);
+    color: #0b1220;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  button:hover { opacity: 0.9; }
+  .controls { display: flex; gap: 10px; flex-wrap: wrap; align-items: center; }
+  input[type="text"] {
+    flex: 1;
+    min-width: 200px;
+    background: var(--code-bg);
+    color: var(--text);
+    border: 1px solid var(--border);
+    padding: 9px 12px;
+    border-radius: 6px;
+    font-family: ui-monospace, Menlo, monospace;
+    font-size: 13px;
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>STOPP/START Asset Diagnostic</h1>
+  <div class="sub">Tests whether <code>/data/stopp_relevant_medicines_uk.json</code> is reachable from this page.</div>
+
+  <div class="panel">
+    <h2>Test Target</h2>
+    <div class="controls">
+      <input type="text" id="assetPath" value="data/stopp_relevant_medicines_uk.json">
+      <button id="runBtn">Re-run test</button>
+    </div>
+    <div style="font-size: 12px; color: var(--muted); margin-top: 8px;">
+      Tip: try both <code>data/...</code> (relative) and <code>/data/...</code> (absolute) to spot subdirectory issues.
+    </div>
+  </div>
+
+  <div class="panel">
+    <h2>Environment</h2>
+    <div class="row"><span class="k">Page URL</span><span class="v" id="pageUrl">—</span></div>
+    <div class="row"><span class="k">Origin</span><span class="v" id="origin">—</span></div>
+    <div class="row"><span class="k">Base path</span><span class="v" id="basePath">—</span></div>
+    <div class="row"><span class="k">Resolved asset URL</span><span class="v" id="resolvedUrl">—</span></div>
+  </div>
+
+  <div class="panel">
+    <h2>Fetch Result</h2>
+    <div class="row"><span class="k">Status</span><span class="v"><span id="statusBadge" class="status pending">Pending</span></span></div>
+    <div class="row"><span class="k">HTTP code</span><span class="v" id="httpCode">—</span></div>
+    <div class="row"><span class="k">Status text</span><span class="v" id="httpStatusText">—</span></div>
+    <div class="row"><span class="k">Final URL (after redirects)</span><span class="v" id="finalUrl">—</span></div>
+    <div class="row"><span class="k">Content-Type</span><span class="v" id="contentType">—</span></div>
+    <div class="row"><span class="k">Content-Length</span><span class="v" id="contentLength">—</span></div>
+    <div class="row"><span class="k">Valid JSON?</span><span class="v" id="jsonValid">—</span></div>
+    <div class="row"><span class="k">Top-level keys / length</span><span class="v" id="jsonShape">—</span></div>
+    <div class="row"><span class="k">Fetch time</span><span class="v" id="fetchTime">—</span></div>
+  </div>
+
+  <div class="panel">
+    <h2>Verdict</h2>
+    <div id="verdict" class="verdict pending">Running test…</div>
+    <div id="causesBox" style="display:none;">
+      <div style="font-size: 13px; color: var(--muted); margin-bottom: 4px;">Most likely causes:</div>
+      <ul id="causes" class="causes"></ul>
+    </div>
+  </div>
+
+  <div class="panel">
+    <h2>Response Preview (first 500 chars)</h2>
+    <pre id="preview">—</pre>
+  </div>
+</div>
+
+<script>
+const $ = (id) => document.getElementById(id);
+
+function setBadge(kind, label) {
+  const b = $('statusBadge');
+  b.className = 'status ' + kind;
+  b.textContent = label;
+}
+
+function setVerdict(kind, msg, causes) {
+  const v = $('verdict');
+  v.className = 'verdict ' + kind;
+  v.textContent = msg;
+  const box = $('causesBox');
+  const ul = $('causes');
+  ul.innerHTML = '';
+  if (causes && causes.length) {
+    causes.forEach(c => {
+      const li = document.createElement('li');
+      li.innerHTML = c;
+      ul.appendChild(li);
+    });
+    box.style.display = 'block';
+  } else {
+    box.style.display = 'none';
+  }
+}
+
+async function runTest() {
+  // Reset
+  setBadge('pending', 'Running');
+  setVerdict('pending', 'Running test…', []);
+  ['httpCode','httpStatusText','finalUrl','contentType','contentLength','jsonValid','jsonShape','fetchTime'].forEach(id => $(id).textContent = '—');
+  $('preview').textContent = '—';
+
+  // Environment
+  $('pageUrl').textContent = window.location.href;
+  $('origin').textContent = window.location.origin;
+  const basePath = window.location.pathname.replace(/\/[^/]*$/, '/');
+  $('basePath').textContent = basePath;
+
+  const assetInput = $('assetPath').value.trim();
+  const resolved = new URL(assetInput, window.location.href).href;
+  $('resolvedUrl').textContent = resolved;
+
+  const t0 = performance.now();
+  let res, errorMsg = null;
+  try {
+    res = await fetch(resolved, { method: 'GET', cache: 'no-store' });
+  } catch (err) {
+    errorMsg = err.message || String(err);
+  }
+  const elapsed = (performance.now() - t0).toFixed(0);
+  $('fetchTime').textContent = elapsed + ' ms';
+
+  if (errorMsg) {
+    setBadge('fail', 'Network error');
+    $('httpCode').textContent = 'n/a';
+    $('httpStatusText').textContent = errorMsg;
+    setVerdict('fail', 'FAIL — Network/CORS error before HTTP response.', [
+      'The request never reached the server (DNS, offline, or CORS preflight rejection).',
+      'If on GitHub Pages, confirm the page itself is reachable; a network-level block is unusual.',
+      'Open DevTools → Network tab to inspect the failed request.',
+      'Browser console error: <code>' + errorMsg.replace(/</g,'&lt;') + '</code>'
+    ]);
+    return;
+  }
+
+  $('httpCode').textContent = res.status;
+  $('httpStatusText').textContent = res.statusText || '(none)';
+  $('finalUrl').textContent = res.url;
+  $('contentType').textContent = res.headers.get('content-type') || '(missing)';
+  $('contentLength').textContent = res.headers.get('content-length') || '(missing)';
+
+  const text = await res.text();
+  $('preview').textContent = text.slice(0, 500) + (text.length > 500 ? '\n…' : '');
+
+  // Try parse JSON
+  let parsed = null, parseErr = null;
+  try { parsed = JSON.parse(text); } catch (e) { parseErr = e.message; }
+
+  if (parsed !== null) {
+    $('jsonValid').textContent = 'Yes';
+    if (Array.isArray(parsed)) {
+      $('jsonShape').textContent = 'array (length ' + parsed.length + ')';
+    } else if (typeof parsed === 'object') {
+      const keys = Object.keys(parsed);
+      $('jsonShape').textContent = keys.length + ' keys: ' + keys.slice(0, 6).join(', ') + (keys.length > 6 ? ', …' : '');
+    } else {
+      $('jsonShape').textContent = typeof parsed;
+    }
+  } else {
+    $('jsonValid').textContent = 'No — ' + (parseErr || 'parse error');
+    $('jsonShape').textContent = '—';
+  }
+
+  // Decision logic
+  const ct = (res.headers.get('content-type') || '').toLowerCase();
+  const looksLikeHtml = /<!doctype html|<html/i.test(text.slice(0, 200));
+
+  if (res.ok && parsed !== null && ct.includes('json')) {
+    setBadge('pass', 'Pass');
+    setVerdict('pass', 'PASS — Asset loaded successfully and parsed as valid JSON.', []);
+  } else if (res.ok && looksLikeHtml) {
+    // 200 OK but HTML — classic SPA fallback or GitHub Pages 404 page served as 200 by index.html
+    setBadge('warn', '200 but HTML');
+    setVerdict('fail', 'FAIL — Server returned 200 OK, but the body is HTML, not JSON.', [
+      'Most likely: the file does not exist at this path and a single-page-app <code>index.html</code> fallback is being served.',
+      'Check the resolved URL: <code>' + resolved + '</code> — does the file actually live there?',
+      'On GitHub Pages, the project may need a subdirectory prefix (e.g. <code>/repo-name/data/...</code>) — try changing the asset path to <code>data/stopp_relevant_medicines_uk.json</code> (relative) instead of <code>/data/...</code>.',
+      'Confirm the file was committed and pushed to the deployed branch (e.g. <code>gh-pages</code> or <code>main</code>/<code>docs</code>).'
+    ]);
+  } else if (res.ok && parsed !== null && !ct.includes('json')) {
+    setBadge('warn', 'Wrong MIME');
+    setVerdict('fail', 'PARTIAL — JSON parsed, but Content-Type is not application/json.', [
+      'Server is sending the wrong MIME type (<code>' + ct + '</code>). Most apps still work, but strict consumers may reject it.',
+      'On GitHub Pages this is rare for <code>.json</code> files — verify the file extension is exactly <code>.json</code>.',
+      'If using a custom server, add a JSON mime mapping.'
+    ]);
+  } else if (res.status === 404) {
+    setBadge('fail', '404 Not Found');
+    setVerdict('fail', 'FAIL — 404 Not Found. The asset is not at the resolved URL.', [
+      'Wrong asset path. The page resolved to <code>' + resolved + '</code> — confirm the file exists at exactly that location in your deployed build.',
+      'GitHub Pages subdirectory mismatch: if the site lives at <code>https://user.github.io/repo-name/</code>, an absolute path <code>/data/...</code> resolves to <code>https://user.github.io/data/...</code> (wrong). Use a relative path <code>data/...</code> or prefix with the repo name.',
+      'File missing from the deployed branch — was the JSON committed and pushed? Check the Actions log / Pages build.',
+      'Case mismatch — GitHub Pages is case-sensitive. Verify capitalisation of <code>stopp_relevant_medicines_uk.json</code> and the <code>data</code> folder.'
+    ]);
+  } else if (res.status === 403) {
+    setBadge('fail', '403 Forbidden');
+    setVerdict('fail', 'FAIL — 403 Forbidden.', [
+      'The file exists but the server refuses to serve it. Check repo visibility and Pages settings.',
+      'On private hosts, verify auth headers / CORS configuration.'
+    ]);
+  } else if (res.status >= 500) {
+    setBadge('fail', String(res.status));
+    setVerdict('fail', 'FAIL — Server error (' + res.status + ').', [
+      'The host returned a server-side error. Try again or check host status.',
+      'If self-hosted, inspect server logs around the request timestamp.'
+    ]);
+  } else if (parsed === null && res.ok) {
+    setBadge('fail', 'Invalid JSON');
+    setVerdict('fail', 'FAIL — Response received, but body is not valid JSON.', [
+      'Parse error: <code>' + (parseErr || 'unknown').replace(/</g,'&lt;') + '</code>',
+      'Check the response preview below — the server may be returning an HTML error page, plain text, or a corrupted file.',
+      'If the response starts with <code>&lt;!DOCTYPE html&gt;</code>, the file is missing and an HTML fallback is being served.'
+    ]);
+  } else {
+    setBadge('fail', String(res.status));
+    setVerdict('fail', 'FAIL — Unexpected response (' + res.status + ' ' + res.statusText + ').', [
+      'Inspect the response preview and headers above for clues.'
+    ]);
+  }
+}
+
+$('runBtn').addEventListener('click', runTest);
+runTest();
+</script>
+</body>
+</html>
