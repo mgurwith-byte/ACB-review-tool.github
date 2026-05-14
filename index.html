@@ -278,6 +278,8 @@ data/stopp_relevant_medicines_uk.json</pre>
     if (group) out.push(group);
     if (item.flag) out.push(item.flag);
     if (item.riskLevel) out.push('risk: ' + item.riskLevel);
+    (item.categories || []).forEach(v => out.push(v));
+    (item.badges || []).forEach(v => out.push(v));
     return [...new Set(out.filter(Boolean))];
   }
 
@@ -294,10 +296,12 @@ data/stopp_relevant_medicines_uk.json</pre>
     const matchedName = acb?.name || aec?.name || local?.name || stopp?.name || uk?.name || null;
     const flags = [];
 
-    const acbScore = acb ? Number(acb.score || acb.acb_score || 0) : 0;
-    const aecScore = aec ? Number(aec.score || aec.aec_score || 0) : 0;
+    const acbScore = acb ? Number(acb.score || acb.acb_score || acb.scales?.acb?.score || 0) : 0;
+    const aecScore = aec ? Number(aec.score || aec.aec_score || aec.scales?.aec?.score || 0) : 0;
     if (acbScore > 0) flags.push('ACB ' + acbScore);
     if (aecScore > 0) flags.push('AEC ' + aecScore);
+    if ((acb?.badges || []).length) flags.push(...acb.badges);
+    if ((aec?.badges || []).length) flags.push(...aec.badges);
     if (stopp) flags.push('STOPP-relevant');
     flags.push(...deriveLocalFlags(local));
 
@@ -433,7 +437,11 @@ data/stopp_relevant_medicines_uk.json</pre>
     const f = String(flag).toLowerCase();
     if (f.startsWith('acb')) return 'tag-acb';
     if (f.startsWith('aec')) return 'tag-aec';
+    if (f === 'aec') return 'tag-aec';
+    if (f === 'acb') return 'tag-acb';
     if (f.includes('stopp')) return 'tag-stopp';
+    if (f.includes('local')) return 'tag-local';
+    if (f.includes('cns depressant') || f.includes('gabapentinoid') || f.includes('opioid') || f.includes('benzodiazepine') || f.includes('antipsychotic')) return 'tag-local';
     if (f.includes('no current automatic flag')) return 'tag-ok';
     if (f.includes('no flag from current reference set')) return 'tag-unknown';
     return 'tag-local';
