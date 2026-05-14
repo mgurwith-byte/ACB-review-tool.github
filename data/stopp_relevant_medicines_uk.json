@@ -22,63 +22,3308 @@
     ]
   },
   "entries": [
-    {"canonical":"diazepam","aliases":["diazemuls","valium"],"class":"benzodiazepine","criterionIds":["K2"],"criterionSummary":"Benzodiazepines for 4 weeks or more.","contextToCheck":["Current duration","Indication","Daytime sedation","Falls history","Cognitive impairment"],"whyItMatters":"Linked with prolonged sedation, confusion, impaired balance and falls in older adults."},
-    {"canonical":"lorazepam","aliases":["ativan"],"class":"benzodiazepine","criterionIds":["K2"],"criterionSummary":"Benzodiazepines for 4 weeks or more.","contextToCheck":["Current duration","Indication","Sedation","Falls history","Cognitive impairment"],"whyItMatters":"Can worsen sedation, mobility and cognition risk in older adults."},
-    {"canonical":"temazepam","aliases":["normison","tenox"],"class":"benzodiazepine","criterionIds":["K2"],"criterionSummary":"Benzodiazepines for 4 weeks or more.","contextToCheck":["Current duration","Indication","Night sedation","Falls history","Daytime hangover effect"],"whyItMatters":"Night sedation may increase falls and confusion risk."},
-    {"canonical":"nitrazepam","aliases":["mogadon"],"class":"benzodiazepine","criterionIds":["K2"],"criterionSummary":"Benzodiazepines for 4 weeks or more.","contextToCheck":["Current duration","Indication","Sedation burden","Falls history"],"whyItMatters":"Long acting sedative effect may increase falls and cognitive adverse effects."},
-    {"canonical":"oxazepam","aliases":[],"class":"benzodiazepine","criterionIds":["K2"],"criterionSummary":"Benzodiazepines for 4 weeks or more.","contextToCheck":["Current duration","Indication","Sedation burden","Falls history"],"whyItMatters":"Sedative adverse effects remain clinically relevant in older adults."},
-    {"canonical":"alprazolam","aliases":["xanax"],"class":"benzodiazepine","criterionIds":["K2"],"criterionSummary":"Benzodiazepines for 4 weeks or more.","contextToCheck":["Current duration","Indication","Dependence risk","Falls history"],"whyItMatters":"Associated with dependence, sedation and falls risk."},
-    {"canonical":"clonazepam","aliases":["rivotril"],"class":"benzodiazepine","criterionIds":["K2"],"criterionSummary":"Benzodiazepines for 4 weeks or more unless clear specialist rationale exists.","contextToCheck":["Current duration","Indication","Specialist rationale","Sedation burden"],"whyItMatters":"May add to confusion, sedation and falls risk; indication review is important."},
-    {"canonical":"chlordiazepoxide","aliases":["librium"],"class":"benzodiazepine","criterionIds":["K2"],"criterionSummary":"Benzodiazepines for 4 weeks or more.","contextToCheck":["Current duration","Indication","Alcohol withdrawal history","Falls history"],"whyItMatters":"Prolonged use in older adults may be inappropriate because of sedation and falls risk."},
-    {"canonical":"zopiclone","aliases":["zimovane"],"class":"z-drug","criterionIds":["K3"],"criterionSummary":"Z-drugs for insomnia for 2 weeks or more.","contextToCheck":["Current duration","Indication","Night sedation","Falls history","Residual daytime sedation"],"whyItMatters":"Associated with falls, confusion and limited long-term benefit."},
-    {"canonical":"zolpidem","aliases":["stilnoct"],"class":"z-drug","criterionIds":["K3"],"criterionSummary":"Z-drugs for insomnia for 2 weeks or more.","contextToCheck":["Current duration","Indication","Falls history","Complex sleep behaviours"],"whyItMatters":"Can contribute to falls and neurocognitive adverse effects."},
-    {"canonical":"zaleplon","aliases":["sonata"],"class":"z-drug","criterionIds":["K3"],"criterionSummary":"Z-drugs for insomnia for 2 weeks or more.","contextToCheck":["Current duration","Indication","Falls history","Sedative burden"],"whyItMatters":"Review needed if used beyond short-term insomnia treatment."},
-    {"canonical":"haloperidol","aliases":["serenace","haldol"],"class":"antipsychotic","criterionIds":["K1"],"criterionSummary":"Antipsychotics for behavioural and psychological symptoms of dementia for more than 12 weeks unless symptoms remain severe and alternatives failed.","contextToCheck":["Diagnosis","Indication","Current duration","Severity of symptoms","Stroke risk","Parkinsonism","QT risk"],"whyItMatters":"Associated with stroke, extrapyramidal effects, sedation and mortality concerns in dementia."},
-    {"canonical":"risperidone","aliases":["risperdal"],"class":"antipsychotic","criterionIds":["K1"],"criterionSummary":"Antipsychotics for behavioural and psychological symptoms of dementia for more than 12 weeks unless still clearly indicated.","contextToCheck":["Diagnosis","Indication","Current duration","Target symptoms","Stroke risk","Falls risk"],"whyItMatters":"May increase cerebrovascular and sedation risk in older adults with dementia."},
-    {"canonical":"olanzapine","aliases":["zyprexa"],"class":"antipsychotic","criterionIds":["K1"],"criterionSummary":"Antipsychotics for behavioural and psychological symptoms of dementia for more than 12 weeks unless still clearly indicated.","contextToCheck":["Diagnosis","Indication","Current duration","Metabolic effects","Sedation burden"],"whyItMatters":"Can cause sedation and metabolic adverse effects; dementia use needs review."},
-    {"canonical":"quetiapine","aliases":["seroquel"],"class":"antipsychotic","criterionIds":["K1"],"criterionSummary":"Antipsychotics for behavioural and psychological symptoms of dementia for more than 12 weeks unless still clearly indicated.","contextToCheck":["Diagnosis","Indication","Current duration","Orthostatic hypotension","Sedation burden"],"whyItMatters":"Can worsen postural symptoms, sedation and falls risk."},
-    {"canonical":"amisulpride","aliases":["solian"],"class":"antipsychotic","criterionIds":["K1"],"criterionSummary":"Antipsychotics for behavioural and psychological symptoms of dementia for more than 12 weeks unless specialist review supports ongoing use.","contextToCheck":["Diagnosis","Indication","Current duration","QT risk","Extrapyramidal symptoms"],"whyItMatters":"Use in frail older adults should be regularly justified and monitored."},
-    {"canonical":"levomepromazine","aliases":["nozinan"],"class":"antipsychotic","criterionIds":["K1"],"criterionSummary":"Antipsychotics for behavioural and psychological symptoms of dementia for more than 12 weeks unless specialist review supports ongoing use.","contextToCheck":["Diagnosis","Indication","Current duration","Sedation burden","Postural hypotension"],"whyItMatters":"Highly sedating and may worsen falls and confusion."},
-    {"canonical":"amitriptyline","aliases":["elavil","triptafen"],"class":"tricyclic antidepressant","criterionIds":["K6"],"criterionSummary":"Tricyclic antidepressants in patients with dementia, glaucoma, cardiac conduction abnormalities, prostatism, chronic constipation, recent falls, prior urinary retention or orthostatic hypotension.","contextToCheck":["Comorbidities listed in STOPP criterion","ACB burden","Falls history","Urinary retention","Constipation"],"whyItMatters":"Strong anticholinergic and sedative effects may worsen cognition and physical adverse outcomes."},
-    {"canonical":"dosulepin","aliases":["dothiepin","prothiaden"],"class":"tricyclic antidepressant","criterionIds":["K6"],"criterionSummary":"Tricyclic antidepressants in high-risk clinical contexts such as dementia, falls or urinary retention.","contextToCheck":["Comorbidities listed in STOPP criterion","Falls history","ECG risk","Anticholinergic burden"],"whyItMatters":"High anticholinergic and cardiotoxic burden in older adults."},
-    {"canonical":"imipramine","aliases":["tofranil"],"class":"tricyclic antidepressant","criterionIds":["K6"],"criterionSummary":"Tricyclic antidepressants in high-risk clinical contexts such as dementia, falls or urinary retention.","contextToCheck":["Comorbidities listed in STOPP criterion","Anticholinergic burden","Falls history"],"whyItMatters":"May worsen confusion, constipation, retention and falls risk."},
-    {"canonical":"clomipramine","aliases":["anafranil"],"class":"tricyclic antidepressant","criterionIds":["K6"],"criterionSummary":"Tricyclic antidepressants in high-risk clinical contexts such as dementia, falls or urinary retention.","contextToCheck":["Comorbidities listed in STOPP criterion","Anticholinergic burden","Falls history"],"whyItMatters":"Carries clinically relevant anticholinergic and orthostatic burden."},
-    {"canonical":"trimipramine","aliases":["surmontil"],"class":"tricyclic antidepressant","criterionIds":["K6"],"criterionSummary":"Tricyclic antidepressants in high-risk clinical contexts such as dementia, falls or urinary retention.","contextToCheck":["Comorbidities listed in STOPP criterion","Sedation burden","Falls history"],"whyItMatters":"Sedation and anticholinergic effects warrant review in older adults."},
-    {"canonical":"paroxetine","aliases":["seroxat"],"class":"antidepressant","criterionIds":["K6"],"criterionSummary":"Review in patients where anticholinergic or orthostatic adverse effects may be particularly hazardous.","contextToCheck":["Dementia","Falls history","Hyponatraemia risk","Anticholinergic burden"],"whyItMatters":"More anticholinergic than most SSRIs and may be less suitable in cognitive vulnerability."},
-    {"canonical":"mirtazapine","aliases":["zispin"],"class":"sedating antidepressant","criterionIds":["contextual"],"criterionSummary":"Not a standalone STOPP automatic breach by name alone; review as part of sedation and falls burden.","contextToCheck":["Sedation burden","Falls history","Daytime somnolence","Reason for use"],"whyItMatters":"Can meaningfully contribute to sedation burden during medication review."},
-    {"canonical":"trazodone","aliases":["molipaxin"],"class":"sedating antidepressant","criterionIds":["contextual"],"criterionSummary":"Not a standalone STOPP automatic breach by name alone; review as part of sedation and falls burden.","contextToCheck":["Sedation burden","Falls history","Orthostatic symptoms","Reason for use"],"whyItMatters":"May add to dizziness, sedation and falls risk."},
-    {"canonical":"morphine","aliases":["oramorph","mst continus","sevredol"],"class":"opioid","criterionIds":["L1"],"criterionSummary":"Strong opioids without concurrent laxative, or where long-term use and adverse effects warrant review.","contextToCheck":["Constipation prophylaxis","Indication","Pain type","Sedation burden","Falls history","Renal function"],"whyItMatters":"Opioids can contribute to constipation, sedation, delirium and falls risk."},
-    {"canonical":"oxycodone","aliases":["oxycontin","oxynorm","targinact"],"class":"opioid","criterionIds":["L1"],"criterionSummary":"Strong opioids without concurrent laxative, or where long-term use and adverse effects warrant review.","contextToCheck":["Constipation prophylaxis","Indication","Sedation burden","Falls history","Renal function"],"whyItMatters":"May worsen constipation, sedation and delirium risk."},
-    {"canonical":"fentanyl","aliases":["durogesic","matrifen"],"class":"opioid","criterionIds":["L1"],"criterionSummary":"Strong opioids without concurrent laxative when appropriate, or where ongoing need and adverse effects require review.","contextToCheck":["Constipation prophylaxis","Indication","Patch use rationale","Sedation burden"],"whyItMatters":"Potent opioid therapy in older adults requires careful ongoing review."},
-    {"canonical":"buprenorphine","aliases":["butec","transtec"],"class":"opioid","criterionIds":["L1"],"criterionSummary":"Opioid treatment requiring review of constipation prevention and adverse effects.","contextToCheck":["Constipation prophylaxis","Indication","Patch use rationale","Falls risk"],"whyItMatters":"Can contribute to sedation and constipation burden."},
-    {"canonical":"tramadol","aliases":["zydol","zamadol"],"class":"opioid","criterionIds":["L1"],"criterionSummary":"Opioid treatment requiring review of constipation prevention and adverse effects.","contextToCheck":["Constipation prophylaxis","Delirium risk","Seizure risk","Falls history"],"whyItMatters":"May contribute to confusion, serotonergic interactions and falls."},
-    {"canonical":"codeine","aliases":["solpadeine","co-codamol","codeine phosphate"],"class":"opioid","criterionIds":["L1"],"criterionSummary":"Opioid treatment requiring review of constipation prevention and adverse effects.","contextToCheck":["Constipation prophylaxis","Indication","Sedation burden","Falls history"],"whyItMatters":"Commonly contributes to constipation and sedation in older adults."},
-    {"canonical":"dihydrocodeine","aliases":["df118 forte"],"class":"opioid","criterionIds":["L1"],"criterionSummary":"Opioid treatment requiring review of constipation prevention and adverse effects.","contextToCheck":["Constipation prophylaxis","Indication","Falls history","Sedation burden"],"whyItMatters":"May worsen constipation and falls risk."},
-    {"canonical":"omeprazole","aliases":["losec"],"class":"proton pump inhibitor","criterionIds":["F2"],"criterionSummary":"Proton pump inhibitor for uncomplicated peptic ulcer disease or erosive peptic oesophagitis at full therapeutic dosage for longer than 8 weeks.","contextToCheck":["Indication","Current dose","Current duration","Need for maintenance therapy"],"whyItMatters":"Long-term full-dose use may be unnecessary and increase adverse effect burden."},
-    {"canonical":"lansoprazole","aliases":["zoton"],"class":"proton pump inhibitor","criterionIds":["F2"],"criterionSummary":"Proton pump inhibitor at full therapeutic dosage for longer than 8 weeks without clear ongoing indication.","contextToCheck":["Indication","Current dose","Current duration","Need for maintenance therapy"],"whyItMatters":"Dose and duration should be reviewed to avoid unnecessary long-term exposure."},
-    {"canonical":"pantoprazole","aliases":["protium"],"class":"proton pump inhibitor","criterionIds":["F2"],"criterionSummary":"Proton pump inhibitor at full therapeutic dosage for longer than 8 weeks without clear ongoing indication.","contextToCheck":["Indication","Current dose","Current duration"],"whyItMatters":"Therapy may need step-down or discontinuation if no continuing indication exists."},
-    {"canonical":"esomeprazole","aliases":["nexium"],"class":"proton pump inhibitor","criterionIds":["F2"],"criterionSummary":"Proton pump inhibitor at full therapeutic dosage for longer than 8 weeks without clear ongoing indication.","contextToCheck":["Indication","Current dose","Current duration"],"whyItMatters":"Review helps reduce unnecessary chronic exposure."},
-    {"canonical":"rabeprazole","aliases":["pariet"],"class":"proton pump inhibitor","criterionIds":["F2"],"criterionSummary":"Proton pump inhibitor at full therapeutic dosage for longer than 8 weeks without clear ongoing indication.","contextToCheck":["Indication","Current dose","Current duration"],"whyItMatters":"Full-dose long-term treatment may be inappropriate without review."},
-    {"canonical":"ibuprofen","aliases":["brufen","nurofen"],"class":"nsaid","criterionIds":["E4"],"criterionSummary":"NSAID in significant hypertension, heart failure, severe chronic kidney disease, peptic ulcer disease without PPI, or concurrent anticoagulant or antiplatelet where risk is high.","contextToCheck":["Renal function","Heart failure","Blood pressure","GI history","PPI cover","Anticoagulants","Antiplatelets"],"whyItMatters":"Can increase GI bleed, renal and heart failure risk."},
-    {"canonical":"naproxen","aliases":"naprosyn" ,"class":"nsaid","criterionIds":["E4"],"criterionSummary":"NSAID in high-risk GI, renal or cardiovascular contexts.","contextToCheck":["Renal function","Heart failure","GI history","PPI cover","Anticoagulants","Antiplatelets"],"whyItMatters":"Risk depends heavily on comorbidity and co-prescribing context."},
-    {"canonical":"diclofenac","aliases":["voltarol"],"class":"nsaid","criterionIds":["E4"],"criterionSummary":"NSAID in high-risk GI, renal or cardiovascular contexts.","contextToCheck":["Cardiovascular disease","Renal function","GI history","PPI cover"],"whyItMatters":"Requires careful risk-benefit review in older adults."},
-    {"canonical":"indometacin","aliases":["indocid"],"class":"nsaid","criterionIds":["E4"],"criterionSummary":"NSAID in high-risk GI, renal or cardiovascular contexts.","contextToCheck":["Renal function","GI history","CNS adverse effects","Falls history"],"whyItMatters":"Can be particularly problematic because of CNS and GI adverse effects."},
-    {"canonical":"celecoxib","aliases":["celebrex"],"class":"nsaid","criterionIds":["E4"],"criterionSummary":"NSAID or COX-2 inhibitor in high-risk GI, renal or cardiovascular contexts.","contextToCheck":["Cardiovascular risk","Renal function","GI history"],"whyItMatters":"Selection still requires contextual review rather than name-only labelling."},
-    {"canonical":"furosemide","aliases":["frusemide","lasix"],"class":"loop diuretic","criterionIds":["C5"],"criterionSummary":"Loop diuretic for dependent ankle oedema only, that is, no clinical signs of heart failure.","contextToCheck":["Heart failure diagnosis","Reason for prescribing","Volume status","Renal function"],"whyItMatters":"May be used without clear indication and can worsen dehydration or electrolyte disturbance."},
-    {"canonical":"bumetanide","aliases":["burinex"],"class":"loop diuretic","criterionIds":["C5"],"criterionSummary":"Loop diuretic for dependent ankle oedema only without heart failure.","contextToCheck":["Heart failure diagnosis","Reason for prescribing","Electrolytes","Renal function"],"whyItMatters":"Needs indication review to avoid unnecessary diuresis."},
-    {"canonical":"warfarin","aliases":["marevan"],"class":"anticoagulant","criterionIds":["B7"],"criterionSummary":"Anticoagulant where adherence, bleeding risk, recurrent falls, interacting drugs or inappropriate duplication create concern; criterion is contextual rather than name-only.","contextToCheck":["Indication","Bleeding history","Falls","INR control","Drug interactions"],"whyItMatters":"Appropriateness depends on indication and bleeding risk profile."},
-    {"canonical":"apixaban","aliases":["eliquis"],"class":"anticoagulant","criterionIds":["B7"],"criterionSummary":"Anticoagulant review is contextual and should consider indication, bleeding risk, dose and renal function.","contextToCheck":["Indication","Dose","Renal function","Bleeding history","Concurrent antiplatelets"],"whyItMatters":"Name-only matching is insufficient; contextual review is necessary."},
-    {"canonical":"rivaroxaban","aliases":["xarelto"],"class":"anticoagulant","criterionIds":["B7"],"criterionSummary":"Anticoagulant review is contextual and should consider indication, bleeding risk, dose and renal function.","contextToCheck":["Indication","Dose","Renal function","Bleeding history","Concurrent antiplatelets"],"whyItMatters":"Requires contextual assessment rather than automatic STOPP classification."},
-    {"canonical":"edoxaban","aliases":["lixiana"],"class":"anticoagulant","criterionIds":["B7"],"criterionSummary":"Anticoagulant review is contextual and should consider indication, bleeding risk, dose and renal function.","contextToCheck":["Indication","Dose","Renal function","Bleeding history"],"whyItMatters":"Potential inappropriateness depends on clinical context."},
-    {"canonical":"dabigatran","aliases":["pradaxa"],"class":"anticoagulant","criterionIds":["B7"],"criterionSummary":"Anticoagulant review is contextual and should consider indication, bleeding risk, dose and renal function.","contextToCheck":["Indication","Dose","Renal function","GI bleed risk"],"whyItMatters":"Appropriateness cannot be determined from the drug name alone."},
-    {"canonical":"aspirin","aliases":["dispersible aspirin","caprin"],"class":"antiplatelet","criterionIds":["B9"],"criterionSummary":"Antiplatelet therapy may be inappropriate in some primary prevention or duplication contexts; review is contextual.","contextToCheck":["Primary vs secondary prevention","Duration","Concurrent anticoagulant","GI protection"],"whyItMatters":"Benefit-risk balance varies markedly by indication."},
-    {"canonical":"clopidogrel","aliases":["plavix"],"class":"antiplatelet","criterionIds":["B9"],"criterionSummary":"Antiplatelet therapy may be inappropriate in duplication or non-indicated long-term use; review is contextual.","contextToCheck":["Indication","Duration","Concurrent anticoagulant","Bleeding history"],"whyItMatters":"Requires indication-specific review."},
-    {"canonical":"ticagrelor","aliases":["brilique"],"class":"antiplatelet","criterionIds":["B9"],"criterionSummary":"Antiplatelet therapy may be inappropriate in duplication or non-indicated long-term use; review is contextual.","contextToCheck":["Indication","Duration","Concurrent anticoagulant","Bleeding history"],"whyItMatters":"Potential risk is context dependent."},
-    {"canonical":"prasugrel","aliases":["efient"],"class":"antiplatelet","criterionIds":["B9"],"criterionSummary":"Antiplatelet therapy may be inappropriate in duplication or non-indicated long-term use; review is contextual.","contextToCheck":["Indication","Duration","Concurrent anticoagulant","Bleeding history"],"whyItMatters":"Requires contextual review rather than automatic flagging."},
-    {"canonical":"chlorphenamine","aliases":["piriton"],"class":"sedating antihistamine","criterionIds":["K6"],"criterionSummary":"Review in patients vulnerable to anticholinergic adverse effects, falls, urinary retention or confusion.","contextToCheck":["Dementia","Falls history","Urinary retention","Anticholinergic burden"],"whyItMatters":"Sedating anticholinergic antihistamines may worsen cognition and falls risk."},
-    {"canonical":"promethazine","aliases":["phenergan","sominex"],"class":"sedating antihistamine","criterionIds":["K6"],"criterionSummary":"Review in patients vulnerable to anticholinergic adverse effects, falls or confusion.","contextToCheck":["Sedation burden","Falls history","Anticholinergic burden"],"whyItMatters":"May add materially to sedation and cognitive adverse effects."},
-    {"canonical":"hydroxyzine","aliases":["atarax","ucerax"],"class":"sedating antihistamine","criterionIds":["K6"],"criterionSummary":"Review in patients vulnerable to anticholinergic or sedative adverse effects.","contextToCheck":["Anticholinergic burden","Falls history","QT risk"],"whyItMatters":"Can contribute to sedation and cognitive adverse effects in older adults."},
-    {"canonical":"atorvastatin","aliases":["lipitor"],"class":"statin","criterionIds":["I1"],"criterionSummary":"Contextual review only; relevance usually depends on limited life expectancy, advanced frailty or end-of-life context rather than the drug name alone.","contextToCheck":["Frailty","Life expectancy","Secondary prevention indication","Treatment goals"],"whyItMatters":"Statin review in very frail older adults is indication and prognosis dependent."},
-    {"canonical":"simvastatin","aliases":["zocor"],"class":"statin","criterionIds":["I1"],"criterionSummary":"Contextual review only; relevance usually depends on limited life expectancy, advanced frailty or end-of-life context rather than the drug name alone.","contextToCheck":["Frailty","Life expectancy","Secondary prevention indication","Treatment goals"],"whyItMatters":"Appropriateness depends on goals of care and prevention context."}
+    {
+      "canonical": "diazepam",
+      "aliases": [
+        "diazemuls",
+        "valium"
+      ],
+      "class": "benzodiazepine",
+      "criterionIds": [
+        "K2"
+      ],
+      "criterionSummary": "Benzodiazepines for 4 weeks or more.",
+      "contextToCheck": [
+        "Current duration",
+        "Indication",
+        "Daytime sedation",
+        "Falls history",
+        "Cognitive impairment"
+      ],
+      "whyItMatters": "Linked with prolonged sedation, confusion, impaired balance and falls in older adults."
+    },
+    {
+      "canonical": "lorazepam",
+      "aliases": [
+        "ativan"
+      ],
+      "class": "benzodiazepine",
+      "criterionIds": [
+        "K2"
+      ],
+      "criterionSummary": "Benzodiazepines for 4 weeks or more.",
+      "contextToCheck": [
+        "Current duration",
+        "Indication",
+        "Sedation",
+        "Falls history",
+        "Cognitive impairment"
+      ],
+      "whyItMatters": "Can worsen sedation, mobility and cognition risk in older adults."
+    },
+    {
+      "canonical": "temazepam",
+      "aliases": [
+        "normison",
+        "tenox"
+      ],
+      "class": "benzodiazepine",
+      "criterionIds": [
+        "K2"
+      ],
+      "criterionSummary": "Benzodiazepines for 4 weeks or more.",
+      "contextToCheck": [
+        "Current duration",
+        "Indication",
+        "Night sedation",
+        "Falls history",
+        "Daytime hangover effect"
+      ],
+      "whyItMatters": "Night sedation may increase falls and confusion risk."
+    },
+    {
+      "canonical": "nitrazepam",
+      "aliases": [
+        "mogadon"
+      ],
+      "class": "benzodiazepine",
+      "criterionIds": [
+        "K2"
+      ],
+      "criterionSummary": "Benzodiazepines for 4 weeks or more.",
+      "contextToCheck": [
+        "Current duration",
+        "Indication",
+        "Sedation burden",
+        "Falls history"
+      ],
+      "whyItMatters": "Long acting sedative effect may increase falls and cognitive adverse effects."
+    },
+    {
+      "canonical": "oxazepam",
+      "aliases": [],
+      "class": "benzodiazepine",
+      "criterionIds": [
+        "K2"
+      ],
+      "criterionSummary": "Benzodiazepines for 4 weeks or more.",
+      "contextToCheck": [
+        "Current duration",
+        "Indication",
+        "Sedation burden",
+        "Falls history"
+      ],
+      "whyItMatters": "Sedative adverse effects remain clinically relevant in older adults."
+    },
+    {
+      "canonical": "alprazolam",
+      "aliases": [
+        "xanax"
+      ],
+      "class": "benzodiazepine",
+      "criterionIds": [
+        "K2"
+      ],
+      "criterionSummary": "Benzodiazepines for 4 weeks or more.",
+      "contextToCheck": [
+        "Current duration",
+        "Indication",
+        "Dependence risk",
+        "Falls history"
+      ],
+      "whyItMatters": "Associated with dependence, sedation and falls risk."
+    },
+    {
+      "canonical": "clonazepam",
+      "aliases": [
+        "rivotril"
+      ],
+      "class": "benzodiazepine",
+      "criterionIds": [
+        "K2"
+      ],
+      "criterionSummary": "Benzodiazepines for 4 weeks or more unless clear specialist rationale exists.",
+      "contextToCheck": [
+        "Current duration",
+        "Indication",
+        "Specialist rationale",
+        "Sedation burden"
+      ],
+      "whyItMatters": "May add to confusion, sedation and falls risk; indication review is important."
+    },
+    {
+      "canonical": "chlordiazepoxide",
+      "aliases": [
+        "librium"
+      ],
+      "class": "benzodiazepine",
+      "criterionIds": [
+        "K2"
+      ],
+      "criterionSummary": "Benzodiazepines for 4 weeks or more.",
+      "contextToCheck": [
+        "Current duration",
+        "Indication",
+        "Alcohol withdrawal history",
+        "Falls history"
+      ],
+      "whyItMatters": "Prolonged use in older adults may be inappropriate because of sedation and falls risk."
+    },
+    {
+      "canonical": "zopiclone",
+      "aliases": [
+        "zimovane"
+      ],
+      "class": "z-drug",
+      "criterionIds": [
+        "K3"
+      ],
+      "criterionSummary": "Z-drugs for insomnia for 2 weeks or more.",
+      "contextToCheck": [
+        "Current duration",
+        "Indication",
+        "Night sedation",
+        "Falls history",
+        "Residual daytime sedation"
+      ],
+      "whyItMatters": "Associated with falls, confusion and limited long-term benefit."
+    },
+    {
+      "canonical": "zolpidem",
+      "aliases": [
+        "stilnoct"
+      ],
+      "class": "z-drug",
+      "criterionIds": [
+        "K3"
+      ],
+      "criterionSummary": "Z-drugs for insomnia for 2 weeks or more.",
+      "contextToCheck": [
+        "Current duration",
+        "Indication",
+        "Falls history",
+        "Complex sleep behaviours"
+      ],
+      "whyItMatters": "Can contribute to falls and neurocognitive adverse effects."
+    },
+    {
+      "canonical": "zaleplon",
+      "aliases": [
+        "sonata"
+      ],
+      "class": "z-drug",
+      "criterionIds": [
+        "K3"
+      ],
+      "criterionSummary": "Z-drugs for insomnia for 2 weeks or more.",
+      "contextToCheck": [
+        "Current duration",
+        "Indication",
+        "Falls history",
+        "Sedative burden"
+      ],
+      "whyItMatters": "Review needed if used beyond short-term insomnia treatment."
+    },
+    {
+      "canonical": "haloperidol",
+      "aliases": [
+        "serenace",
+        "haldol"
+      ],
+      "class": "antipsychotic",
+      "criterionIds": [
+        "K1"
+      ],
+      "criterionSummary": "Antipsychotics for behavioural and psychological symptoms of dementia for more than 12 weeks unless symptoms remain severe and alternatives failed.",
+      "contextToCheck": [
+        "Diagnosis",
+        "Indication",
+        "Current duration",
+        "Severity of symptoms",
+        "Stroke risk",
+        "Parkinsonism",
+        "QT risk"
+      ],
+      "whyItMatters": "Associated with stroke, extrapyramidal effects, sedation and mortality concerns in dementia."
+    },
+    {
+      "canonical": "risperidone",
+      "aliases": [
+        "risperdal"
+      ],
+      "class": "antipsychotic",
+      "criterionIds": [
+        "K1"
+      ],
+      "criterionSummary": "Antipsychotics for behavioural and psychological symptoms of dementia for more than 12 weeks unless still clearly indicated.",
+      "contextToCheck": [
+        "Diagnosis",
+        "Indication",
+        "Current duration",
+        "Target symptoms",
+        "Stroke risk",
+        "Falls risk"
+      ],
+      "whyItMatters": "May increase cerebrovascular and sedation risk in older adults with dementia."
+    },
+    {
+      "canonical": "olanzapine",
+      "aliases": [
+        "zyprexa"
+      ],
+      "class": "antipsychotic",
+      "criterionIds": [
+        "K1"
+      ],
+      "criterionSummary": "Antipsychotics for behavioural and psychological symptoms of dementia for more than 12 weeks unless still clearly indicated.",
+      "contextToCheck": [
+        "Diagnosis",
+        "Indication",
+        "Current duration",
+        "Metabolic effects",
+        "Sedation burden"
+      ],
+      "whyItMatters": "Can cause sedation and metabolic adverse effects; dementia use needs review."
+    },
+    {
+      "canonical": "quetiapine",
+      "aliases": [
+        "seroquel"
+      ],
+      "class": "antipsychotic",
+      "criterionIds": [
+        "K1"
+      ],
+      "criterionSummary": "Antipsychotics for behavioural and psychological symptoms of dementia for more than 12 weeks unless still clearly indicated.",
+      "contextToCheck": [
+        "Diagnosis",
+        "Indication",
+        "Current duration",
+        "Orthostatic hypotension",
+        "Sedation burden"
+      ],
+      "whyItMatters": "Can worsen postural symptoms, sedation and falls risk."
+    },
+    {
+      "canonical": "amisulpride",
+      "aliases": [
+        "solian"
+      ],
+      "class": "antipsychotic",
+      "criterionIds": [
+        "K1"
+      ],
+      "criterionSummary": "Antipsychotics for behavioural and psychological symptoms of dementia for more than 12 weeks unless specialist review supports ongoing use.",
+      "contextToCheck": [
+        "Diagnosis",
+        "Indication",
+        "Current duration",
+        "QT risk",
+        "Extrapyramidal symptoms"
+      ],
+      "whyItMatters": "Use in frail older adults should be regularly justified and monitored."
+    },
+    {
+      "canonical": "levomepromazine",
+      "aliases": [
+        "nozinan"
+      ],
+      "class": "antipsychotic",
+      "criterionIds": [
+        "K1"
+      ],
+      "criterionSummary": "Antipsychotics for behavioural and psychological symptoms of dementia for more than 12 weeks unless specialist review supports ongoing use.",
+      "contextToCheck": [
+        "Diagnosis",
+        "Indication",
+        "Current duration",
+        "Sedation burden",
+        "Postural hypotension"
+      ],
+      "whyItMatters": "Highly sedating and may worsen falls and confusion."
+    },
+    {
+      "canonical": "amitriptyline",
+      "aliases": [
+        "elavil",
+        "triptafen"
+      ],
+      "class": "tricyclic antidepressant",
+      "criterionIds": [
+        "K6"
+      ],
+      "criterionSummary": "Tricyclic antidepressants in patients with dementia, glaucoma, cardiac conduction abnormalities, prostatism, chronic constipation, recent falls, prior urinary retention or orthostatic hypotension.",
+      "contextToCheck": [
+        "Comorbidities listed in STOPP criterion",
+        "ACB burden",
+        "Falls history",
+        "Urinary retention",
+        "Constipation"
+      ],
+      "whyItMatters": "Strong anticholinergic and sedative effects may worsen cognition and physical adverse outcomes."
+    },
+    {
+      "canonical": "dosulepin",
+      "aliases": [
+        "dothiepin",
+        "prothiaden"
+      ],
+      "class": "tricyclic antidepressant",
+      "criterionIds": [
+        "K6"
+      ],
+      "criterionSummary": "Tricyclic antidepressants in high-risk clinical contexts such as dementia, falls or urinary retention.",
+      "contextToCheck": [
+        "Comorbidities listed in STOPP criterion",
+        "Falls history",
+        "ECG risk",
+        "Anticholinergic burden"
+      ],
+      "whyItMatters": "High anticholinergic and cardiotoxic burden in older adults."
+    },
+    {
+      "canonical": "imipramine",
+      "aliases": [
+        "tofranil"
+      ],
+      "class": "tricyclic antidepressant",
+      "criterionIds": [
+        "K6"
+      ],
+      "criterionSummary": "Tricyclic antidepressants in high-risk clinical contexts such as dementia, falls or urinary retention.",
+      "contextToCheck": [
+        "Comorbidities listed in STOPP criterion",
+        "Anticholinergic burden",
+        "Falls history"
+      ],
+      "whyItMatters": "May worsen confusion, constipation, retention and falls risk."
+    },
+    {
+      "canonical": "clomipramine",
+      "aliases": [
+        "anafranil"
+      ],
+      "class": "tricyclic antidepressant",
+      "criterionIds": [
+        "K6"
+      ],
+      "criterionSummary": "Tricyclic antidepressants in high-risk clinical contexts such as dementia, falls or urinary retention.",
+      "contextToCheck": [
+        "Comorbidities listed in STOPP criterion",
+        "Anticholinergic burden",
+        "Falls history"
+      ],
+      "whyItMatters": "Carries clinically relevant anticholinergic and orthostatic burden."
+    },
+    {
+      "canonical": "trimipramine",
+      "aliases": [
+        "surmontil"
+      ],
+      "class": "tricyclic antidepressant",
+      "criterionIds": [
+        "K6"
+      ],
+      "criterionSummary": "Tricyclic antidepressants in high-risk clinical contexts such as dementia, falls or urinary retention.",
+      "contextToCheck": [
+        "Comorbidities listed in STOPP criterion",
+        "Sedation burden",
+        "Falls history"
+      ],
+      "whyItMatters": "Sedation and anticholinergic effects warrant review in older adults."
+    },
+    {
+      "canonical": "paroxetine",
+      "aliases": [
+        "seroxat"
+      ],
+      "class": "antidepressant",
+      "criterionIds": [
+        "K6"
+      ],
+      "criterionSummary": "Review in patients where anticholinergic or orthostatic adverse effects may be particularly hazardous.",
+      "contextToCheck": [
+        "Dementia",
+        "Falls history",
+        "Hyponatraemia risk",
+        "Anticholinergic burden"
+      ],
+      "whyItMatters": "More anticholinergic than most SSRIs and may be less suitable in cognitive vulnerability."
+    },
+    {
+      "canonical": "mirtazapine",
+      "aliases": [
+        "zispin"
+      ],
+      "class": "sedating antidepressant",
+      "criterionIds": [
+        "contextual"
+      ],
+      "criterionSummary": "Not a standalone STOPP automatic breach by name alone; review as part of sedation and falls burden.",
+      "contextToCheck": [
+        "Sedation burden",
+        "Falls history",
+        "Daytime somnolence",
+        "Reason for use"
+      ],
+      "whyItMatters": "Can meaningfully contribute to sedation burden during medication review."
+    },
+    {
+      "canonical": "trazodone",
+      "aliases": [
+        "molipaxin"
+      ],
+      "class": "sedating antidepressant",
+      "criterionIds": [
+        "contextual"
+      ],
+      "criterionSummary": "Not a standalone STOPP automatic breach by name alone; review as part of sedation and falls burden.",
+      "contextToCheck": [
+        "Sedation burden",
+        "Falls history",
+        "Orthostatic symptoms",
+        "Reason for use"
+      ],
+      "whyItMatters": "May add to dizziness, sedation and falls risk."
+    },
+    {
+      "canonical": "morphine",
+      "aliases": [
+        "oramorph",
+        "mst continus",
+        "sevredol"
+      ],
+      "class": "opioid",
+      "criterionIds": [
+        "L1"
+      ],
+      "criterionSummary": "Strong opioids without concurrent laxative, or where long-term use and adverse effects warrant review.",
+      "contextToCheck": [
+        "Constipation prophylaxis",
+        "Indication",
+        "Pain type",
+        "Sedation burden",
+        "Falls history",
+        "Renal function"
+      ],
+      "whyItMatters": "Opioids can contribute to constipation, sedation, delirium and falls risk."
+    },
+    {
+      "canonical": "oxycodone",
+      "aliases": [
+        "oxycontin",
+        "oxynorm",
+        "targinact"
+      ],
+      "class": "opioid",
+      "criterionIds": [
+        "L1"
+      ],
+      "criterionSummary": "Strong opioids without concurrent laxative, or where long-term use and adverse effects warrant review.",
+      "contextToCheck": [
+        "Constipation prophylaxis",
+        "Indication",
+        "Sedation burden",
+        "Falls history",
+        "Renal function"
+      ],
+      "whyItMatters": "May worsen constipation, sedation and delirium risk."
+    },
+    {
+      "canonical": "fentanyl",
+      "aliases": [
+        "durogesic",
+        "matrifen"
+      ],
+      "class": "opioid",
+      "criterionIds": [
+        "L1"
+      ],
+      "criterionSummary": "Strong opioids without concurrent laxative when appropriate, or where ongoing need and adverse effects require review.",
+      "contextToCheck": [
+        "Constipation prophylaxis",
+        "Indication",
+        "Patch use rationale",
+        "Sedation burden"
+      ],
+      "whyItMatters": "Potent opioid therapy in older adults requires careful ongoing review."
+    },
+    {
+      "canonical": "buprenorphine",
+      "aliases": [
+        "butec",
+        "transtec"
+      ],
+      "class": "opioid",
+      "criterionIds": [
+        "L1"
+      ],
+      "criterionSummary": "Opioid treatment requiring review of constipation prevention and adverse effects.",
+      "contextToCheck": [
+        "Constipation prophylaxis",
+        "Indication",
+        "Patch use rationale",
+        "Falls risk"
+      ],
+      "whyItMatters": "Can contribute to sedation and constipation burden."
+    },
+    {
+      "canonical": "tramadol",
+      "aliases": [
+        "zydol",
+        "zamadol"
+      ],
+      "class": "opioid",
+      "criterionIds": [
+        "L1"
+      ],
+      "criterionSummary": "Opioid treatment requiring review of constipation prevention and adverse effects.",
+      "contextToCheck": [
+        "Constipation prophylaxis",
+        "Delirium risk",
+        "Seizure risk",
+        "Falls history"
+      ],
+      "whyItMatters": "May contribute to confusion, serotonergic interactions and falls."
+    },
+    {
+      "canonical": "codeine",
+      "aliases": [
+        "solpadeine",
+        "co-codamol",
+        "codeine phosphate"
+      ],
+      "class": "opioid",
+      "criterionIds": [
+        "L1"
+      ],
+      "criterionSummary": "Opioid treatment requiring review of constipation prevention and adverse effects.",
+      "contextToCheck": [
+        "Constipation prophylaxis",
+        "Indication",
+        "Sedation burden",
+        "Falls history"
+      ],
+      "whyItMatters": "Commonly contributes to constipation and sedation in older adults."
+    },
+    {
+      "canonical": "dihydrocodeine",
+      "aliases": [
+        "df118 forte"
+      ],
+      "class": "opioid",
+      "criterionIds": [
+        "L1"
+      ],
+      "criterionSummary": "Opioid treatment requiring review of constipation prevention and adverse effects.",
+      "contextToCheck": [
+        "Constipation prophylaxis",
+        "Indication",
+        "Falls history",
+        "Sedation burden"
+      ],
+      "whyItMatters": "May worsen constipation and falls risk."
+    },
+    {
+      "canonical": "omeprazole",
+      "aliases": [
+        "losec"
+      ],
+      "class": "proton pump inhibitor",
+      "criterionIds": [
+        "F2"
+      ],
+      "criterionSummary": "Proton pump inhibitor for uncomplicated peptic ulcer disease or erosive peptic oesophagitis at full therapeutic dosage for longer than 8 weeks.",
+      "contextToCheck": [
+        "Indication",
+        "Current dose",
+        "Current duration",
+        "Need for maintenance therapy"
+      ],
+      "whyItMatters": "Long-term full-dose use may be unnecessary and increase adverse effect burden."
+    },
+    {
+      "canonical": "lansoprazole",
+      "aliases": [
+        "zoton"
+      ],
+      "class": "proton pump inhibitor",
+      "criterionIds": [
+        "F2"
+      ],
+      "criterionSummary": "Proton pump inhibitor at full therapeutic dosage for longer than 8 weeks without clear ongoing indication.",
+      "contextToCheck": [
+        "Indication",
+        "Current dose",
+        "Current duration",
+        "Need for maintenance therapy"
+      ],
+      "whyItMatters": "Dose and duration should be reviewed to avoid unnecessary long-term exposure."
+    },
+    {
+      "canonical": "pantoprazole",
+      "aliases": [
+        "protium"
+      ],
+      "class": "proton pump inhibitor",
+      "criterionIds": [
+        "F2"
+      ],
+      "criterionSummary": "Proton pump inhibitor at full therapeutic dosage for longer than 8 weeks without clear ongoing indication.",
+      "contextToCheck": [
+        "Indication",
+        "Current dose",
+        "Current duration"
+      ],
+      "whyItMatters": "Therapy may need step-down or discontinuation if no continuing indication exists."
+    },
+    {
+      "canonical": "esomeprazole",
+      "aliases": [
+        "nexium"
+      ],
+      "class": "proton pump inhibitor",
+      "criterionIds": [
+        "F2"
+      ],
+      "criterionSummary": "Proton pump inhibitor at full therapeutic dosage for longer than 8 weeks without clear ongoing indication.",
+      "contextToCheck": [
+        "Indication",
+        "Current dose",
+        "Current duration"
+      ],
+      "whyItMatters": "Review helps reduce unnecessary chronic exposure."
+    },
+    {
+      "canonical": "rabeprazole",
+      "aliases": [
+        "pariet"
+      ],
+      "class": "proton pump inhibitor",
+      "criterionIds": [
+        "F2"
+      ],
+      "criterionSummary": "Proton pump inhibitor at full therapeutic dosage for longer than 8 weeks without clear ongoing indication.",
+      "contextToCheck": [
+        "Indication",
+        "Current dose",
+        "Current duration"
+      ],
+      "whyItMatters": "Full-dose long-term treatment may be inappropriate without review."
+    },
+    {
+      "canonical": "ibuprofen",
+      "aliases": [
+        "brufen",
+        "nurofen"
+      ],
+      "class": "nsaid",
+      "criterionIds": [
+        "E4"
+      ],
+      "criterionSummary": "NSAID in significant hypertension, heart failure, severe chronic kidney disease, peptic ulcer disease without PPI, or concurrent anticoagulant or antiplatelet where risk is high.",
+      "contextToCheck": [
+        "Renal function",
+        "Heart failure",
+        "Blood pressure",
+        "GI history",
+        "PPI cover",
+        "Anticoagulants",
+        "Antiplatelets"
+      ],
+      "whyItMatters": "Can increase GI bleed, renal and heart failure risk."
+    },
+    {
+      "canonical": "naproxen",
+      "aliases": [
+        "naprosyn"
+      ],
+      "class": "nsaid",
+      "criterionIds": [
+        "E4"
+      ],
+      "criterionSummary": "NSAID in high-risk GI, renal or cardiovascular contexts.",
+      "contextToCheck": [
+        "Renal function",
+        "Heart failure",
+        "GI history",
+        "PPI cover",
+        "Anticoagulants",
+        "Antiplatelets"
+      ],
+      "whyItMatters": "Risk depends heavily on comorbidity and co-prescribing context."
+    },
+    {
+      "canonical": "diclofenac",
+      "aliases": [
+        "voltarol"
+      ],
+      "class": "nsaid",
+      "criterionIds": [
+        "E4"
+      ],
+      "criterionSummary": "NSAID in high-risk GI, renal or cardiovascular contexts.",
+      "contextToCheck": [
+        "Cardiovascular disease",
+        "Renal function",
+        "GI history",
+        "PPI cover"
+      ],
+      "whyItMatters": "Requires careful risk-benefit review in older adults."
+    },
+    {
+      "canonical": "indometacin",
+      "aliases": [
+        "indocid"
+      ],
+      "class": "nsaid",
+      "criterionIds": [
+        "E4"
+      ],
+      "criterionSummary": "NSAID in high-risk GI, renal or cardiovascular contexts.",
+      "contextToCheck": [
+        "Renal function",
+        "GI history",
+        "CNS adverse effects",
+        "Falls history"
+      ],
+      "whyItMatters": "Can be particularly problematic because of CNS and GI adverse effects."
+    },
+    {
+      "canonical": "celecoxib",
+      "aliases": [
+        "celebrex"
+      ],
+      "class": "nsaid",
+      "criterionIds": [
+        "E4"
+      ],
+      "criterionSummary": "NSAID or COX-2 inhibitor in high-risk GI, renal or cardiovascular contexts.",
+      "contextToCheck": [
+        "Cardiovascular risk",
+        "Renal function",
+        "GI history"
+      ],
+      "whyItMatters": "Selection still requires contextual review rather than name-only labelling."
+    },
+    {
+      "canonical": "furosemide",
+      "aliases": [
+        "frusemide",
+        "lasix"
+      ],
+      "class": "loop diuretic",
+      "criterionIds": [
+        "C5"
+      ],
+      "criterionSummary": "Loop diuretic for dependent ankle oedema only, that is, no clinical signs of heart failure.",
+      "contextToCheck": [
+        "Heart failure diagnosis",
+        "Reason for prescribing",
+        "Volume status",
+        "Renal function"
+      ],
+      "whyItMatters": "May be used without clear indication and can worsen dehydration or electrolyte disturbance."
+    },
+    {
+      "canonical": "bumetanide",
+      "aliases": [
+        "burinex"
+      ],
+      "class": "loop diuretic",
+      "criterionIds": [
+        "C5"
+      ],
+      "criterionSummary": "Loop diuretic for dependent ankle oedema only without heart failure.",
+      "contextToCheck": [
+        "Heart failure diagnosis",
+        "Reason for prescribing",
+        "Electrolytes",
+        "Renal function"
+      ],
+      "whyItMatters": "Needs indication review to avoid unnecessary diuresis."
+    },
+    {
+      "canonical": "warfarin",
+      "aliases": [
+        "marevan"
+      ],
+      "class": "anticoagulant",
+      "criterionIds": [
+        "B7"
+      ],
+      "criterionSummary": "Anticoagulant where adherence, bleeding risk, recurrent falls, interacting drugs or inappropriate duplication create concern; criterion is contextual rather than name-only.",
+      "contextToCheck": [
+        "Indication",
+        "Bleeding history",
+        "Falls",
+        "INR control",
+        "Drug interactions"
+      ],
+      "whyItMatters": "Appropriateness depends on indication and bleeding risk profile."
+    },
+    {
+      "canonical": "apixaban",
+      "aliases": [
+        "eliquis"
+      ],
+      "class": "anticoagulant",
+      "criterionIds": [
+        "B7"
+      ],
+      "criterionSummary": "Anticoagulant review is contextual and should consider indication, bleeding risk, dose and renal function.",
+      "contextToCheck": [
+        "Indication",
+        "Dose",
+        "Renal function",
+        "Bleeding history",
+        "Concurrent antiplatelets"
+      ],
+      "whyItMatters": "Name-only matching is insufficient; contextual review is necessary."
+    },
+    {
+      "canonical": "rivaroxaban",
+      "aliases": [
+        "xarelto"
+      ],
+      "class": "anticoagulant",
+      "criterionIds": [
+        "B7"
+      ],
+      "criterionSummary": "Anticoagulant review is contextual and should consider indication, bleeding risk, dose and renal function.",
+      "contextToCheck": [
+        "Indication",
+        "Dose",
+        "Renal function",
+        "Bleeding history",
+        "Concurrent antiplatelets"
+      ],
+      "whyItMatters": "Requires contextual assessment rather than automatic STOPP classification."
+    },
+    {
+      "canonical": "edoxaban",
+      "aliases": [
+        "lixiana"
+      ],
+      "class": "anticoagulant",
+      "criterionIds": [
+        "B7"
+      ],
+      "criterionSummary": "Anticoagulant review is contextual and should consider indication, bleeding risk, dose and renal function.",
+      "contextToCheck": [
+        "Indication",
+        "Dose",
+        "Renal function",
+        "Bleeding history"
+      ],
+      "whyItMatters": "Potential inappropriateness depends on clinical context."
+    },
+    {
+      "canonical": "dabigatran",
+      "aliases": [
+        "pradaxa"
+      ],
+      "class": "anticoagulant",
+      "criterionIds": [
+        "B7"
+      ],
+      "criterionSummary": "Anticoagulant review is contextual and should consider indication, bleeding risk, dose and renal function.",
+      "contextToCheck": [
+        "Indication",
+        "Dose",
+        "Renal function",
+        "GI bleed risk"
+      ],
+      "whyItMatters": "Appropriateness cannot be determined from the drug name alone."
+    },
+    {
+      "canonical": "aspirin",
+      "aliases": [
+        "dispersible aspirin",
+        "caprin"
+      ],
+      "class": "antiplatelet",
+      "criterionIds": [
+        "B9"
+      ],
+      "criterionSummary": "Antiplatelet therapy may be inappropriate in some primary prevention or duplication contexts; review is contextual.",
+      "contextToCheck": [
+        "Primary vs secondary prevention",
+        "Duration",
+        "Concurrent anticoagulant",
+        "GI protection"
+      ],
+      "whyItMatters": "Benefit-risk balance varies markedly by indication."
+    },
+    {
+      "canonical": "clopidogrel",
+      "aliases": [
+        "plavix"
+      ],
+      "class": "antiplatelet",
+      "criterionIds": [
+        "B9"
+      ],
+      "criterionSummary": "Antiplatelet therapy may be inappropriate in duplication or non-indicated long-term use; review is contextual.",
+      "contextToCheck": [
+        "Indication",
+        "Duration",
+        "Concurrent anticoagulant",
+        "Bleeding history"
+      ],
+      "whyItMatters": "Requires indication-specific review."
+    },
+    {
+      "canonical": "ticagrelor",
+      "aliases": [
+        "brilique"
+      ],
+      "class": "antiplatelet",
+      "criterionIds": [
+        "B9"
+      ],
+      "criterionSummary": "Antiplatelet therapy may be inappropriate in duplication or non-indicated long-term use; review is contextual.",
+      "contextToCheck": [
+        "Indication",
+        "Duration",
+        "Concurrent anticoagulant",
+        "Bleeding history"
+      ],
+      "whyItMatters": "Potential risk is context dependent."
+    },
+    {
+      "canonical": "prasugrel",
+      "aliases": [
+        "efient"
+      ],
+      "class": "antiplatelet",
+      "criterionIds": [
+        "B9"
+      ],
+      "criterionSummary": "Antiplatelet therapy may be inappropriate in duplication or non-indicated long-term use; review is contextual.",
+      "contextToCheck": [
+        "Indication",
+        "Duration",
+        "Concurrent anticoagulant",
+        "Bleeding history"
+      ],
+      "whyItMatters": "Requires contextual review rather than automatic flagging."
+    },
+    {
+      "canonical": "chlorphenamine",
+      "aliases": [
+        "piriton"
+      ],
+      "class": "sedating antihistamine",
+      "criterionIds": [
+        "K6"
+      ],
+      "criterionSummary": "Review in patients vulnerable to anticholinergic adverse effects, falls, urinary retention or confusion.",
+      "contextToCheck": [
+        "Dementia",
+        "Falls history",
+        "Urinary retention",
+        "Anticholinergic burden"
+      ],
+      "whyItMatters": "Sedating anticholinergic antihistamines may worsen cognition and falls risk."
+    },
+    {
+      "canonical": "promethazine",
+      "aliases": [
+        "phenergan",
+        "sominex"
+      ],
+      "class": "sedating antihistamine",
+      "criterionIds": [
+        "K6"
+      ],
+      "criterionSummary": "Review in patients vulnerable to anticholinergic adverse effects, falls or confusion.",
+      "contextToCheck": [
+        "Sedation burden",
+        "Falls history",
+        "Anticholinergic burden"
+      ],
+      "whyItMatters": "May add materially to sedation and cognitive adverse effects."
+    },
+    {
+      "canonical": "hydroxyzine",
+      "aliases": [
+        "atarax",
+        "ucerax"
+      ],
+      "class": "sedating antihistamine",
+      "criterionIds": [
+        "K6"
+      ],
+      "criterionSummary": "Review in patients vulnerable to anticholinergic or sedative adverse effects.",
+      "contextToCheck": [
+        "Anticholinergic burden",
+        "Falls history",
+        "QT risk"
+      ],
+      "whyItMatters": "Can contribute to sedation and cognitive adverse effects in older adults."
+    },
+    {
+      "canonical": "atorvastatin",
+      "aliases": [
+        "lipitor"
+      ],
+      "class": "statin",
+      "criterionIds": [
+        "I1"
+      ],
+      "criterionSummary": "Contextual review only; relevance usually depends on limited life expectancy, advanced frailty or end-of-life context rather than the drug name alone.",
+      "contextToCheck": [
+        "Frailty",
+        "Life expectancy",
+        "Secondary prevention indication",
+        "Treatment goals"
+      ],
+      "whyItMatters": "Statin review in very frail older adults is indication and prognosis dependent."
+    },
+    {
+      "canonical": "simvastatin",
+      "aliases": [
+        "zocor"
+      ],
+      "class": "statin",
+      "criterionIds": [
+        "I1"
+      ],
+      "criterionSummary": "Contextual review only; relevance usually depends on limited life expectancy, advanced frailty or end-of-life context rather than the drug name alone.",
+      "contextToCheck": [
+        "Frailty",
+        "Life expectancy",
+        "Secondary prevention indication",
+        "Treatment goals"
+      ],
+      "whyItMatters": "Appropriateness depends on goals of care and prevention context."
+    },
+    {
+      "canonical": "oxybutynin",
+      "aliases": [
+        "ditropan",
+        "lyrinel xl",
+        "kentera"
+      ],
+      "class": "antimuscarinic (OAB)",
+      "criterionIds": [
+        "I1",
+        "I2",
+        "I3",
+        "I4",
+        "K12",
+        "M1",
+        "D14"
+      ],
+      "criterionSummary": "Oxybutynin is contraindicated in dementia or chronic cognitive impairment (I1), narrow-angle glaucoma (I2), BPH with post-void residual >200 ml (I3), and chronic constipation (I4); also flagged in recurrent falls (K12), concurrent use of 2+ antimuscarinics (M1), and delirium or dementia (D14).",
+      "contextToCheck": [
+        "Dementia or cognitive impairment diagnosis",
+        "Narrow-angle glaucoma",
+        "BPH and post-void residual volume",
+        "Constipation history",
+        "Falls history",
+        "Total anticholinergic burden (M1 — count of concurrent antimuscarinics)"
+      ],
+      "whyItMatters": "Oxybutynin has high CNS penetration and is the most cognitively hazardous antimuscarinic OAB agent in older adults."
+    },
+    {
+      "canonical": "tolterodine",
+      "aliases": [
+        "detrusitol"
+      ],
+      "class": "antimuscarinic (OAB)",
+      "criterionIds": [
+        "I1",
+        "I2",
+        "I3",
+        "I4",
+        "K12",
+        "M1"
+      ],
+      "criterionSummary": "Antimuscarinic for overactive bladder contraindicated in dementia or cognitive impairment (I1), narrow-angle glaucoma (I2), BPH with high post-void residual >200 ml (I3), and chronic constipation (I4); flagged in recurrent falls (K12) and polyanticholinergic regimens (M1).",
+      "contextToCheck": [
+        "Dementia or cognitive impairment diagnosis",
+        "Narrow-angle glaucoma",
+        "BPH and post-void residual volume",
+        "Constipation history",
+        "Falls history",
+        "Total number of concurrent antimuscarinics"
+      ],
+      "whyItMatters": "Anticholinergic burden from OAB agents contributes to confusion, urinary retention, constipation and falls in older adults."
+    },
+    {
+      "canonical": "solifenacin",
+      "aliases": [
+        "vesicare"
+      ],
+      "class": "antimuscarinic (OAB)",
+      "criterionIds": [
+        "I1",
+        "I2",
+        "I3",
+        "I4",
+        "K12",
+        "M1"
+      ],
+      "criterionSummary": "Antimuscarinic for overactive bladder contraindicated in dementia or cognitive impairment (I1), narrow-angle glaucoma (I2), BPH with post-void residual >200 ml (I3), and chronic constipation (I4); also flagged in recurrent falls (K12) and concurrent antimuscarinic use (M1).",
+      "contextToCheck": [
+        "Dementia or cognitive impairment diagnosis",
+        "Narrow-angle glaucoma",
+        "BPH and post-void residual volume",
+        "Constipation history",
+        "Falls history",
+        "Total number of concurrent antimuscarinics"
+      ],
+      "whyItMatters": "Adds to anticholinergic burden and may precipitate or worsen urinary retention, confusion and falls."
+    },
+    {
+      "canonical": "trospium",
+      "aliases": [
+        "regurin",
+        "regurin xl"
+      ],
+      "class": "antimuscarinic (OAB)",
+      "criterionIds": [
+        "I1",
+        "I2",
+        "I3",
+        "I4",
+        "K12",
+        "M1"
+      ],
+      "criterionSummary": "Antimuscarinic for overactive bladder contraindicated in dementia or cognitive impairment (I1), narrow-angle glaucoma (I2), BPH with post-void residual >200 ml (I3), and chronic constipation (I4); flagged in recurrent falls (K12) and polyanticholinergic regimens (M1).",
+      "contextToCheck": [
+        "Dementia or cognitive impairment diagnosis",
+        "Narrow-angle glaucoma",
+        "BPH and post-void residual volume",
+        "Constipation history",
+        "Falls history",
+        "Total number of concurrent antimuscarinics"
+      ],
+      "whyItMatters": "Contributes to anticholinergic burden despite lower CNS penetration than oxybutynin."
+    },
+    {
+      "canonical": "darifenacin",
+      "aliases": [
+        "emselex"
+      ],
+      "class": "antimuscarinic (OAB)",
+      "criterionIds": [
+        "I1",
+        "I2",
+        "I3",
+        "I4",
+        "K12",
+        "M1"
+      ],
+      "criterionSummary": "Antimuscarinic for overactive bladder contraindicated in dementia or cognitive impairment (I1), narrow-angle glaucoma (I2), BPH with post-void residual >200 ml (I3), and chronic constipation (I4); also flagged in recurrent falls (K12) and concurrent antimuscarinic use (M1).",
+      "contextToCheck": [
+        "Dementia or cognitive impairment diagnosis",
+        "Narrow-angle glaucoma",
+        "BPH and post-void residual volume",
+        "Constipation history",
+        "Falls history",
+        "Total number of concurrent antimuscarinics"
+      ],
+      "whyItMatters": "Selective M3 antagonism does not eliminate risk of cognitive and urinary adverse effects in frail older adults."
+    },
+    {
+      "canonical": "fesoterodine",
+      "aliases": [
+        "toviaz"
+      ],
+      "class": "antimuscarinic (OAB)",
+      "criterionIds": [
+        "I1",
+        "I2",
+        "I3",
+        "I4",
+        "K12",
+        "M1"
+      ],
+      "criterionSummary": "Antimuscarinic for overactive bladder contraindicated in dementia or cognitive impairment (I1), narrow-angle glaucoma (I2), BPH with post-void residual >200 ml (I3), and chronic constipation (I4); flagged in recurrent falls (K12) and polyanticholinergic regimens (M1).",
+      "contextToCheck": [
+        "Dementia or cognitive impairment diagnosis",
+        "Narrow-angle glaucoma",
+        "BPH and post-void residual volume",
+        "Constipation history",
+        "Falls history",
+        "Total number of concurrent antimuscarinics"
+      ],
+      "whyItMatters": "Contributes to anticholinergic burden and falls risk; often interchangeable concerns apply to all agents in this class."
+    },
+    {
+      "canonical": "propiverine",
+      "aliases": [
+        "detrunorm"
+      ],
+      "class": "antimuscarinic (OAB)",
+      "criterionIds": [
+        "I1",
+        "I2",
+        "I3",
+        "I4",
+        "K12",
+        "M1"
+      ],
+      "criterionSummary": "Antimuscarinic for overactive bladder contraindicated in dementia or cognitive impairment (I1), narrow-angle glaucoma (I2), BPH with post-void residual >200 ml (I3), and chronic constipation (I4); flagged in recurrent falls (K12) and concurrent antimuscarinic use (M1).",
+      "contextToCheck": [
+        "Dementia or cognitive impairment diagnosis",
+        "Narrow-angle glaucoma",
+        "BPH and post-void residual volume",
+        "Constipation history",
+        "Falls history",
+        "Total number of concurrent antimuscarinics"
+      ],
+      "whyItMatters": "Mixed calcium-channel and antimuscarinic action still carries the class-wide anticholinergic safety concerns."
+    },
+    {
+      "canonical": "flavoxate",
+      "aliases": [
+        "urispas"
+      ],
+      "class": "antimuscarinic (OAB)",
+      "criterionIds": [
+        "I1",
+        "I2",
+        "I3",
+        "I4",
+        "K12",
+        "M1"
+      ],
+      "criterionSummary": "Antimuscarinic for overactive bladder contraindicated in dementia or cognitive impairment (I1), narrow-angle glaucoma (I2), BPH with post-void residual >200 ml (I3), and chronic constipation (I4); flagged in recurrent falls (K12) and polyanticholinergic regimens (M1).",
+      "contextToCheck": [
+        "Dementia or cognitive impairment diagnosis",
+        "Narrow-angle glaucoma",
+        "BPH and post-void residual volume",
+        "Constipation history",
+        "Falls history",
+        "Total number of concurrent antimuscarinics"
+      ],
+      "whyItMatters": "Limited efficacy data combined with full anticholinergic safety risks makes this agent particularly problematic in older adults."
+    },
+    {
+      "canonical": "procyclidine",
+      "aliases": [
+        "kemadrin"
+      ],
+      "class": "anti-Parkinson anticholinergic",
+      "criterionIds": [
+        "D13",
+        "D14"
+      ],
+      "criterionSummary": "Procyclidine used to treat antipsychotic-induced extrapyramidal symptoms is rarely justified and risks cognitive worsening (D13); contraindicated in delirium or dementia (D14).",
+      "contextToCheck": [
+        "Indication — is it solely for antipsychotic-induced EPS?",
+        "Dementia or delirium diagnosis",
+        "Whether the causative antipsychotic can be reduced or switched",
+        "Cognitive trajectory",
+        "Total anticholinergic burden"
+      ],
+      "whyItMatters": "Procyclidine adds substantial anticholinergic burden and should rarely be used in older adults, particularly those with cognitive impairment."
+    },
+    {
+      "canonical": "trihexyphenidyl",
+      "aliases": [
+        "broflex",
+        "benzhexol"
+      ],
+      "class": "anti-Parkinson anticholinergic",
+      "criterionIds": [
+        "D13",
+        "D14"
+      ],
+      "criterionSummary": "Used to treat antipsychotic-induced EPS, this is rarely justified and risks cognitive worsening (D13); contraindicated in delirium or dementia (D14).",
+      "contextToCheck": [
+        "Indication — is it solely for antipsychotic-induced EPS?",
+        "Dementia or delirium diagnosis",
+        "Whether the causative antipsychotic can be reduced or switched",
+        "Cognitive trajectory",
+        "Total anticholinergic burden"
+      ],
+      "whyItMatters": "One of the highest-burden anticholinergic agents; especially hazardous in dementia and delirium."
+    },
+    {
+      "canonical": "orphenadrine",
+      "aliases": [
+        "disipal",
+        "norflex"
+      ],
+      "class": "anti-Parkinson anticholinergic",
+      "criterionIds": [
+        "D13",
+        "D14"
+      ],
+      "criterionSummary": "Used to treat antipsychotic-induced EPS, this is rarely justified and risks cognitive worsening (D13); contraindicated in delirium or dementia (D14).",
+      "contextToCheck": [
+        "Indication — is it solely for antipsychotic-induced EPS?",
+        "Dementia or delirium diagnosis",
+        "Whether the causative antipsychotic can be reduced or switched",
+        "Cognitive trajectory",
+        "Total anticholinergic burden"
+      ],
+      "whyItMatters": "High anticholinergic burden; use in older adults with cognitive impairment is strongly discouraged."
+    },
+    {
+      "canonical": "biperiden",
+      "aliases": [
+        "akineton"
+      ],
+      "class": "anti-Parkinson anticholinergic",
+      "criterionIds": [
+        "D13",
+        "D14"
+      ],
+      "criterionSummary": "Used to treat antipsychotic-induced EPS, this is rarely justified and risks cognitive worsening (D13); contraindicated in delirium or dementia (D14).",
+      "contextToCheck": [
+        "Indication — is it solely for antipsychotic-induced EPS?",
+        "Dementia or delirium diagnosis",
+        "Whether the causative antipsychotic can be reduced or switched",
+        "Cognitive trajectory",
+        "Total anticholinergic burden"
+      ],
+      "whyItMatters": "Anticholinergic agent with risk of worsening cognition, delirium and urinary retention in older adults."
+    },
+    {
+      "canonical": "chlorpromazine",
+      "aliases": [
+        "largactil"
+      ],
+      "class": "antipsychotic (phenothiazine)",
+      "criterionIds": [
+        "D4",
+        "D14",
+        "D15",
+        "D21",
+        "K2"
+      ],
+      "criterionSummary": "Chlorpromazine carries high antimuscarinic burden and is flagged in lower urinary tract symptoms or BPH (D4), delirium or dementia (D14), BPSD use beyond 12 weeks without review (D15), and as a first-line agent for psychosis or BPSD given its sedative and EPS profile (D21); also a falls risk (K2).",
+      "contextToCheck": [
+        "Lower urinary tract symptoms or BPH",
+        "Dementia or delirium diagnosis",
+        "Duration of use for BPSD",
+        "Falls history",
+        "Total anticholinergic burden",
+        "QT interval"
+      ],
+      "whyItMatters": "High anticholinergic and sedative load makes chlorpromazine particularly unsuitable in older adults with cognitive impairment or falls risk."
+    },
+    {
+      "canonical": "clozapine",
+      "aliases": [
+        "clozaril",
+        "denzapine",
+        "zaponex"
+      ],
+      "class": "antipsychotic (clozapine)",
+      "criterionIds": [
+        "D4",
+        "D14"
+      ],
+      "criterionSummary": "Clozapine has very high antimuscarinic burden and is flagged in lower urinary tract symptoms or BPH with urinary retention risk (D4) and in delirium or dementia (D14).",
+      "contextToCheck": [
+        "Lower urinary tract symptoms or urinary retention history",
+        "Dementia or delirium diagnosis",
+        "Metabolic monitoring (weight, glucose, lipids)",
+        "Haematological monitoring (mandatory)",
+        "Total anticholinergic burden",
+        "Constipation — clozapine-associated bowel obstruction risk"
+      ],
+      "whyItMatters": "Clozapine's extreme anticholinergic burden can cause urinary retention, severe constipation and delirium, and its use in older adults with dementia requires specialist justification."
+    },
+    {
+      "canonical": "flupentixol",
+      "aliases": [
+        "depixol",
+        "fluanxol"
+      ],
+      "class": "antipsychotic (thioxanthene)",
+      "criterionIds": [
+        "D4",
+        "D14",
+        "D15",
+        "K2"
+      ],
+      "criterionSummary": "Flupentixol is flagged in lower urinary tract symptoms or BPH (D4), delirium or dementia (D14), BPSD use beyond 12 weeks without review (D15), and contributes to falls risk (K2).",
+      "contextToCheck": [
+        "Lower urinary tract symptoms or BPH",
+        "Dementia or delirium diagnosis",
+        "Duration of use for BPSD",
+        "Falls history",
+        "EPS monitoring",
+        "Anticholinergic burden"
+      ],
+      "whyItMatters": "Anticholinergic and EPS profile of flupentixol adds to risk of retention, falls and worsened cognition in older adults."
+    },
+    {
+      "canonical": "fluphenazine",
+      "aliases": [
+        "modecate"
+      ],
+      "class": "antipsychotic (phenothiazine)",
+      "criterionIds": [
+        "D4",
+        "D14",
+        "D15",
+        "D21",
+        "K2"
+      ],
+      "criterionSummary": "Fluphenazine carries anticholinergic burden and is flagged in lower urinary tract symptoms or BPH (D4), delirium or dementia (D14), BPSD use beyond 12 weeks without review (D15), as a first-line BPSD agent given its EPS profile (D21), and as a falls risk (K2).",
+      "contextToCheck": [
+        "Lower urinary tract symptoms or BPH",
+        "Dementia or delirium diagnosis",
+        "Duration of use for BPSD",
+        "Falls history",
+        "EPS monitoring",
+        "Depot formulation — frequency and indication review"
+      ],
+      "whyItMatters": "High EPS and anticholinergic burden make fluphenazine especially problematic in frail older adults."
+    },
+    {
+      "canonical": "promazine",
+      "aliases": [
+        "sparine"
+      ],
+      "class": "antipsychotic (phenothiazine)",
+      "criterionIds": [
+        "D4",
+        "D14",
+        "D15",
+        "D21",
+        "K2"
+      ],
+      "criterionSummary": "Promazine carries significant anticholinergic and sedative burden and is flagged in lower urinary tract symptoms or BPH (D4), delirium or dementia (D14), BPSD use beyond 12 weeks without review (D15), as a first-line phenothiazine for psychosis or BPSD (D21), and as a falls risk (K2).",
+      "contextToCheck": [
+        "Lower urinary tract symptoms or BPH",
+        "Dementia or delirium diagnosis",
+        "Duration of use for BPSD",
+        "Falls history",
+        "Total sedation burden",
+        "QT interval"
+      ],
+      "whyItMatters": "Promazine's combination of sedation, anticholinergic and orthostatic effects carries a high adverse-event burden in older adults."
+    },
+    {
+      "canonical": "aripiprazole",
+      "aliases": [
+        "abilify"
+      ],
+      "class": "antipsychotic (partial dopamine agonist)",
+      "criterionIds": [
+        "D5",
+        "D15",
+        "K2"
+      ],
+      "criterionSummary": "Aripiprazole used for behavioural and psychological symptoms of dementia should be reviewed after 12 weeks unless symptoms remain severe and non-pharmacological alternatives have been tried (D5/D15); also contributes to falls risk (K2).",
+      "contextToCheck": [
+        "Dementia diagnosis and symptom type",
+        "Duration of use for BPSD",
+        "Review of non-pharmacological alternatives",
+        "Falls history",
+        "Akathisia (may worsen restlessness)",
+        "Ongoing clinical indication"
+      ],
+      "whyItMatters": "Even atypical antipsychotics with lower anticholinergic burden carry cerebrovascular and falls risk in older adults with dementia."
+    },
+    {
+      "canonical": "donepezil",
+      "aliases": [
+        "aricept"
+      ],
+      "class": "acetylcholinesterase inhibitor",
+      "criterionIds": [
+        "D17",
+        "D18"
+      ],
+      "criterionSummary": "Donepezil is contraindicated with resting bradycardia <60 bpm, heart block, or recurrent syncope (D17) and should be reviewed when combined with beta-blockers, digoxin, diltiazem or verapamil due to additive bradycardia risk (D18).",
+      "contextToCheck": [
+        "Resting heart rate",
+        "ECG — PR interval and heart block",
+        "History of syncope",
+        "Concurrent bradycardic drugs (beta-blockers, digoxin, diltiazem, verapamil)",
+        "Pacemaker status"
+      ],
+      "whyItMatters": "AChE inhibitors reduce heart rate; combination with other bradycardic agents substantially increases syncope and heart block risk."
+    },
+    {
+      "canonical": "rivastigmine",
+      "aliases": [
+        "exelon"
+      ],
+      "class": "acetylcholinesterase inhibitor",
+      "criterionIds": [
+        "D17",
+        "D18"
+      ],
+      "criterionSummary": "Rivastigmine is contraindicated with resting bradycardia <60 bpm, heart block, or recurrent syncope (D17) and should be reviewed when combined with beta-blockers, digoxin, diltiazem or verapamil due to additive bradycardia risk (D18).",
+      "contextToCheck": [
+        "Resting heart rate",
+        "ECG — PR interval and heart block",
+        "History of syncope",
+        "Concurrent bradycardic drugs",
+        "Patch formulation — dose titration",
+        "GI tolerability (nausea/vomiting with patch)"
+      ],
+      "whyItMatters": "Bradycardic risk is a class effect; patch formulation does not eliminate cardiac concern."
+    },
+    {
+      "canonical": "galantamine",
+      "aliases": [
+        "reminyl",
+        "acumor"
+      ],
+      "class": "acetylcholinesterase inhibitor",
+      "criterionIds": [
+        "D17",
+        "D18"
+      ],
+      "criterionSummary": "Galantamine is contraindicated with resting bradycardia <60 bpm, heart block, or recurrent syncope (D17) and should be reviewed when combined with beta-blockers, digoxin, diltiazem or verapamil due to additive bradycardia risk (D18).",
+      "contextToCheck": [
+        "Resting heart rate",
+        "ECG — PR interval and heart block",
+        "History of syncope",
+        "Concurrent bradycardic drugs",
+        "Renal function (dose reduction if eGFR <9)"
+      ],
+      "whyItMatters": "Additive bradycardia risk with other rate-limiting drugs can precipitate syncope and falls."
+    },
+    {
+      "canonical": "memantine",
+      "aliases": [
+        "ebixa",
+        "nemdatine"
+      ],
+      "class": "NMDA antagonist (dementia)",
+      "criterionIds": [
+        "D19"
+      ],
+      "criterionSummary": "Memantine should be reviewed in patients with a history of seizure disorder, as NMDA antagonism may lower the seizure threshold (D19).",
+      "contextToCheck": [
+        "Seizure disorder history",
+        "Current anti-epileptic medication",
+        "Frequency of recent seizures",
+        "Neurological diagnosis",
+        "Renal function — dose adjustment required if eGFR <30"
+      ],
+      "whyItMatters": "Use in patients with active or recent seizure history may increase seizure risk and requires specialist review."
+    },
+    {
+      "canonical": "prochlorperazine",
+      "aliases": [
+        "stemetil",
+        "buccastem"
+      ],
+      "class": "phenothiazine antiemetic",
+      "criterionIds": [
+        "F1",
+        "D21"
+      ],
+      "criterionSummary": "Prochlorperazine worsens extrapyramidal symptoms in Parkinsonism (F1) and as a phenothiazine it is flagged as a first-line agent for psychosis or BPSD given its sedative and EPS profile (D21).",
+      "contextToCheck": [
+        "Parkinsonism or Parkinson's disease diagnosis",
+        "Indication — is there an alternative anti-emetic (e.g. domperidone, ondansetron)?",
+        "Duration of use",
+        "EPS monitoring",
+        "Use for BPSD or psychosis"
+      ],
+      "whyItMatters": "Can markedly worsen motor symptoms in Parkinson's disease and is a frequent contributor to drug-induced Parkinsonism."
+    },
+    {
+      "canonical": "metoclopramide",
+      "aliases": [
+        "maxolon"
+      ],
+      "class": "dopamine antagonist antiemetic",
+      "criterionIds": [
+        "F1"
+      ],
+      "criterionSummary": "Metoclopramide worsens extrapyramidal symptoms in patients with Parkinsonism and should be avoided in this group; alternatives should be used for nausea and vomiting (F1).",
+      "contextToCheck": [
+        "Parkinsonism or Parkinson's disease diagnosis",
+        "Indication — is there a non-dopamine-blocking alternative?",
+        "Duration of use",
+        "EPS monitoring",
+        "Renal function"
+      ],
+      "whyItMatters": "Central dopamine blockade precipitates or worsens Parkinsonism, sometimes irreversibly."
+    },
+    {
+      "canonical": "mirabegron",
+      "aliases": [
+        "betmiga"
+      ],
+      "class": "beta-3 adrenoceptor agonist (OAB)",
+      "criterionIds": [
+        "I6",
+        "B15"
+      ],
+      "criterionSummary": "Mirabegron should be avoided in labile or severe hypertension (I6) and has QT-prolonging potential requiring review in patients with known QTc prolongation or concurrent QT-prolonging drugs (B15).",
+      "contextToCheck": [
+        "Current blood pressure and antihypertensive regimen",
+        "History of labile or severe hypertension",
+        "Baseline QTc interval",
+        "Concurrent QT-prolonging drugs",
+        "Renal and hepatic function"
+      ],
+      "whyItMatters": "Can raise blood pressure significantly in poorly controlled hypertension and adds to QT prolongation risk."
+    },
+    {
+      "canonical": "gabapentin",
+      "aliases": [
+        "neurontin"
+      ],
+      "class": "gabapentinoid",
+      "criterionIds": [
+        "L5",
+        "K5"
+      ],
+      "criterionSummary": "Gabapentin used for non-neuropathic pain has no proven benefit and carries sedation, falls and misuse risk (L5); as an anti-epileptic it is also flagged in recurrent falls due to sedation and ataxia (K5).",
+      "contextToCheck": [
+        "Indication — is there confirmed neuropathic pain?",
+        "Falls history",
+        "Sedation burden",
+        "Renal function (dose reduction required if eGFR reduced)",
+        "Misuse or dependence risk",
+        "Controlled drug status awareness"
+      ],
+      "whyItMatters": "Gabapentin contributes to sedation, ataxia and falls, and its use for non-neuropathic pain is not evidence-based."
+    },
+    {
+      "canonical": "pregabalin",
+      "aliases": [
+        "lyrica",
+        "alzain",
+        "lecaent",
+        "rewisca"
+      ],
+      "class": "gabapentinoid",
+      "criterionIds": [
+        "L5",
+        "K5"
+      ],
+      "criterionSummary": "Pregabalin used for non-neuropathic pain has no proven benefit and carries sedation, falls and misuse risk (L5); as an anti-epileptic it is also flagged in recurrent falls due to sedation and ataxia (K5).",
+      "contextToCheck": [
+        "Indication — is there confirmed neuropathic pain?",
+        "Falls history",
+        "Sedation burden",
+        "Renal function (dose reduction required)",
+        "Misuse or dependence risk",
+        "Controlled drug status awareness"
+      ],
+      "whyItMatters": "Pregabalin has high misuse potential and significantly adds to sedation and falls risk in older adults."
+    },
+    {
+      "canonical": "digoxin",
+      "aliases": [
+        "lanoxin"
+      ],
+      "class": "cardiac glycoside",
+      "criterionIds": [
+        "B1",
+        "B4",
+        "B21"
+      ],
+      "criterionSummary": "Digoxin is inappropriate in heart failure with preserved ejection fraction (B1), in bradycardia <50 bpm or significant heart block (B4), and as first-line therapy for AF rate control beyond 3 months where superior alternatives exist (B21).",
+      "contextToCheck": [
+        "Echocardiogram — is EF preserved or reduced?",
+        "Heart rate and ECG (PR interval, heart block)",
+        "AF indication — is this first-line rate control?",
+        "Renal function (narrow therapeutic index, toxicity if eGFR reduced)",
+        "Electrolytes (hypokalaemia increases toxicity)",
+        "Digoxin level if available"
+      ],
+      "whyItMatters": "Digoxin has a narrow therapeutic index and is especially prone to toxicity in older adults with reduced renal function."
+    },
+    {
+      "canonical": "verapamil",
+      "aliases": [
+        "securon",
+        "univer",
+        "verapress",
+        "zolvera"
+      ],
+      "class": "rate-limiting calcium-channel blocker",
+      "criterionIds": [
+        "B2",
+        "B3",
+        "B4",
+        "C13"
+      ],
+      "criterionSummary": "Verapamil is contraindicated in NYHA class III/IV heart failure (B2), in combination with beta-blockers due to heart block risk (B3), in bradycardia <50 bpm or significant heart block (B4), and increases dabigatran exposure (C13).",
+      "contextToCheck": [
+        "Heart failure class and ejection fraction",
+        "Concurrent beta-blocker",
+        "Resting heart rate and ECG (PR interval, heart block)",
+        "Dabigatran co-prescription — increased bleeding risk",
+        "Constipating effect burden"
+      ],
+      "whyItMatters": "Verapamil can precipitate acute decompensation in heart failure and life-threatening bradyarrhythmias when combined with beta-blockers."
+    },
+    {
+      "canonical": "diltiazem",
+      "aliases": [
+        "tildiem",
+        "adizem",
+        "slozem",
+        "viazem xl",
+        "zemtard"
+      ],
+      "class": "rate-limiting calcium-channel blocker",
+      "criterionIds": [
+        "B2",
+        "B3",
+        "B4",
+        "C13"
+      ],
+      "criterionSummary": "Diltiazem is contraindicated in NYHA class III/IV heart failure (B2), in combination with beta-blockers due to heart block risk (B3), in bradycardia <50 bpm or significant heart block (B4), and increases dabigatran exposure (C13).",
+      "contextToCheck": [
+        "Heart failure class and ejection fraction",
+        "Concurrent beta-blocker",
+        "Resting heart rate and ECG (PR interval, heart block)",
+        "Dabigatran co-prescription — increased bleeding risk",
+        "Renal and hepatic function"
+      ],
+      "whyItMatters": "Combination with beta-blockers is a common prescription error that can cause complete heart block."
+    },
+    {
+      "canonical": "amiodarone",
+      "aliases": [
+        "cordarone x"
+      ],
+      "class": "antiarrhythmic",
+      "criterionIds": [
+        "B6",
+        "B15"
+      ],
+      "criterionSummary": "Amiodarone should not be used as first-line treatment for supraventricular tachycardia due to its extensive toxicity profile (B6) and is a potent QT-prolonging agent requiring review in patients with known QTc prolongation (B15).",
+      "contextToCheck": [
+        "Is amiodarone genuinely first-line for SVT?",
+        "Baseline QTc interval",
+        "Concurrent QT-prolonging drugs",
+        "Thyroid, pulmonary and hepatic function monitoring",
+        "Ophthalmology review for corneal microdeposits",
+        "Photosensitivity and skin monitoring"
+      ],
+      "whyItMatters": "Amiodarone has the highest organ toxicity profile of any antiarrhythmic and requires active surveillance even at maintenance doses."
+    },
+    {
+      "canonical": "methyldopa",
+      "aliases": [
+        "aldomet"
+      ],
+      "class": "centrally-acting antihypertensive",
+      "criterionIds": [
+        "B11",
+        "K11"
+      ],
+      "criterionSummary": "Methyldopa is poorly tolerated in older people and should generally be avoided as an antihypertensive (B11); it is also specifically flagged in patients with recurrent falls (K11).",
+      "contextToCheck": [
+        "Age and frailty",
+        "Falls history",
+        "Sedation and cognitive effects",
+        "Whether better-tolerated alternatives have been tried",
+        "Blood pressure control adequacy"
+      ],
+      "whyItMatters": "Methyldopa causes sedation, depression and postural hypotension that substantially increase falls and confusion risk in older adults."
+    },
+    {
+      "canonical": "clonidine",
+      "aliases": [
+        "catapres",
+        "dixarit"
+      ],
+      "class": "centrally-acting antihypertensive",
+      "criterionIds": [
+        "B11",
+        "K11"
+      ],
+      "criterionSummary": "Clonidine is poorly tolerated in older people due to sedation and rebound hypertension risk, and should generally be avoided as an antihypertensive (B11); also flagged in patients with recurrent falls (K11).",
+      "contextToCheck": [
+        "Falls history",
+        "Sedation burden",
+        "Risk of rebound hypertension on discontinuation",
+        "Whether better-tolerated alternatives are available",
+        "Blood pressure control adequacy"
+      ],
+      "whyItMatters": "Sedation, postural hypotension and rebound hypertension on cessation are clinically dangerous in frail older adults."
+    },
+    {
+      "canonical": "moxonidine",
+      "aliases": [
+        "physiotens"
+      ],
+      "class": "centrally-acting antihypertensive",
+      "criterionIds": [
+        "B11",
+        "K11"
+      ],
+      "criterionSummary": "Moxonidine is poorly tolerated in older people and should generally be avoided as an antihypertensive (B11); it is also flagged in patients with recurrent falls (K11).",
+      "contextToCheck": [
+        "Falls history",
+        "Sedation and cognitive effects",
+        "Whether better-tolerated alternatives have been tried",
+        "Blood pressure control adequacy",
+        "Renal function"
+      ],
+      "whyItMatters": "Central sympatholysis contributes to sedation and postural hypotension with associated falls risk."
+    },
+    {
+      "canonical": "alfuzosin",
+      "aliases": [
+        "xatral"
+      ],
+      "class": "alpha-1 adrenoceptor blocker",
+      "criterionIds": [
+        "I5",
+        "K9",
+        "K10"
+      ],
+      "criterionSummary": "Alfuzosin should be avoided in patients with symptomatic orthostatic hypotension or syncope history (I5); as an antihypertensive it is also flagged in recurrent falls (K9) and specifically for prostatic outflow symptoms in recurrent falls (K10).",
+      "contextToCheck": [
+        "Orthostatic hypotension or syncope history",
+        "Falls history",
+        "Indication — BPH or hypertension?",
+        "Concurrent antihypertensives",
+        "Fluid status"
+      ],
+      "whyItMatters": "First-dose and sustained postural hypotension from alpha-1 blockade is a significant falls risk in older men."
+    },
+    {
+      "canonical": "doxazosin",
+      "aliases": [
+        "cardura",
+        "doxadura"
+      ],
+      "class": "alpha-1 adrenoceptor blocker",
+      "criterionIds": [
+        "I5",
+        "K9",
+        "K10"
+      ],
+      "criterionSummary": "Doxazosin should be avoided in patients with symptomatic orthostatic hypotension or syncope history (I5); as an antihypertensive it is also flagged in recurrent falls (K9) and for prostatic outflow symptoms in recurrent falls (K10).",
+      "contextToCheck": [
+        "Orthostatic hypotension or syncope history",
+        "Falls history",
+        "Indication — BPH or hypertension?",
+        "Concurrent antihypertensives",
+        "Fluid status"
+      ],
+      "whyItMatters": "Alpha-1 blockade causes postural hypotension; falls risk is amplified when combined with other antihypertensives."
+    },
+    {
+      "canonical": "tamsulosin",
+      "aliases": [
+        "flomaxtra",
+        "pinexel",
+        "contiflo"
+      ],
+      "class": "alpha-1 adrenoceptor blocker",
+      "criterionIds": [
+        "I5",
+        "K10"
+      ],
+      "criterionSummary": "Tamsulosin should be avoided in patients with symptomatic orthostatic hypotension or syncope history (I5) and is flagged for prostatic outflow symptom use in patients with recurrent falls (K10).",
+      "contextToCheck": [
+        "Orthostatic hypotension or syncope history",
+        "Falls history",
+        "Concurrent antihypertensives",
+        "Is this first-line for BPH with safer alternatives available?",
+        "Fluid status"
+      ],
+      "whyItMatters": "Selective urological alpha-1 blockers still cause postural hypotension, adding materially to falls risk in frail older men."
+    },
+    {
+      "canonical": "terazosin",
+      "aliases": [
+        "hytrin"
+      ],
+      "class": "alpha-1 adrenoceptor blocker",
+      "criterionIds": [
+        "I5",
+        "K9",
+        "K10"
+      ],
+      "criterionSummary": "Terazosin should be avoided in patients with symptomatic orthostatic hypotension or syncope history (I5); as an antihypertensive it is flagged in recurrent falls (K9) and for prostatic outflow symptom use in recurrent falls (K10).",
+      "contextToCheck": [
+        "Orthostatic hypotension or syncope history",
+        "Falls history",
+        "Indication — BPH or hypertension?",
+        "Concurrent antihypertensives",
+        "Fluid status"
+      ],
+      "whyItMatters": "Persistent postural hypotension makes terazosin a significant falls and syncope risk, especially in frail older adults."
+    },
+    {
+      "canonical": "indoramin",
+      "aliases": [
+        "doralese"
+      ],
+      "class": "alpha-1 adrenoceptor blocker",
+      "criterionIds": [
+        "I5",
+        "K9",
+        "K10"
+      ],
+      "criterionSummary": "Indoramin should be avoided in patients with symptomatic orthostatic hypotension or syncope history (I5); as an antihypertensive it is flagged in recurrent falls (K9) and for prostatic outflow symptom use in recurrent falls (K10).",
+      "contextToCheck": [
+        "Orthostatic hypotension or syncope history",
+        "Falls history",
+        "Indication — BPH or hypertension?",
+        "Concurrent antihypertensives",
+        "Sedative effect (indoramin has sedating properties)"
+      ],
+      "whyItMatters": "Indoramin's additional sedative action increases falls risk beyond simple postural hypotension."
+    },
+    {
+      "canonical": "tiotropium",
+      "aliases": [
+        "spiriva",
+        "braltus"
+      ],
+      "class": "inhaled long-acting muscarinic antagonist (LAMA)",
+      "criterionIds": [
+        "G3"
+      ],
+      "criterionSummary": "Tiotropium should be reviewed in patients with narrow-angle glaucoma or bladder outflow obstruction, as inhaled anticholinergic delivery does not fully prevent systemic effects (G3).",
+      "contextToCheck": [
+        "Narrow-angle glaucoma — ophthalmological confirmation",
+        "Bladder outflow obstruction or BPH",
+        "Post-void residual volume",
+        "Correct inhaler technique (eye protection)",
+        "Total anticholinergic burden"
+      ],
+      "whyItMatters": "Even inhaled LAMAs can precipitate acute angle-closure glaucoma or worsen urinary retention in susceptible patients."
+    },
+    {
+      "canonical": "aclidinium",
+      "aliases": [
+        "eklira"
+      ],
+      "class": "inhaled long-acting muscarinic antagonist (LAMA)",
+      "criterionIds": [
+        "G3"
+      ],
+      "criterionSummary": "Aclidinium should be reviewed in patients with narrow-angle glaucoma or bladder outflow obstruction, as inhaled anticholinergic delivery does not fully prevent systemic effects (G3).",
+      "contextToCheck": [
+        "Narrow-angle glaucoma — ophthalmological confirmation",
+        "Bladder outflow obstruction or BPH",
+        "Post-void residual volume",
+        "Total anticholinergic burden"
+      ],
+      "whyItMatters": "Inhaled anticholinergics can worsen glaucoma and urinary retention in susceptible patients."
+    },
+    {
+      "canonical": "umeclidinium",
+      "aliases": [
+        "incruse",
+        "anoro",
+        "trelegy"
+      ],
+      "class": "inhaled long-acting muscarinic antagonist (LAMA)",
+      "criterionIds": [
+        "G3"
+      ],
+      "criterionSummary": "Umeclidinium (alone or in combination inhalers) should be reviewed in patients with narrow-angle glaucoma or bladder outflow obstruction (G3).",
+      "contextToCheck": [
+        "Narrow-angle glaucoma — ophthalmological confirmation",
+        "Bladder outflow obstruction or BPH",
+        "Post-void residual volume",
+        "Total anticholinergic burden including combination inhaler components"
+      ],
+      "whyItMatters": "Combination inhalers containing LAMAs are easy to overlook as anticholinergic contributors in polypharmacy reviews."
+    },
+    {
+      "canonical": "glycopyrronium",
+      "aliases": [
+        "seebri",
+        "ultibro",
+        "trimbow",
+        "glycopyrrolate"
+      ],
+      "class": "inhaled long-acting muscarinic antagonist (LAMA)",
+      "criterionIds": [
+        "G3"
+      ],
+      "criterionSummary": "Glycopyrronium (alone or in combination inhalers) should be reviewed in patients with narrow-angle glaucoma or bladder outflow obstruction (G3).",
+      "contextToCheck": [
+        "Narrow-angle glaucoma — ophthalmological confirmation",
+        "Bladder outflow obstruction or BPH",
+        "Post-void residual volume",
+        "Total anticholinergic burden including combination inhaler components"
+      ],
+      "whyItMatters": "Glycopyrronium in combination inhalers may not be readily identified as an antimuscarinic contributor during medication review."
+    },
+    {
+      "canonical": "citalopram",
+      "aliases": [
+        "cipramil"
+      ],
+      "class": "antidepressant (SSRI)",
+      "criterionIds": [
+        "D6",
+        "D7",
+        "C12",
+        "K8",
+        "B15"
+      ],
+      "criterionSummary": "Citalopram is flagged in hyponatraemia (Na <130, D6), current or recent significant bleeding (D7), combined with anticoagulants where there is a major haemorrhage history (C12), in recurrent falls (K8), and at doses above 20 mg due to QT prolongation (B15).",
+      "contextToCheck": [
+        "Serum sodium — risk of hyponatraemia (SIADH)",
+        "Recent or current bleeding history",
+        "Anticoagulant co-prescription and haemorrhage history",
+        "Falls history",
+        "QTc interval — avoid >20 mg/day if QTc prolonged",
+        "Dose: UK maximum is 20 mg/day in patients over 65"
+      ],
+      "whyItMatters": "Citalopram has the highest QT-prolonging risk among common SSRIs and its UK licensed dose is halved in older adults."
+    },
+    {
+      "canonical": "escitalopram",
+      "aliases": [
+        "cipralex"
+      ],
+      "class": "antidepressant (SSRI)",
+      "criterionIds": [
+        "D6",
+        "D7",
+        "C12",
+        "K8",
+        "B15"
+      ],
+      "criterionSummary": "Escitalopram is flagged in hyponatraemia (Na <130, D6), current or recent significant bleeding (D7), combined with anticoagulants where there is a major haemorrhage history (C12), in recurrent falls (K8), and at doses above 10 mg due to QT prolongation (B15).",
+      "contextToCheck": [
+        "Serum sodium — risk of hyponatraemia (SIADH)",
+        "Recent or current bleeding history",
+        "Anticoagulant co-prescription and haemorrhage history",
+        "Falls history",
+        "QTc interval — avoid >10 mg/day in older adults if QTc prolonged",
+        "Dose: UK maximum is 10 mg/day in patients over 65"
+      ],
+      "whyItMatters": "Escitalopram shares citalopram's QT risk; the maximum licensed dose in older adults is half the general adult dose."
+    },
+    {
+      "canonical": "sertraline",
+      "aliases": [
+        "lustral"
+      ],
+      "class": "antidepressant (SSRI)",
+      "criterionIds": [
+        "D6",
+        "D7",
+        "C12",
+        "K8"
+      ],
+      "criterionSummary": "Sertraline is flagged in hyponatraemia (Na <130, D6), current or recent significant bleeding (D7), combined with anticoagulants where there is a major haemorrhage history (C12), and in recurrent falls (K8).",
+      "contextToCheck": [
+        "Serum sodium — risk of hyponatraemia (SIADH)",
+        "Recent or current bleeding history",
+        "Anticoagulant co-prescription and haemorrhage history",
+        "Falls history",
+        "Indication and duration"
+      ],
+      "whyItMatters": "Generally preferred SSRI in older adults but still carries hyponatraemia, bleeding augmentation and falls risks."
+    },
+    {
+      "canonical": "fluoxetine",
+      "aliases": [
+        "prozac"
+      ],
+      "class": "antidepressant (SSRI)",
+      "criterionIds": [
+        "D6",
+        "D7",
+        "C12",
+        "K8"
+      ],
+      "criterionSummary": "Fluoxetine is flagged in hyponatraemia (Na <130, D6), current or recent significant bleeding (D7), combined with anticoagulants where there is a major haemorrhage history (C12), and in recurrent falls (K8).",
+      "contextToCheck": [
+        "Serum sodium — risk of hyponatraemia (SIADH)",
+        "Recent or current bleeding history",
+        "Anticoagulant co-prescription and haemorrhage history",
+        "Falls history",
+        "Drug interactions — long half-life means interactions persist after stopping"
+      ],
+      "whyItMatters": "Fluoxetine's very long half-life prolongs drug interaction risks and makes it harder to manage adverse effects promptly."
+    },
+    {
+      "canonical": "venlafaxine",
+      "aliases": [
+        "efexor xl",
+        "vensir xl",
+        "foraven xl"
+      ],
+      "class": "antidepressant (SNRI)",
+      "criterionIds": [
+        "D3"
+      ],
+      "criterionSummary": "Venlafaxine should be avoided in patients with severe hypertension (SBP >180 mmHg or DBP >105 mmHg) due to noradrenergic-mediated blood pressure elevation (D3).",
+      "contextToCheck": [
+        "Current blood pressure — systolic and diastolic",
+        "Antihypertensive regimen adequacy",
+        "Blood pressure monitoring at initiation and dose changes",
+        "Reason for SNRI selection over SSRI",
+        "Hyponatraemia risk (also applies to SNRIs)"
+      ],
+      "whyItMatters": "Noradrenergic activity can raise blood pressure substantially, particularly at higher doses, creating cardiovascular risk in poorly controlled hypertension."
+    },
+    {
+      "canonical": "duloxetine",
+      "aliases": [
+        "cymbalta",
+        "yentreve"
+      ],
+      "class": "antidepressant (SNRI)",
+      "criterionIds": [
+        "D3",
+        "I7"
+      ],
+      "criterionSummary": "Duloxetine should be avoided in severe hypertension (SBP >180 mmHg or DBP >105 mmHg, D3) and in patients with urinary urgency or urge incontinence as it may worsen these symptoms (I7).",
+      "contextToCheck": [
+        "Current blood pressure — systolic and diastolic",
+        "Lower urinary tract symptoms — urgency and urge incontinence",
+        "Indication — pain, depression, or incontinence treatment?",
+        "Renal function (avoid if eGFR <30)",
+        "Hyponatraemia risk"
+      ],
+      "whyItMatters": "Duloxetine can worsen urinary urgency through noradrenergic tone at the bladder neck and simultaneously elevate blood pressure."
+    },
+    {
+      "canonical": "glibenclamide",
+      "aliases": [
+        "daonil",
+        "semi-daonil"
+      ],
+      "class": "sulphonylurea",
+      "criterionIds": [
+        "J1"
+      ],
+      "criterionSummary": "Glibenclamide is a long-acting sulphonylurea in type 2 diabetes that carries a significantly higher risk of prolonged hypoglycaemia than shorter-acting alternatives and should be avoided in older adults (J1).",
+      "contextToCheck": [
+        "Type 2 diabetes — is glibenclamide appropriate given age?",
+        "History of hypoglycaemic episodes",
+        "Renal function — potentiates hypoglycaemia",
+        "Whether gliclazide or a DPP4-inhibitor would be safer",
+        "HbA1c and glycaemic control targets"
+      ],
+      "whyItMatters": "Long-acting sulphonylureas cause prolonged hypoglycaemia that may be missed in older adults and can precipitate falls, confusion and cardiac events."
+    },
+    {
+      "canonical": "glimepiride",
+      "aliases": [
+        "amaryl"
+      ],
+      "class": "sulphonylurea",
+      "criterionIds": [
+        "J1"
+      ],
+      "criterionSummary": "Glimepiride is a long-acting sulphonylurea in type 2 diabetes carrying hypoglycaemia risk; STOPP recommends preference for shorter-acting agents such as gliclazide in older adults (J1).",
+      "contextToCheck": [
+        "Type 2 diabetes — is a long-acting SU appropriate?",
+        "History of hypoglycaemic episodes",
+        "Renal function",
+        "Whether gliclazide or a DPP4-inhibitor would be safer",
+        "HbA1c and glycaemic control targets"
+      ],
+      "whyItMatters": "Prolonged hypoglycaemia from long-acting sulphonylureas is particularly dangerous in older adults with limited awareness of hypoglycaemic symptoms."
+    },
+    {
+      "canonical": "gliclazide",
+      "aliases": [
+        "diamicron",
+        "diamicron mr"
+      ],
+      "class": "sulphonylurea",
+      "criterionIds": [
+        "J1"
+      ],
+      "criterionSummary": "Gliclazide is the preferred sulphonylurea in older adults in the UK; it is flagged as a class representative under STOPP J1 to prompt review of hypoglycaemia risk and glycaemic targets even with shorter-acting agents.",
+      "contextToCheck": [
+        "History of hypoglycaemic episodes",
+        "Renal function",
+        "HbA1c target — is 48–53 mmol/mol appropriate for this patient?",
+        "Whether dose reduction or a DPP4-inhibitor would be safer",
+        "Nutritional intake and meal regularity"
+      ],
+      "whyItMatters": "Even gliclazide can cause clinically significant hypoglycaemia in older adults with variable dietary intake or renal impairment."
+    },
+    {
+      "canonical": "pioglitazone",
+      "aliases": [
+        "actos"
+      ],
+      "class": "thiazolidinedione (glitazone)",
+      "criterionIds": [
+        "J2"
+      ],
+      "criterionSummary": "Pioglitazone is contraindicated in patients with heart failure due to its fluid-retaining properties, which can precipitate acute decompensation (J2).",
+      "contextToCheck": [
+        "Heart failure diagnosis and NYHA class",
+        "Recent echocardiogram findings",
+        "Peripheral oedema",
+        "Fluid status and weight trend",
+        "Alternative glucose-lowering agents available"
+      ],
+      "whyItMatters": "Pioglitazone causes sodium and water retention that can rapidly worsen heart failure and should be avoided in all grades of this condition."
+    },
+    {
+      "canonical": "metformin",
+      "aliases": [
+        "glucophage",
+        "glucophage sr"
+      ],
+      "class": "biguanide",
+      "criterionIds": [
+        "E6"
+      ],
+      "criterionSummary": "Metformin should be withheld or dose-reduced if eGFR falls below 30 ml/min/1.73 m² due to risk of lactic acidosis accumulation (E6).",
+      "contextToCheck": [
+        "Current eGFR — withhold if <30",
+        "Recent acute kidney injury episodes",
+        "Contrast media administration planned",
+        "Current dose — reduction if eGFR 30–45",
+        "Hydration and illness rules (sick-day guidance)"
+      ],
+      "whyItMatters": "Lactic acidosis from metformin accumulation in severe renal impairment can be life-threatening."
+    },
+    {
+      "canonical": "canagliflozin",
+      "aliases": [
+        "invokana"
+      ],
+      "class": "SGLT2 inhibitor",
+      "criterionIds": [
+        "J4"
+      ],
+      "criterionSummary": "Canagliflozin should be reviewed in patients with symptomatic hypotension, as SGLT2 inhibitors cause volume depletion that may worsen haemodynamic instability (J4).",
+      "contextToCheck": [
+        "Symptomatic hypotension or orthostatic symptoms",
+        "Concurrent antihypertensives and diuretics",
+        "Volume status and hydration",
+        "eGFR (efficacy and safety threshold varies by agent)",
+        "Urogenital infection history"
+      ],
+      "whyItMatters": "Volume depletion from glucosuria can precipitate symptomatic hypotension, especially in older adults on multiple antihypertensive agents."
+    },
+    {
+      "canonical": "dapagliflozin",
+      "aliases": [
+        "forxiga"
+      ],
+      "class": "SGLT2 inhibitor",
+      "criterionIds": [
+        "J4"
+      ],
+      "criterionSummary": "Dapagliflozin should be reviewed in patients with symptomatic hypotension, as SGLT2 inhibitors cause volume depletion that may worsen haemodynamic instability (J4).",
+      "contextToCheck": [
+        "Symptomatic hypotension or orthostatic symptoms",
+        "Concurrent antihypertensives and diuretics",
+        "Volume status and hydration",
+        "eGFR (avoid if eGFR <25 for diabetes indication)",
+        "Urogenital infection history"
+      ],
+      "whyItMatters": "Volume depletion can precipitate falls and acute kidney injury, particularly in frail older adults."
+    },
+    {
+      "canonical": "empagliflozin",
+      "aliases": [
+        "jardiance"
+      ],
+      "class": "SGLT2 inhibitor",
+      "criterionIds": [
+        "J4"
+      ],
+      "criterionSummary": "Empagliflozin should be reviewed in patients with symptomatic hypotension, as SGLT2 inhibitors cause volume depletion that may worsen haemodynamic instability (J4).",
+      "contextToCheck": [
+        "Symptomatic hypotension or orthostatic symptoms",
+        "Concurrent antihypertensives and diuretics",
+        "Volume status and hydration",
+        "eGFR (avoid if eGFR <30 for diabetes indication)",
+        "Urogenital infection history"
+      ],
+      "whyItMatters": "Volume-depleting mechanism adds to falls and renal impairment risk in polypharmacy-heavy older adults."
+    },
+    {
+      "canonical": "ertugliflozin",
+      "aliases": [
+        "steglatro"
+      ],
+      "class": "SGLT2 inhibitor",
+      "criterionIds": [
+        "J4"
+      ],
+      "criterionSummary": "Ertugliflozin should be reviewed in patients with symptomatic hypotension, as SGLT2 inhibitors cause volume depletion that may worsen haemodynamic instability (J4).",
+      "contextToCheck": [
+        "Symptomatic hypotension or orthostatic symptoms",
+        "Concurrent antihypertensives and diuretics",
+        "Volume status and hydration",
+        "eGFR (avoid if eGFR <45 for diabetes indication)",
+        "Urogenital infection history"
+      ],
+      "whyItMatters": "Class-wide volume-depleting mechanism creates risk of symptomatic hypotension and falls."
+    },
+    {
+      "canonical": "phenytoin",
+      "aliases": [
+        "epanutin"
+      ],
+      "class": "anti-epileptic",
+      "criterionIds": [
+        "K5"
+      ],
+      "criterionSummary": "Phenytoin is flagged in patients with recurrent falls due to sedation, ataxia and cerebellar toxicity risk (K5).",
+      "contextToCheck": [
+        "Falls history",
+        "Ataxia or cerebellar signs",
+        "Phenytoin level (narrow therapeutic index)",
+        "Drug interactions — phenytoin is a potent inducer",
+        "Osteoporosis risk (enzyme induction reduces vitamin D)"
+      ],
+      "whyItMatters": "Phenytoin causes cerebellar toxicity and ataxia at supratherapeutic levels, substantially increasing falls risk in older adults."
+    },
+    {
+      "canonical": "carbamazepine",
+      "aliases": [
+        "tegretol",
+        "carbagen sr"
+      ],
+      "class": "anti-epileptic",
+      "criterionIds": [
+        "K5"
+      ],
+      "criterionSummary": "Carbamazepine is flagged in patients with recurrent falls due to sedation, ataxia and hyponatraemia risk (K5).",
+      "contextToCheck": [
+        "Falls history",
+        "Serum sodium — risk of SIADH-related hyponatraemia",
+        "Drug interactions — potent enzyme inducer",
+        "Carbamazepine level monitoring",
+        "Haematological monitoring (rare aplastic anaemia)"
+      ],
+      "whyItMatters": "Carbamazepine causes sedation, ataxia and hyponatraemia, all of which independently increase falls risk."
+    },
+    {
+      "canonical": "sodium valproate",
+      "aliases": [
+        "epilim",
+        "episenta",
+        "depakote",
+        "convulex"
+      ],
+      "class": "anti-epileptic",
+      "criterionIds": [
+        "K5"
+      ],
+      "criterionSummary": "Sodium valproate is flagged in patients with recurrent falls due to sedation and tremor risk (K5).",
+      "contextToCheck": [
+        "Falls history",
+        "Tremor or movement disorder signs",
+        "Hepatic function (hepatotoxicity monitoring)",
+        "Drug interactions",
+        "Weight gain and metabolic effects"
+      ],
+      "whyItMatters": "Valproate-induced tremor and sedation can significantly increase falls risk in older adults."
+    },
+    {
+      "canonical": "lamotrigine",
+      "aliases": [
+        "lamictal"
+      ],
+      "class": "anti-epileptic",
+      "criterionIds": [
+        "K5"
+      ],
+      "criterionSummary": "Lamotrigine is flagged in patients with recurrent falls due to sedation and dizziness, particularly at higher doses (K5).",
+      "contextToCheck": [
+        "Falls history",
+        "Dizziness or balance problems at current dose",
+        "Drug interactions — valproate doubles lamotrigine levels",
+        "Dose titration rate",
+        "Indication review"
+      ],
+      "whyItMatters": "Dose-dependent sedation and dizziness from lamotrigine contribute to falls risk, requiring careful dose titration in older adults."
+    },
+    {
+      "canonical": "levetiracetam",
+      "aliases": [
+        "keppra",
+        "desitrend"
+      ],
+      "class": "anti-epileptic",
+      "criterionIds": [
+        "K5"
+      ],
+      "criterionSummary": "Levetiracetam is flagged in patients with recurrent falls due to sedation and behavioural side effects that may increase fall risk (K5).",
+      "contextToCheck": [
+        "Falls history",
+        "Behavioural changes — irritability, agitation (common side effect)",
+        "Renal function — dose reduction required if eGFR reduced",
+        "Sedation burden",
+        "Indication review"
+      ],
+      "whyItMatters": "Behavioural and sedative adverse effects of levetiracetam can increase falls risk; renal dose adjustment is commonly required."
+    },
+    {
+      "canonical": "alendronic acid",
+      "aliases": [
+        "fosamax",
+        "binosto"
+      ],
+      "class": "bisphosphonate",
+      "criterionIds": [
+        "E9",
+        "H8"
+      ],
+      "criterionSummary": "Alendronic acid should be avoided if eGFR <30 due to impaired renal clearance and accumulation risk (E9) and should not be used in patients with upper GI disease including dysphagia, oesophagitis or peptic ulceration (H8).",
+      "contextToCheck": [
+        "eGFR — contraindicated if <30",
+        "Upper GI disease — dysphagia, oesophagitis, ulcers",
+        "Swallowing ability (must remain upright 30 min after dose)",
+        "Calcium and vitamin D status",
+        "Duration of use and indication (osteoporosis prevention or treatment)"
+      ],
+      "whyItMatters": "Oesophageal ulceration and failure to clear drug in renal impairment are serious preventable harms."
+    },
+    {
+      "canonical": "risedronate",
+      "aliases": [
+        "actonel",
+        "actonel combi"
+      ],
+      "class": "bisphosphonate",
+      "criterionIds": [
+        "E9",
+        "H8"
+      ],
+      "criterionSummary": "Risedronate should be avoided if eGFR <30 due to impaired renal clearance (E9) and should not be used in patients with upper GI disease including dysphagia, oesophagitis or peptic ulceration (H8).",
+      "contextToCheck": [
+        "eGFR — contraindicated if <30",
+        "Upper GI disease — dysphagia, oesophagitis, ulcers",
+        "Swallowing ability (must remain upright 30 min after dose)",
+        "Calcium and vitamin D status",
+        "Duration and indication"
+      ],
+      "whyItMatters": "Renal impairment and upper GI disease are common in older adults and require careful screening before bisphosphonate prescribing."
+    },
+    {
+      "canonical": "ibandronic acid",
+      "aliases": [
+        "bonviva"
+      ],
+      "class": "bisphosphonate",
+      "criterionIds": [
+        "E9",
+        "H8"
+      ],
+      "criterionSummary": "Ibandronic acid should be avoided if eGFR <30 due to impaired renal clearance (E9) and should not be used in patients with upper GI disease including dysphagia, oesophagitis or peptic ulceration (H8).",
+      "contextToCheck": [
+        "eGFR — contraindicated if <30",
+        "Upper GI disease — dysphagia, oesophagitis, ulcers",
+        "Swallowing ability (monthly or IV formulation options)",
+        "Calcium and vitamin D status",
+        "Indication and duration"
+      ],
+      "whyItMatters": "Oral ibandronate carries similar upper GI risks to other bisphosphonates; renal function must be checked before and during treatment."
+    },
+    {
+      "canonical": "zoledronic acid",
+      "aliases": [
+        "aclasta",
+        "zometa"
+      ],
+      "class": "bisphosphonate",
+      "criterionIds": [
+        "E9"
+      ],
+      "criterionSummary": "Zoledronic acid should be avoided if eGFR <30 due to risk of acute kidney injury and accumulation; its IV route bypasses upper GI risks (E9).",
+      "contextToCheck": [
+        "eGFR — contraindicated if <30, use with caution if 30–35",
+        "Hydration status at time of infusion",
+        "Renal function monitoring post-infusion",
+        "Calcium and vitamin D correction before administration",
+        "Indication — oncology versus osteoporosis dosing differs"
+      ],
+      "whyItMatters": "IV administration bypasses GI concerns but acute post-infusion nephrotoxicity is a well-recognised risk in frail older adults."
+    },
+    {
+      "canonical": "sildenafil",
+      "aliases": [
+        "viagra",
+        "revatio"
+      ],
+      "class": "PDE5 inhibitor",
+      "criterionIds": [
+        "B14"
+      ],
+      "criterionSummary": "Sildenafil should be avoided in patients with severe heart failure with hypotension, or in those taking concurrent nitrate therapy, due to profound hypotension risk (B14).",
+      "contextToCheck": [
+        "Concurrent nitrates — absolute contraindication",
+        "Heart failure severity and baseline blood pressure",
+        "SBP at rest",
+        "Other antihypertensives (alpha-blockers amplify hypotension)",
+        "Indication — erectile dysfunction or pulmonary hypertension?"
+      ],
+      "whyItMatters": "The combination with nitrates is an absolute contraindication that can cause life-threatening hypotension."
+    },
+    {
+      "canonical": "tadalafil",
+      "aliases": [
+        "cialis",
+        "adcirca"
+      ],
+      "class": "PDE5 inhibitor",
+      "criterionIds": [
+        "B14"
+      ],
+      "criterionSummary": "Tadalafil should be avoided in patients with severe heart failure with hypotension, or in those taking concurrent nitrate therapy, due to profound hypotension risk (B14).",
+      "contextToCheck": [
+        "Concurrent nitrates — absolute contraindication",
+        "Heart failure severity and baseline blood pressure",
+        "Other antihypertensives (alpha-blockers used for BPH — amplify hypotension)",
+        "Renal and hepatic function",
+        "Indication — erectile dysfunction, BPH or pulmonary hypertension?"
+      ],
+      "whyItMatters": "Tadalafil has a long half-life (17.5 hours), meaning nitrate interaction risk persists for an extended period."
+    },
+    {
+      "canonical": "vardenafil",
+      "aliases": [
+        "levitra"
+      ],
+      "class": "PDE5 inhibitor",
+      "criterionIds": [
+        "B14"
+      ],
+      "criterionSummary": "Vardenafil should be avoided in patients with severe heart failure with hypotension, or in those taking concurrent nitrate therapy, due to profound hypotension risk (B14).",
+      "contextToCheck": [
+        "Concurrent nitrates — absolute contraindication",
+        "Heart failure severity and baseline blood pressure",
+        "Other antihypertensives",
+        "QT-prolonging potential — caution with other QT drugs",
+        "Hepatic function"
+      ],
+      "whyItMatters": "Combination with nitrates is absolutely contraindicated; even without nitrates, severe heart failure with hypotension makes PDE5 inhibitors unsafe."
+    },
+    {
+      "canonical": "spironolactone",
+      "aliases": [
+        "aldactone"
+      ],
+      "class": "aldosterone antagonist",
+      "criterionIds": [
+        "B13",
+        "E7"
+      ],
+      "criterionSummary": "Spironolactone combined with other potassium-conserving drugs without electrolyte monitoring carries hyperkalaemia risk (B13) and should be avoided if eGFR <30 due to hyperkalaemia accumulation (E7).",
+      "contextToCheck": [
+        "eGFR — avoid if <30",
+        "Serum potassium — monitor with any K-conserving combination",
+        "Concurrent ACE-I, ARB, or potassium supplements",
+        "Indication — heart failure, ascites, hyperaldosteronism?",
+        "Blood pressure and fluid balance"
+      ],
+      "whyItMatters": "Hyperkalaemia from spironolactone can be life-threatening, particularly in renal impairment or with ACE-I/ARB combinations."
+    },
+    {
+      "canonical": "eplerenone",
+      "aliases": [
+        "inspra"
+      ],
+      "class": "aldosterone antagonist",
+      "criterionIds": [
+        "B13",
+        "E7"
+      ],
+      "criterionSummary": "Eplerenone combined with other potassium-conserving drugs without electrolyte monitoring carries hyperkalaemia risk (B13) and should be avoided if eGFR <30 due to hyperkalaemia accumulation (E7).",
+      "contextToCheck": [
+        "eGFR — avoid if <30",
+        "Serum potassium — monitor with any K-conserving combination",
+        "Concurrent ACE-I, ARB, or potassium supplements",
+        "Indication (usually post-MI heart failure)",
+        "Hepatic function (eplerenone is hepatically metabolised)"
+      ],
+      "whyItMatters": "Life-threatening hyperkalaemia is the dominant risk; renal function and electrolyte monitoring are mandatory."
+    },
+    {
+      "canonical": "isosorbide mononitrate",
+      "aliases": [
+        "imdur",
+        "monomil xl",
+        "isib",
+        "chemydur"
+      ],
+      "class": "nitrate",
+      "criterionIds": [
+        "K3"
+      ],
+      "criterionSummary": "Isosorbide mononitrate should be reviewed in patients with recurrent falls and persistent postural hypotension, as vasodilation may worsen haemodynamic instability (K3).",
+      "contextToCheck": [
+        "Recurrent falls history",
+        "Postural hypotension — lying-standing BP",
+        "Concurrent antihypertensives",
+        "PDE5 inhibitor co-prescription (absolute contraindication)",
+        "Indication — is antianginal therapy still appropriate?"
+      ],
+      "whyItMatters": "Nitrate-induced vasodilation can precipitate symptomatic postural hypotension and falls, especially in frail older adults on multiple antihypertensives."
+    },
+    {
+      "canonical": "isosorbide dinitrate",
+      "aliases": [
+        "isoket",
+        "angitil"
+      ],
+      "class": "nitrate",
+      "criterionIds": [
+        "K3"
+      ],
+      "criterionSummary": "Isosorbide dinitrate should be reviewed in patients with recurrent falls and persistent postural hypotension, as vasodilation may worsen haemodynamic instability (K3).",
+      "contextToCheck": [
+        "Recurrent falls history",
+        "Postural hypotension — lying-standing BP",
+        "Concurrent antihypertensives",
+        "PDE5 inhibitor co-prescription (absolute contraindication)",
+        "Indication — is antianginal therapy still appropriate?"
+      ],
+      "whyItMatters": "Nitrate-induced hypotension contributes to falls risk, requiring indication review in patients with postural instability."
+    },
+    {
+      "canonical": "glyceryl trinitrate",
+      "aliases": [
+        "gtn",
+        "nitromin",
+        "nitrolingual",
+        "minitran",
+        "transiderm-nitro",
+        "coro-nitro"
+      ],
+      "class": "nitrate",
+      "criterionIds": [
+        "K3"
+      ],
+      "criterionSummary": "Glyceryl trinitrate should be reviewed in patients with recurrent falls and persistent postural hypotension, as acute vasodilation may precipitate syncope and falls (K3).",
+      "contextToCheck": [
+        "Recurrent falls history",
+        "Postural hypotension — lying-standing BP",
+        "Concurrent antihypertensives",
+        "PDE5 inhibitor co-prescription (absolute contraindication)",
+        "Patient education: sit or lie down after SL dose"
+      ],
+      "whyItMatters": "Acute GTN-induced vasodilation is a common precipitant of syncope in older adults; patient positioning after use is essential."
+    },
+    {
+      "canonical": "hyoscine butylbromide",
+      "aliases": [
+        "buscopan"
+      ],
+      "class": "antimuscarinic antispasmodic",
+      "criterionIds": [
+        "D14",
+        "F3"
+      ],
+      "criterionSummary": "Hyoscine butylbromide is flagged in delirium or dementia due to its anticholinergic burden (D14) and in patients with chronic constipation as it worsens bowel motility (F3).",
+      "contextToCheck": [
+        "Dementia or delirium diagnosis",
+        "Constipation history",
+        "Total anticholinergic burden",
+        "Indication — is an alternative antispasmodic available?",
+        "Duration of use"
+      ],
+      "whyItMatters": "Anticholinergic burden from hyoscine compounds in cognitively impaired or constipated older adults can precipitate delirium or bowel obstruction."
+    },
+    {
+      "canonical": "hyoscine hydrobromide",
+      "aliases": [
+        "joy-rides",
+        "kwells",
+        "scopoderm"
+      ],
+      "class": "antimuscarinic",
+      "criterionIds": [
+        "D14",
+        "F3"
+      ],
+      "criterionSummary": "Hyoscine hydrobromide is flagged in delirium or dementia due to its significant anticholinergic burden including CNS penetration (D14) and in patients with chronic constipation (F3).",
+      "contextToCheck": [
+        "Dementia or delirium diagnosis",
+        "Constipation history",
+        "Total anticholinergic burden",
+        "Indication — travel sickness or end-of-life secretion management?",
+        "Duration of use (patch formulation provides continuous exposure)"
+      ],
+      "whyItMatters": "Hyoscine hydrobromide crosses the blood-brain barrier and can directly precipitate delirium and worsened cognition."
+    },
+    {
+      "canonical": "nitrofurantoin",
+      "aliases": [
+        "macrobid",
+        "macrodantin"
+      ],
+      "class": "urinary antibiotic",
+      "criterionIds": [
+        "E8"
+      ],
+      "criterionSummary": "Nitrofurantoin should be avoided if eGFR <45 ml/min/1.73 m², as reduced renal clearance impairs urinary drug concentration and increases systemic toxicity including pulmonary and peripheral neuropathy risk (E8).",
+      "contextToCheck": [
+        "Current eGFR — contraindicated if <45",
+        "History of pulmonary reaction to nitrofurantoin",
+        "History of peripheral neuropathy",
+        "Glucose-6-phosphate dehydrogenase deficiency",
+        "Duration — long-term prophylaxis increases toxicity risk"
+      ],
+      "whyItMatters": "Below eGFR 45 the drug fails to achieve therapeutic urinary concentrations and systemic adverse effects, including pulmonary fibrosis, accumulate."
+    },
+    {
+      "canonical": "colchicine",
+      "aliases": [],
+      "class": "gout treatment",
+      "criterionIds": [
+        "E5",
+        "H6"
+      ],
+      "criterionSummary": "Colchicine should be avoided if eGFR <10 due to toxicity accumulation (E5) and should not be used long-term for chronic gout when a xanthine oxidase inhibitor is indicated (H6).",
+      "contextToCheck": [
+        "eGFR — avoid if <10, dose-reduce if <30",
+        "Long-term use for gout — is allopurinol or febuxostat indicated?",
+        "Concurrent drugs that raise colchicine levels (e.g. clarithromycin, ciclosporin)",
+        "GI symptoms and diarrhoea monitoring",
+        "Neuromuscular toxicity (myopathy in renal impairment)"
+      ],
+      "whyItMatters": "Colchicine has a narrow therapeutic index; accumulation in renal impairment causes severe GI toxicity, myopathy and bone marrow suppression."
+    },
+    {
+      "canonical": "theophylline",
+      "aliases": [
+        "uniphyllin continus",
+        "slo-phyllin"
+      ],
+      "class": "methylxanthine bronchodilator",
+      "criterionIds": [
+        "G1"
+      ],
+      "criterionSummary": "Theophylline should not be used as monotherapy for COPD when better-tolerated alternatives with superior evidence (LABAs, LAMAs) are available (G1).",
+      "contextToCheck": [
+        "Is this genuinely monotherapy for COPD?",
+        "Current inhaler regimen",
+        "Theophylline level monitoring (narrow therapeutic index)",
+        "Drug interactions — numerous (e.g. quinolones, macrolides raise levels)",
+        "Smoking status affects levels"
+      ],
+      "whyItMatters": "Theophylline has a narrow therapeutic index with significant toxicity (arrhythmias, seizures) and is no longer recommended as first-line COPD therapy."
+    },
+    {
+      "canonical": "methotrexate",
+      "aliases": [
+        "methofar",
+        "metoject"
+      ],
+      "class": "disease-modifying antirheumatic drug (DMARD)",
+      "criterionIds": [
+        "E10"
+      ],
+      "criterionSummary": "Methotrexate should be avoided if eGFR <30 due to impaired renal clearance leading to accumulation and severe toxicity including pancytopenia and mucositis (E10).",
+      "contextToCheck": [
+        "Current eGFR — contraindicated if <30",
+        "Monitoring bloods — FBC, LFTs, renal function (mandatory regular monitoring)",
+        "Folic acid supplementation",
+        "Drug interactions (NSAIDs, trimethoprim increase toxicity)",
+        "Hydration status"
+      ],
+      "whyItMatters": "Methotrexate toxicity in renal impairment is life-threatening; regular monitoring and dose adjustment are mandatory."
+    },
+    {
+      "canonical": "lithium",
+      "aliases": [
+        "priadel",
+        "camcolit",
+        "liskonum"
+      ],
+      "class": "mood stabiliser",
+      "criterionIds": [
+        "B15"
+      ],
+      "criterionSummary": "Lithium has QT-prolonging potential and should be reviewed in patients with known QTc prolongation or concurrent QT-prolonging drugs (B15); it also requires regular monitoring for toxicity given its narrow therapeutic index.",
+      "contextToCheck": [
+        "Baseline and periodic QTc measurement",
+        "Concurrent QT-prolonging drugs",
+        "Serum lithium level (narrow therapeutic index 0.4–1.0 mmol/L in older adults)",
+        "Renal function — toxicity accumulates as eGFR falls",
+        "Thyroid and parathyroid function",
+        "Hydration and sodium intake — dehydration raises levels"
+      ],
+      "whyItMatters": "Lithium toxicity is life-threatening and its risk is amplified in older adults by age-related renal decline, dehydration and drug interactions."
+    },
+    {
+      "canonical": "levothyroxine",
+      "aliases": [
+        "eltroxin",
+        "euthyrox"
+      ],
+      "class": "thyroid hormone",
+      "criterionIds": [
+        "J9"
+      ],
+      "criterionSummary": "Levothyroxine should be reviewed in patients with subclinical hypothyroidism where TSH is below 10 mU/L and free T4 is normal, as treatment benefit is unproven and over-replacement increases AF and bone loss risk (J9).",
+      "contextToCheck": [
+        "TSH level — is it above 10 mU/L?",
+        "Free T4 — is it within normal range?",
+        "Symptoms attributable to hypothyroidism",
+        "History of AF or osteoporosis",
+        "Whether diagnosis is subclinical or overt hypothyroidism"
+      ],
+      "whyItMatters": "Over-treating subclinical hypothyroidism increases the risk of atrial fibrillation, osteoporosis and fracture in older adults."
+    },
+    {
+      "canonical": "desmopressin",
+      "aliases": [
+        "ddavp",
+        "desmotabs",
+        "octim",
+        "noqdirna"
+      ],
+      "class": "synthetic vasopressin analogue",
+      "criterionIds": [
+        "J10"
+      ],
+      "criterionSummary": "Desmopressin should not be used for urinary incontinence or frequency in older adults due to significant risk of hyponatraemia (J10).",
+      "contextToCheck": [
+        "Indication — is this for nocturia, enuresis or urinary frequency?",
+        "Baseline sodium — any hyponatraemia?",
+        "Serum sodium monitoring after initiation",
+        "Fluid intake habits",
+        "Concurrent diuretics or drugs causing SIADH"
+      ],
+      "whyItMatters": "Desmopressin causes hyponatraemia in older adults through water retention, risking confusion, seizures and falls."
+    },
+    {
+      "canonical": "megestrol acetate",
+      "aliases": [
+        "megace"
+      ],
+      "class": "progestogen",
+      "criterionIds": [
+        "F8"
+      ],
+      "criterionSummary": "Megestrol acetate should not be routinely used to stimulate appetite in older adults as evidence of benefit is limited and it carries significant thromboembolic and adrenal suppression risks (F8).",
+      "contextToCheck": [
+        "Indication — has multidisciplinary nutritional assessment been done?",
+        "VTE risk and history",
+        "Adrenal suppression risk on discontinuation",
+        "Oedema and fluid retention",
+        "Whether evidence-based nutritional interventions have been tried"
+      ],
+      "whyItMatters": "Appetite stimulation with megestrol provides marginal benefit while risking deep vein thrombosis, pulmonary embolism and adrenal insufficiency."
+    },
+    {
+      "canonical": "perphenazine",
+      "aliases": [
+        "fentazin"
+      ],
+      "class": "antipsychotic (phenothiazine)",
+      "criterionIds": [
+        "D4",
+        "D14",
+        "D21",
+        "K2"
+      ],
+      "criterionSummary": "Perphenazine carries antimuscarinic burden and is flagged in lower urinary tract symptoms or BPH (D4), delirium or dementia (D14), as a first-line phenothiazine for psychosis or BPSD given EPS profile (D21), and as a falls risk (K2).",
+      "contextToCheck": [
+        "Lower urinary tract symptoms or BPH",
+        "Dementia or delirium diagnosis",
+        "Duration and indication",
+        "Falls history",
+        "EPS monitoring"
+      ],
+      "whyItMatters": "Phenothiazines as a class carry significant EPS, anticholinergic and sedative risks in older adults with dementia."
+    },
+    {
+      "canonical": "pipotiazine",
+      "aliases": [
+        "piportil"
+      ],
+      "class": "antipsychotic (phenothiazine depot)",
+      "criterionIds": [
+        "D4",
+        "D14",
+        "D21",
+        "K2"
+      ],
+      "criterionSummary": "Pipotiazine as a depot phenothiazine is flagged in lower urinary tract symptoms or BPH (D4), delirium or dementia (D14), as a first-line phenothiazine for psychosis or BPSD (D21), and as a falls risk (K2).",
+      "contextToCheck": [
+        "Lower urinary tract symptoms or BPH",
+        "Dementia or delirium diagnosis",
+        "Duration and indication",
+        "Falls history",
+        "Depot formulation — frequency review and cannot rapidly dose-adjust"
+      ],
+      "whyItMatters": "Depot formulation means adverse effects from high anticholinergic and EPS burden cannot be rapidly reversed if problems arise."
+    },
+    {
+      "canonical": "piracetam",
+      "aliases": [
+        "nootropil"
+      ],
+      "class": "nootropic",
+      "criterionIds": [
+        "D20"
+      ],
+      "criterionSummary": "Piracetam lacks evidence of cognitive benefit in dementia and should not be used for this indication in older adults (D20).",
+      "contextToCheck": [
+        "Indication — is this prescribed for dementia or cognitive decline?",
+        "Evidence review — any specialist rationale?",
+        "Renal function (renally cleared)",
+        "Whether evidence-based dementia treatments have been optimised"
+      ],
+      "whyItMatters": "Prescribing agents without evidence of benefit in dementia adds medication burden without clinical gain."
+    },
+    {
+      "canonical": "modafinil",
+      "aliases": [
+        "provigil"
+      ],
+      "class": "wakefulness-promoting agent",
+      "criterionIds": [
+        "D20"
+      ],
+      "criterionSummary": "Modafinil lacks evidence of cognitive benefit in dementia and should not be used for this indication in older adults (D20).",
+      "contextToCheck": [
+        "Indication — is this prescribed for dementia-related cognitive impairment or excessive daytime sleepiness?",
+        "Evidence and specialist rationale",
+        "Cardiovascular effects (raised BP and heart rate)",
+        "Drug interactions (modafinil induces CYP enzymes)"
+      ],
+      "whyItMatters": "Cardiovascular stimulant effects and lack of dementia evidence make modafinil inappropriate for cognitive enhancement in older adults."
+    },
+    {
+      "canonical": "ginkgo biloba",
+      "aliases": [],
+      "class": "herbal nootropic",
+      "criterionIds": [
+        "D20"
+      ],
+      "criterionSummary": "Ginkgo biloba lacks robust evidence of cognitive benefit in dementia and should not be used for this indication (D20).",
+      "contextToCheck": [
+        "Indication — is this being used for cognitive decline or dementia?",
+        "Concurrent anticoagulants or antiplatelets (ginkgo inhibits platelet aggregation)",
+        "Bleeding risk",
+        "Whether it is being counted in the medication list for interactions"
+      ],
+      "whyItMatters": "Ginkgo biloba has antiplatelet effects that increase bleeding risk when combined with anticoagulants, despite lacking evidence for dementia benefit."
+    },
+    {
+      "canonical": "ramipril",
+      "aliases": [
+        "tritace"
+      ],
+      "class": "ACE inhibitor",
+      "criterionIds": [
+        "B12",
+        "B13"
+      ],
+      "criterionSummary": "Ramipril should be withheld in patients with hyperkalaemia (serum K >5.5 mmol/L, B12) and requires electrolyte monitoring when combined with other potassium-conserving drugs such as spironolactone or potassium supplements (B13).",
+      "contextToCheck": [
+        "Serum potassium — withhold if >5.5 mmol/L",
+        "Concurrent potassium-conserving drugs (aldosterone antagonists, potassium-sparing diuretics, supplements)",
+        "eGFR trend — check after initiation or dose change",
+        "Blood pressure",
+        "Heart failure indication"
+      ],
+      "whyItMatters": "Hyperkalaemia from ACE inhibitor use in combination with potassium-conserving agents can precipitate life-threatening arrhythmia."
+    },
+    {
+      "canonical": "lisinopril",
+      "aliases": [
+        "zestril",
+        "carace"
+      ],
+      "class": "ACE inhibitor",
+      "criterionIds": [
+        "B12",
+        "B13"
+      ],
+      "criterionSummary": "Lisinopril should be withheld in patients with hyperkalaemia (serum K >5.5 mmol/L, B12) and requires electrolyte monitoring when combined with other potassium-conserving drugs (B13).",
+      "contextToCheck": [
+        "Serum potassium — withhold if >5.5 mmol/L",
+        "Concurrent potassium-conserving drugs",
+        "eGFR trend",
+        "Blood pressure",
+        "Indication (hypertension, heart failure, diabetic nephropathy)"
+      ],
+      "whyItMatters": "Unopposed hyperkalaemia from ACE inhibitor plus potassium-conserving drug combinations carries arrhythmia risk."
+    },
+    {
+      "canonical": "perindopril",
+      "aliases": [
+        "coversyl"
+      ],
+      "class": "ACE inhibitor",
+      "criterionIds": [
+        "B12",
+        "B13"
+      ],
+      "criterionSummary": "Perindopril should be withheld in patients with hyperkalaemia (serum K >5.5 mmol/L, B12) and requires electrolyte monitoring when combined with other potassium-conserving drugs (B13).",
+      "contextToCheck": [
+        "Serum potassium — withhold if >5.5 mmol/L",
+        "Concurrent potassium-conserving drugs",
+        "eGFR trend",
+        "Blood pressure",
+        "Indication"
+      ],
+      "whyItMatters": "Hyperkalaemia risk must be actively monitored in any ACE inhibitor combined with aldosterone antagonists or potassium supplements."
+    },
+    {
+      "canonical": "enalapril",
+      "aliases": [
+        "innovace"
+      ],
+      "class": "ACE inhibitor",
+      "criterionIds": [
+        "B12",
+        "B13"
+      ],
+      "criterionSummary": "Enalapril should be withheld in patients with hyperkalaemia (serum K >5.5 mmol/L, B12) and requires electrolyte monitoring when combined with other potassium-conserving drugs (B13).",
+      "contextToCheck": [
+        "Serum potassium — withhold if >5.5 mmol/L",
+        "Concurrent potassium-conserving drugs",
+        "eGFR trend",
+        "Blood pressure"
+      ],
+      "whyItMatters": "Electrolyte disturbance from ACE inhibitor combinations can be life-threatening if unmonitored."
+    },
+    {
+      "canonical": "losartan",
+      "aliases": [
+        "cozaar"
+      ],
+      "class": "angiotensin II receptor blocker (ARB)",
+      "criterionIds": [
+        "B12",
+        "B13"
+      ],
+      "criterionSummary": "Losartan should be withheld in patients with hyperkalaemia (serum K >5.5 mmol/L, B12) and requires electrolyte monitoring when combined with other potassium-conserving drugs (B13).",
+      "contextToCheck": [
+        "Serum potassium — withhold if >5.5 mmol/L",
+        "Concurrent potassium-conserving drugs",
+        "eGFR trend",
+        "Blood pressure"
+      ],
+      "whyItMatters": "ARBs carry identical hyperkalaemia risk to ACE inhibitors, particularly in combination with aldosterone antagonists."
+    },
+    {
+      "canonical": "candesartan",
+      "aliases": [
+        "amias"
+      ],
+      "class": "angiotensin II receptor blocker (ARB)",
+      "criterionIds": [
+        "B12",
+        "B13"
+      ],
+      "criterionSummary": "Candesartan should be withheld in patients with hyperkalaemia (serum K >5.5 mmol/L, B12) and requires electrolyte monitoring when combined with other potassium-conserving drugs (B13).",
+      "contextToCheck": [
+        "Serum potassium — withhold if >5.5 mmol/L",
+        "Concurrent potassium-conserving drugs",
+        "eGFR trend",
+        "Blood pressure",
+        "Heart failure indication (candesartan has strong HFrEF evidence)"
+      ],
+      "whyItMatters": "Combination with aldosterone antagonists and renal impairment are common co-factors amplifying ARB-associated hyperkalaemia."
+    },
+    {
+      "canonical": "irbesartan",
+      "aliases": [
+        "aprovel"
+      ],
+      "class": "angiotensin II receptor blocker (ARB)",
+      "criterionIds": [
+        "B12",
+        "B13"
+      ],
+      "criterionSummary": "Irbesartan should be withheld in patients with hyperkalaemia (serum K >5.5 mmol/L, B12) and requires electrolyte monitoring when combined with other potassium-conserving drugs (B13).",
+      "contextToCheck": [
+        "Serum potassium — withhold if >5.5 mmol/L",
+        "Concurrent potassium-conserving drugs",
+        "eGFR trend",
+        "Blood pressure"
+      ],
+      "whyItMatters": "Unmonitored hyperkalaemia in ARB-plus-potassium-conserving regimens can precipitate fatal arrhythmia."
+    },
+    {
+      "canonical": "valsartan",
+      "aliases": [
+        "diovan"
+      ],
+      "class": "angiotensin II receptor blocker (ARB)",
+      "criterionIds": [
+        "B12",
+        "B13"
+      ],
+      "criterionSummary": "Valsartan should be withheld in patients with hyperkalaemia (serum K >5.5 mmol/L, B12) and requires electrolyte monitoring when combined with other potassium-conserving drugs (B13).",
+      "contextToCheck": [
+        "Serum potassium — withhold if >5.5 mmol/L",
+        "Concurrent potassium-conserving drugs",
+        "eGFR trend",
+        "Blood pressure"
+      ],
+      "whyItMatters": "Regular electrolyte monitoring is essential in any ARB regimen involving potassium-conserving co-medications."
+    },
+    {
+      "canonical": "atenolol",
+      "aliases": [
+        "tenormin"
+      ],
+      "class": "beta-blocker",
+      "criterionIds": [
+        "B3",
+        "B4",
+        "B5",
+        "D18"
+      ],
+      "criterionSummary": "Atenolol is flagged in combination with verapamil or diltiazem due to heart block risk (B3), in bradycardia <50 bpm or significant heart block (B4), as monotherapy for uncomplicated hypertension where superior alternatives exist (B5), and in combination with AChE inhibitors due to additive bradycardia (D18).",
+      "contextToCheck": [
+        "Concurrent verapamil or diltiazem",
+        "Resting heart rate and ECG",
+        "Indication — is this genuinely first-line for hypertension?",
+        "Concurrent AChE inhibitor",
+        "Peripheral vascular disease or cold extremities"
+      ],
+      "whyItMatters": "Atenolol's use as sole antihypertensive is not guideline-recommended and its combination with rate-limiting calcium-channel blockers risks complete heart block."
+    },
+    {
+      "canonical": "bisoprolol",
+      "aliases": [
+        "cardicor",
+        "emcor"
+      ],
+      "class": "beta-blocker",
+      "criterionIds": [
+        "B3",
+        "B4",
+        "B5",
+        "D18"
+      ],
+      "criterionSummary": "Bisoprolol is flagged in combination with verapamil or diltiazem due to heart block risk (B3), in bradycardia <50 bpm or significant heart block (B4), as monotherapy for uncomplicated hypertension (B5), and in combination with AChE inhibitors due to additive bradycardia (D18).",
+      "contextToCheck": [
+        "Concurrent verapamil or diltiazem",
+        "Resting heart rate and ECG",
+        "Indication — heart failure, AF rate control, or hypertension?",
+        "Concurrent AChE inhibitor",
+        "Asthma or COPD (bisoprolol is cardioselective but caution needed)"
+      ],
+      "whyItMatters": "Bisoprolol is commonly used in heart failure but combination with calcium-channel blockers or AChE inhibitors risks bradyarrhythmia."
+    },
+    {
+      "canonical": "propranolol",
+      "aliases": [
+        "inderal",
+        "half-inderal"
+      ],
+      "class": "beta-blocker",
+      "criterionIds": [
+        "B3",
+        "B4",
+        "B5",
+        "J3",
+        "D18"
+      ],
+      "criterionSummary": "Propranolol is flagged in combination with verapamil or diltiazem due to heart block risk (B3), in bradycardia or heart block (B4), as antihypertensive monotherapy (B5), as a non-selective beta-blocker in diabetes with frequent hypoglycaemia (J3), and combined with AChE inhibitors (D18).",
+      "contextToCheck": [
+        "Concurrent verapamil or diltiazem",
+        "Resting heart rate and ECG",
+        "Diabetes with frequent hypoglycaemia (masks symptoms)",
+        "Concurrent AChE inhibitor",
+        "Asthma or obstructive airways disease (non-selective — contraindicated)"
+      ],
+      "whyItMatters": "As a non-selective beta-blocker, propranolol masks hypoglycaemia symptoms and is contraindicated in asthma; it also carries the class-wide heart block risk with calcium-channel blockers."
+    },
+    {
+      "canonical": "carvedilol",
+      "aliases": [
+        "eucardic"
+      ],
+      "class": "beta-blocker",
+      "criterionIds": [
+        "B3",
+        "B4",
+        "D18"
+      ],
+      "criterionSummary": "Carvedilol is flagged in combination with verapamil or diltiazem due to heart block risk (B3), in bradycardia or heart block (B4), and in combination with AChE inhibitors due to additive bradycardia (D18).",
+      "contextToCheck": [
+        "Concurrent verapamil or diltiazem",
+        "Resting heart rate and ECG",
+        "Concurrent AChE inhibitor",
+        "Orthostatic hypotension (carvedilol has alpha-blocking activity)",
+        "Heart failure — is this indicated?"
+      ],
+      "whyItMatters": "Carvedilol's additional alpha-blockade amplifies orthostatic hypotension risk compared to cardioselective beta-blockers."
+    },
+    {
+      "canonical": "metoprolol",
+      "aliases": [
+        "betaloc",
+        "lopresor"
+      ],
+      "class": "beta-blocker",
+      "criterionIds": [
+        "B3",
+        "B4",
+        "B5",
+        "D18"
+      ],
+      "criterionSummary": "Metoprolol is flagged in combination with verapamil or diltiazem due to heart block risk (B3), in bradycardia or heart block (B4), as antihypertensive monotherapy (B5), and in combination with AChE inhibitors (D18).",
+      "contextToCheck": [
+        "Concurrent verapamil or diltiazem",
+        "Resting heart rate and ECG",
+        "Indication — AF rate control, heart failure or hypertension?",
+        "Concurrent AChE inhibitor",
+        "Asthma (cardioselective but caution at higher doses)"
+      ],
+      "whyItMatters": "Rate-limiting drug combinations with metoprolol can precipitate complete heart block, particularly in older adults with pre-existing conduction disease."
+    },
+    {
+      "canonical": "nebivolol",
+      "aliases": [
+        "nebilet"
+      ],
+      "class": "beta-blocker",
+      "criterionIds": [
+        "B3",
+        "B4",
+        "B5",
+        "D18"
+      ],
+      "criterionSummary": "Nebivolol is flagged in combination with verapamil or diltiazem due to heart block risk (B3), in bradycardia or heart block (B4), as antihypertensive monotherapy (B5), and in combination with AChE inhibitors (D18).",
+      "contextToCheck": [
+        "Concurrent verapamil or diltiazem",
+        "Resting heart rate and ECG",
+        "Indication — heart failure in older adults or hypertension?",
+        "Concurrent AChE inhibitor",
+        "Hepatic function (nebivolol is hepatically metabolised)"
+      ],
+      "whyItMatters": "Despite vasodilatory properties, nebivolol carries the class-wide bradyarrhythmia risk with concurrent rate-limiting agents."
+    },
+    {
+      "canonical": "sotalol",
+      "aliases": [
+        "beta-cardone",
+        "sotacor"
+      ],
+      "class": "beta-blocker / antiarrhythmic",
+      "criterionIds": [
+        "B3",
+        "B4",
+        "B5",
+        "B15",
+        "D18"
+      ],
+      "criterionSummary": "Sotalol is flagged in combination with verapamil or diltiazem (B3), in bradycardia or heart block (B4), as antihypertensive monotherapy (B5), as a QT-prolonging agent (B15), and in combination with AChE inhibitors (D18).",
+      "contextToCheck": [
+        "Concurrent verapamil or diltiazem",
+        "Resting heart rate and ECG",
+        "QTc interval — sotalol prolongs QT",
+        "Concurrent QT-prolonging drugs",
+        "Renal function (sotalol renally cleared — QT risk rises with eGFR reduction)",
+        "Concurrent AChE inhibitor"
+      ],
+      "whyItMatters": "Sotalol's class III antiarrhythmic properties prolong the QT interval; in renal impairment, accumulation markedly increases the risk of torsades de pointes."
+    }
   ]
 }
