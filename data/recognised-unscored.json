@@ -1,0 +1,80 @@
+{
+  "dataset": "recognised-unscored-uk",
+  "description": "UK BNF medicines that are recognised by this tool but not present on the ACB (Boustani) or AEC (Bishara) scales. Used by the fuzzy matcher so that common drugs like donepezil or omeprazole are flagged as 'Not scored on ACB/AEC' rather than 'unknown drug'.",
+  "medicines": [
+    {
+      "name": "atorvastatin",
+      "aliases": [
+        "lipitor"
+      ],
+      "notes": "Recognised UK medicine; not anticholinergic on Boustani or Bishara scales."
+    },
+    {
+      "name": "buprenorphine",
+      "aliases": [
+        "butec",
+        "transtec"
+      ],
+      "notes": "Recognised UK medicine; not anticholinergic on Boustani or Bishara scales."
+    },
+    {
+      "name": "dihydrocodeine",
+      "aliases": [
+        "df118 forte"
+      ],
+      "notes": "Recognised UK medicine; not anticholinergic on Boustani or Bishara scales."
+    },
+    {
+      "name": "donepezil",
+      "aliases": [
+        "aricept"
+      ],
+      "notes": "Recognised UK medicine; not anticholinergic on Boustani or Bishara scales."
+    },
+    {
+      "name": "memantine",
+      "aliases": [
+        "ebixa"
+      ],
+      "notes": "Recognised UK medicine; not anticholinergic on Boustani or Bishara scales."
+    },
+    {
+      "name": "omeprazole",
+      "aliases": [
+        "losec"
+      ],
+      "notes": "Recognised UK medicine; not anticholinergic on Boustani or Bishara scales."
+    },
+    {
+      "name": "oxycodone",
+      "aliases": [
+        "oxycontin",
+        "oxynorm",
+        "targinact"
+      ],
+      "notes": "Recognised UK medicine; not anticholinergic on Boustani or Bishara scales."
+    },
+    {
+      "name": "ramipril",
+      "aliases": [
+        "tritace"
+      ],
+      "notes": "Recognised UK medicine; not anticholinergic on Boustani or Bishara scales."
+    },
+    {
+      "name": "sertraline",
+      "aliases": [
+        "lustral"
+      ],
+      "notes": "Recognised UK medicine; not anticholinergic on Boustani or Bishara scales."
+    },
+    {
+      "name": "tramadol",
+      "aliases": [
+        "zamadol",
+        "zydol"
+      ],
+      "notes": "Recognised UK medicine; not anticholinergic on Boustani or Bishara scales."
+    }
+  ]
+}

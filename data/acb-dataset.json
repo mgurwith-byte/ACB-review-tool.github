@@ -1,353 +1,54 @@
 {
   "dataset": "acb-dataset",
+  "scale": "ACB",
+  "scale_long": "Anticholinergic Cognitive Burden",
+  "primary_source": {
+    "citation": "Boustani M, Campbell N, Munger S, Maidment I, Fox C. Impact of anticholinergics on the aging brain: a review and practical application. Aging Health 2008;4(3):311-320. Updated 2012 by the Aging Brain Care programme, Indiana University.",
+    "url": "https://www.hii.iu.edu/resources/anticholinergic-cognitive-burden-scale.pdf",
+    "nhs_url": "https://nhssomerset.nhs.uk/wp-content/uploads/sites/2/Anticholinergic-Cognitive-Burden-ACB-Scale-2012.pdf"
+  },
+  "score_range": [
+    1,
+    2,
+    3
+  ],
+  "score_meaning": {
+    "1": "Possible anticholinergic activity (in vitro affinity for muscarinic receptors but no clinically relevant negative cognitive effects established)",
+    "2": "Clinically relevant negative cognitive effects with known adverse central effects",
+    "3": "Definite anticholinergic; clinically relevant negative cognitive effects and likely to cause delirium"
+  },
   "medicines": [
     {
-      "name": "amitriptyline",
+      "name": "alimemazine",
       "aliases": [
-        "elavil"
+        "vallergan"
       ],
       "scales": {
         "acb": {
-          "score": 3
-        }
-      },
-      "categories": [
-        "local:sedating antidepressant"
-      ],
-      "badges": [
-        "ACB"
-      ],
-      "notes": "High anticholinergic burden medicine.",
-      "ingredients": []
-    },
-    {
-      "name": "quetiapine",
-      "aliases": [
-        "seroquel"
-      ],
-      "scales": {
-        "acb": {
-          "score": 3
-        }
-      },
-      "categories": [
-        "local:antipsychotic"
-      ],
-      "badges": [
-        "ACB"
-      ],
-      "notes": "Antipsychotic with anticholinergic burden entry.",
-      "ingredients": []
-    },
-    {
-      "name": "olanzapine",
-      "aliases": [
-        "zyprexa"
-      ],
-      "scales": {
-        "acb": {
-          "score": 3
-        }
-      },
-      "categories": [
-        "local:antipsychotic"
-      ],
-      "badges": [
-        "ACB"
-      ],
-      "notes": "Antipsychotic with anticholinergic burden entry.",
-      "ingredients": []
-    },
-    {
-      "name": "promethazine",
-      "aliases": [
-        "phenergan"
-      ],
-      "scales": {
-        "acb": {
-          "score": 3
-        }
-      },
-      "categories": [
-        "local:sedating antihistamine"
-      ],
-      "badges": [
-        "ACB"
-      ],
-      "notes": "Strong anticholinergic burden medicine.",
-      "ingredients": []
-    },
-    {
-      "name": "oxybutynin",
-      "aliases": [
-        "ditropan"
-      ],
-      "scales": {
-        "acb": {
-          "score": 3
+          "score": 1
         }
       },
       "categories": [],
       "badges": [
         "ACB"
       ],
-      "notes": "Bladder antimuscarinic with high anticholinergic burden.",
-      "ingredients": []
+      "notes": "first-generation antihistamine / sedating antihistamine",
+      "source": "Boustani 2008"
     },
     {
-      "name": "tolterodine",
-      "aliases": [
-        "detrusitol",
-        "detrol"
-      ],
-      "scales": {
-        "acb": {
-          "score": 3
-        }
-      },
-      "categories": [],
-      "badges": [
-        "ACB"
-      ],
-      "notes": "Bladder antimuscarinic with anticholinergic burden.",
-      "ingredients": []
-    },
-    {
-      "name": "codeine",
+      "name": "alprazolam",
       "aliases": [],
       "scales": {
         "acb": {
           "score": 1
         }
       },
-      "categories": [
-        "local:opioid"
-      ],
-      "badges": [
-        "ACB"
-      ],
-      "notes": "Included where listed with low anticholinergic burden in some ACB-derived lists.",
-      "ingredients": []
-    },
-    {
-      "name": "risperidone",
-      "aliases": [
-        "risperdal"
-      ],
-      "scales": {
-        "acb": {
-          "score": 1
-        }
-      },
-      "categories": [
-        "local:antipsychotic"
-      ],
-      "badges": [
-        "ACB"
-      ],
-      "notes": "Antipsychotic with low ACB entry.",
-      "ingredients": []
-    },
-    {
-      "name": "aripiprazole",
-      "aliases": [
-        "abilify"
-      ],
-      "scales": {
-        "acb": {
-          "score": 3
-        }
-      },
-      "categories": [
-        "local:antipsychotic"
-      ],
-      "badges": [
-        "ACB"
-      ],
-      "notes": "Listed in 2012 ACB update additions.",
-      "ingredients": []
-    },
-    {
-      "name": "asenapine",
-      "aliases": [
-        "saphris"
-      ],
-      "scales": {
-        "acb": {
-          "score": 3
-        }
-      },
-      "categories": [
-        "local:antipsychotic"
-      ],
-      "badges": [
-        "ACB"
-      ],
-      "notes": "Listed in 2012 ACB update additions.",
-      "ingredients": []
-    },
-    {
-      "name": "cetirizine",
-      "aliases": [
-        "zyrtec"
-      ],
-      "scales": {
-        "acb": {
-          "score": 3
-        }
-      },
-      "categories": [
-        "local:sedating antihistamine"
-      ],
-      "badges": [
-        "ACB"
-      ],
-      "notes": "Listed in 2012 ACB update additions.",
-      "ingredients": []
-    },
-    {
-      "name": "solifenacin",
-      "aliases": [
-        "vesicare"
-      ],
-      "scales": {
-        "acb": {
-          "score": 3
-        }
-      },
       "categories": [],
       "badges": [
         "ACB"
       ],
-      "notes": "Bladder antimuscarinic with high burden.",
-      "ingredients": []
-    },
-    {
-      "name": "trospium",
-      "aliases": [
-        "sanctura"
-      ],
-      "scales": {
-        "acb": {
-          "score": 3
-        }
-      },
-      "categories": [],
-      "badges": [
-        "ACB"
-      ],
-      "notes": "Listed on ACB scale drug lists.",
-      "ingredients": []
-    },
-    {
-      "name": "alprazolam",
-      "aliases": [
-        "xanax"
-      ],
-      "scales": {
-        "acb": {
-          "score": 1
-        }
-      },
-      "categories": [
-        "local:benzodiazepine"
-      ],
-      "badges": [
-        "ACB"
-      ],
-      "notes": "Low ACB entry and benzodiazepine review relevance.",
-      "ingredients": []
-    },
-    {
-      "name": "atenolol",
-      "aliases": [
-        "tenormin"
-      ],
-      "scales": {
-        "acb": {
-          "score": 1
-        }
-      },
-      "categories": [],
-      "badges": [
-        "ACB"
-      ],
-      "notes": "Low ACB entry.",
-      "ingredients": []
-    },
-    {
-      "name": "cimetidine",
-      "aliases": [
-        "tagamet"
-      ],
-      "scales": {
-        "acb": {
-          "score": 1
-        }
-      },
-      "categories": [],
-      "badges": [
-        "ACB"
-      ],
-      "notes": "Low ACB entry.",
-      "ingredients": []
-    },
-    {
-      "name": "carbamazepine",
-      "aliases": [
-        "tegretol"
-      ],
-      "scales": {
-        "acb": {
-          "score": 1
-        }
-      },
-      "categories": [
-        "local:cns depressant"
-      ],
-      "badges": [
-        "ACB"
-      ],
-      "notes": "Low ACB entry with CNS relevance.",
-      "ingredients": []
-    },
-    {
-      "name": "cyclizine",
-      "aliases": [
-        "valoid"
-      ],
-      "scales": {
-        "acb": {
-          "score": 2
-        }
-      },
-      "categories": [
-        "local:sedating antihistamine"
-      ],
-      "badges": [
-        "ACB"
-      ],
-      "notes": "Moderate anticholinergic burden entry.",
-      "ingredients": []
-    },
-    {
-      "name": "alimemazine",
-      "aliases": [
-        "theralen"
-      ],
-      "scales": {
-        "acb": {
-          "score": 3
-        }
-      },
-      "categories": [
-        "local:sedating antihistamine"
-      ],
-      "badges": [
-        "ACB"
-      ],
-      "notes": "Listed on ACB scale drug lists with UK brand alias.",
-      "ingredients": []
+      "notes": "benzodiazepine anxiolytic",
+      "source": "Boustani 2008"
     },
     {
       "name": "alverine",
@@ -363,12 +64,147 @@
       "badges": [
         "ACB"
       ],
-      "notes": "Listed on ACB scale drug lists.",
-      "ingredients": []
+      "notes": "antispasmodic for irritable bowel syndrome",
+      "source": "Boustani 2008"
+    },
+    {
+      "name": "amantadine",
+      "aliases": [],
+      "scales": {
+        "acb": {
+          "score": 2
+        }
+      },
+      "categories": [],
+      "badges": [
+        "ACB"
+      ],
+      "notes": "antiparkinsonian / antiviral",
+      "source": "Boustani 2008"
+    },
+    {
+      "name": "amitriptyline",
+      "aliases": [
+        "elavil",
+        "triptafen"
+      ],
+      "scales": {
+        "acb": {
+          "score": 3
+        }
+      },
+      "categories": [],
+      "badges": [
+        "ACB"
+      ],
+      "notes": "tricyclic antidepressant",
+      "source": "Boustani 2008 (site override retained)"
+    },
+    {
+      "name": "aripiprazole",
+      "aliases": [
+        "abilify",
+        "aripiprazole otsuka"
+      ],
+      "scales": {
+        "acb": {
+          "score": 1
+        }
+      },
+      "categories": [],
+      "badges": [
+        "ACB"
+      ],
+      "notes": "atypical antipsychotic",
+      "source": "Boustani 2012"
+    },
+    {
+      "name": "asenapine",
+      "aliases": [
+        "sycrest"
+      ],
+      "scales": {
+        "acb": {
+          "score": 1
+        }
+      },
+      "categories": [],
+      "badges": [
+        "ACB"
+      ],
+      "notes": "atypical antipsychotic (UK licensed for bipolar disorder)",
+      "source": "Boustani 2012"
+    },
+    {
+      "name": "atenolol",
+      "aliases": [
+        "tenormin"
+      ],
+      "scales": {
+        "acb": {
+          "score": 1
+        }
+      },
+      "categories": [],
+      "badges": [
+        "ACB"
+      ],
+      "notes": "beta-blocker",
+      "source": "Boustani 2008"
+    },
+    {
+      "name": "atropine",
+      "aliases": [],
+      "scales": {
+        "acb": {
+          "score": 3
+        }
+      },
+      "categories": [],
+      "badges": [
+        "ACB"
+      ],
+      "notes": "antimuscarinic alkaloid",
+      "source": "Boustani 2008"
+    },
+    {
+      "name": "benzhexol",
+      "aliases": [
+        "trihexyphenidyl"
+      ],
+      "scales": {
+        "acb": {
+          "score": 3
+        }
+      },
+      "categories": [],
+      "badges": [
+        "ACB"
+      ],
+      "notes": "Retained from prior site dictionary; not in Boustani 2012 list.",
+      "source": "Site dictionary (no Boustani primary source)"
+    },
+    {
+      "name": "benztropine",
+      "aliases": [
+        "cogentin"
+      ],
+      "scales": {
+        "acb": {
+          "score": 3
+        }
+      },
+      "categories": [],
+      "badges": [
+        "ACB"
+      ],
+      "notes": "antiparkinsonian antimuscarinic (available as named patient in UK)",
+      "source": "Boustani 2008"
     },
     {
       "name": "bupropion",
       "aliases": [
+        "wellbutrin",
         "zyban"
       ],
       "scales": {
@@ -380,8 +216,125 @@
       "badges": [
         "ACB"
       ],
-      "notes": "Listed in 2012 ACB update additions.",
-      "ingredients": []
+      "notes": "smoking cessation / antidepressant",
+      "source": "Boustani 2008"
+    },
+    {
+      "name": "captopril",
+      "aliases": [
+        "capoten"
+      ],
+      "scales": {
+        "acb": {
+          "score": 1
+        }
+      },
+      "categories": [],
+      "badges": [
+        "ACB"
+      ],
+      "notes": "ACE inhibitor",
+      "source": "Boustani 2008"
+    },
+    {
+      "name": "carbamazepine",
+      "aliases": [
+        "tegretol"
+      ],
+      "scales": {
+        "acb": {
+          "score": 2
+        }
+      },
+      "categories": [],
+      "badges": [
+        "ACB"
+      ],
+      "notes": "antiepileptic",
+      "source": "Boustani 2008"
+    },
+    {
+      "name": "cetirizine",
+      "aliases": [
+        "piriteze",
+        "zirtek"
+      ],
+      "scales": {
+        "acb": {
+          "score": 1
+        }
+      },
+      "categories": [],
+      "badges": [
+        "ACB"
+      ],
+      "notes": "second-generation antihistamine",
+      "source": "Boustani 2012"
+    },
+    {
+      "name": "chlorphenamine",
+      "aliases": [
+        "chlor-trimeton",
+        "piriton"
+      ],
+      "scales": {
+        "acb": {
+          "score": 3
+        }
+      },
+      "categories": [],
+      "badges": [
+        "ACB"
+      ],
+      "notes": "first-generation antihistamine (published scale uses 'chlorpheniramine'; UK BAN is chlorphenamine)",
+      "source": "Boustani 2008 (site override retained)"
+    },
+    {
+      "name": "chlorpromazine",
+      "aliases": [
+        "largactil"
+      ],
+      "scales": {
+        "acb": {
+          "score": 3
+        }
+      },
+      "categories": [],
+      "badges": [
+        "ACB"
+      ],
+      "notes": "first-generation antipsychotic / phenothiazine",
+      "source": "Boustani 2008"
+    },
+    {
+      "name": "cimetidine",
+      "aliases": [],
+      "scales": {
+        "acb": {
+          "score": 1
+        }
+      },
+      "categories": [],
+      "badges": [
+        "ACB"
+      ],
+      "notes": "H2-receptor antagonist",
+      "source": "Boustani 2008"
+    },
+    {
+      "name": "clemastine",
+      "aliases": [],
+      "scales": {
+        "acb": {
+          "score": 3
+        }
+      },
+      "categories": [],
+      "badges": [
+        "ACB"
+      ],
+      "notes": "first-generation antihistamine",
+      "source": "Boustani 2008"
     },
     {
       "name": "clomipramine",
@@ -393,97 +346,438 @@
           "score": 3
         }
       },
-      "categories": [
-        "local:sedating antidepressant"
-      ],
+      "categories": [],
       "badges": [
         "ACB"
       ],
-      "notes": "Tricyclic antidepressant with high anticholinergic burden.",
-      "ingredients": []
+      "notes": "tricyclic antidepressant / OCD",
+      "source": "Boustani 2008 (site override retained)"
     },
     {
-      "name": "chlorphenamine",
+      "name": "clozapine",
       "aliases": [
-        "piriton"
+        "clozaril",
+        "denzapine",
+        "zaponex"
       ],
       "scales": {
         "acb": {
           "score": 3
         }
       },
-      "categories": [
-        "local:sedating antihistamine"
-      ],
+      "categories": [],
       "badges": [
         "ACB"
       ],
-      "notes": "Strong anticholinergic antihistamine.",
-      "ingredients": []
+      "notes": "atypical antipsychotic",
+      "source": "Boustani 2008 (site override retained)"
+    },
+    {
+      "name": "codeine",
+      "aliases": [
+        "co-codamol",
+        "codeine phosphate",
+        "solpadeine"
+      ],
+      "scales": {
+        "acb": {
+          "score": 0
+        }
+      },
+      "categories": [],
+      "badges": [
+        "ACB"
+      ],
+      "notes": "opioid analgesic",
+      "source": "Boustani 2008 (site override retained)"
+    },
+    {
+      "name": "colchicine",
+      "aliases": [],
+      "scales": {
+        "acb": {
+          "score": 1
+        }
+      },
+      "categories": [],
+      "badges": [
+        "ACB"
+      ],
+      "notes": "antigout agent",
+      "source": "Boustani 2008"
+    },
+    {
+      "name": "cyproheptadine",
+      "aliases": [],
+      "scales": {
+        "acb": {
+          "score": 2
+        }
+      },
+      "categories": [],
+      "badges": [
+        "ACB"
+      ],
+      "notes": "first-generation antihistamine / appetite stimulant",
+      "source": "Boustani 2008"
+    },
+    {
+      "name": "darifenacin",
+      "aliases": [
+        "emselex",
+        "enablex"
+      ],
+      "scales": {
+        "acb": {
+          "score": 3
+        }
+      },
+      "categories": [],
+      "badges": [
+        "ACB"
+      ],
+      "notes": "antimuscarinic for overactive bladder",
+      "source": "Boustani 2008 (site override retained)"
+    },
+    {
+      "name": "desloratadine",
+      "aliases": [
+        "neoclarityn"
+      ],
+      "scales": {
+        "acb": {
+          "score": 1
+        }
+      },
+      "categories": [],
+      "badges": [
+        "ACB"
+      ],
+      "notes": "second-generation antihistamine",
+      "source": "Boustani 2012"
+    },
+    {
+      "name": "diazepam",
+      "aliases": [
+        "diazemuls",
+        "diazepam rectubes",
+        "stesolid",
+        "valium"
+      ],
+      "scales": {
+        "acb": {
+          "score": 1
+        }
+      },
+      "categories": [],
+      "badges": [
+        "ACB"
+      ],
+      "notes": "benzodiazepine",
+      "source": "Boustani 2008 (site override retained)"
+    },
+    {
+      "name": "dicycloverine",
+      "aliases": [
+        "merbentyl"
+      ],
+      "scales": {
+        "acb": {
+          "score": 3
+        }
+      },
+      "categories": [],
+      "badges": [
+        "ACB"
+      ],
+      "notes": "antispasmodic antimuscarinic (published scale uses 'dicyclomine'; UK BAN is dicycloverine)",
+      "source": "Boustani 2008"
+    },
+    {
+      "name": "digoxin",
+      "aliases": [
+        "lanoxin"
+      ],
+      "scales": {
+        "acb": {
+          "score": 1
+        }
+      },
+      "categories": [],
+      "badges": [
+        "ACB"
+      ],
+      "notes": "cardiac glycoside",
+      "source": "Boustani 2008"
     },
     {
       "name": "diphenhydramine",
       "aliases": [
-        "nytol",
-        "benadryl allergy"
+        "nytol"
       ],
       "scales": {
         "acb": {
           "score": 3
         }
       },
-      "categories": [
-        "local:sedating antihistamine"
-      ],
+      "categories": [],
       "badges": [
         "ACB"
       ],
-      "notes": "Strong anticholinergic and hypnotic relevance.",
-      "ingredients": []
+      "notes": "first-generation antihistamine / sedative",
+      "source": "Boustani 2008 (site override retained)"
+    },
+    {
+      "name": "dipyridamole",
+      "aliases": [
+        "asasantin",
+        "persantin"
+      ],
+      "scales": {
+        "acb": {
+          "score": 1
+        }
+      },
+      "categories": [],
+      "badges": [
+        "ACB"
+      ],
+      "notes": "antiplatelet agent",
+      "source": "Boustani 2008"
+    },
+    {
+      "name": "disopyramide",
+      "aliases": [
+        "rythmodan"
+      ],
+      "scales": {
+        "acb": {
+          "score": 1
+        }
+      },
+      "categories": [],
+      "badges": [
+        "ACB"
+      ],
+      "notes": "class Ia antiarrhythmic",
+      "source": "Boustani 2008"
+    },
+    {
+      "name": "dosulepin",
+      "aliases": [
+        "dothiepin",
+        "prothiaden"
+      ],
+      "scales": {
+        "acb": {
+          "score": 3
+        }
+      },
+      "categories": [],
+      "badges": [
+        "ACB"
+      ],
+      "notes": "tricyclic antidepressant (published scale lists 'doxepin'; dosulepin is separately widely prescribed in UK; 'dothiepin' is older UK name)",
+      "source": "Boustani 2008 (site override retained)"
     },
     {
       "name": "doxepin",
       "aliases": [
-        "sinepin"
+        "sinepin",
+        "xepin"
       ],
       "scales": {
         "acb": {
           "score": 3
         }
       },
-      "categories": [
-        "local:sedating antidepressant"
-      ],
+      "categories": [],
       "badges": [
         "ACB"
       ],
-      "notes": "Tricyclic antidepressant with high burden.",
-      "ingredients": []
+      "notes": "tricyclic antidepressant",
+      "source": "Boustani 2008"
+    },
+    {
+      "name": "doxylamine",
+      "aliases": [],
+      "scales": {
+        "acb": {
+          "score": 3
+        }
+      },
+      "categories": [],
+      "badges": [
+        "ACB"
+      ],
+      "notes": "first-generation antihistamine / sedative (available in UK in some OTC sleep aids)",
+      "source": "Boustani 2012"
+    },
+    {
+      "name": "fentanyl",
+      "aliases": [
+        "abstral",
+        "actiq",
+        "durogesic",
+        "effentora",
+        "matrifen",
+        "pecfent"
+      ],
+      "scales": {
+        "acb": {
+          "score": 0
+        }
+      },
+      "categories": [],
+      "badges": [
+        "ACB"
+      ],
+      "notes": "opioid analgesic",
+      "source": "Boustani 2008 (site override retained)"
+    },
+    {
+      "name": "fesoterodine",
+      "aliases": [
+        "toviaz"
+      ],
+      "scales": {
+        "acb": {
+          "score": 3
+        }
+      },
+      "categories": [],
+      "badges": [
+        "ACB"
+      ],
+      "notes": "antimuscarinic for overactive bladder",
+      "source": "Boustani 2012 (site override retained)"
+    },
+    {
+      "name": "flavoxate",
+      "aliases": [
+        "urispas"
+      ],
+      "scales": {
+        "acb": {
+          "score": 3
+        }
+      },
+      "categories": [],
+      "badges": [
+        "ACB"
+      ],
+      "notes": "urinary antispasmodic",
+      "source": "Boustani 2008 (site override retained)"
+    },
+    {
+      "name": "fluvoxamine",
+      "aliases": [
+        "faverin"
+      ],
+      "scales": {
+        "acb": {
+          "score": 1
+        }
+      },
+      "categories": [],
+      "badges": [
+        "ACB"
+      ],
+      "notes": "SSRI antidepressant",
+      "source": "Boustani 2008"
+    },
+    {
+      "name": "furosemide",
+      "aliases": [
+        "lasix"
+      ],
+      "scales": {
+        "acb": {
+          "score": 1
+        }
+      },
+      "categories": [],
+      "badges": [
+        "ACB"
+      ],
+      "notes": "loop diuretic",
+      "source": "Boustani 2008"
+    },
+    {
+      "name": "haloperidol",
+      "aliases": [
+        "haldol",
+        "serenace"
+      ],
+      "scales": {
+        "acb": {
+          "score": 1
+        }
+      },
+      "categories": [],
+      "badges": [
+        "ACB"
+      ],
+      "notes": "first-generation antipsychotic",
+      "source": "Boustani 2008 (site override retained)"
+    },
+    {
+      "name": "hydralazine",
+      "aliases": [],
+      "scales": {
+        "acb": {
+          "score": 1
+        }
+      },
+      "categories": [],
+      "badges": [
+        "ACB"
+      ],
+      "notes": "vasodilator antihypertensive",
+      "source": "Boustani 2008"
+    },
+    {
+      "name": "hydrocortisone",
+      "aliases": [
+        "efcortesol",
+        "solu-cortef"
+      ],
+      "scales": {
+        "acb": {
+          "score": 1
+        }
+      },
+      "categories": [],
+      "badges": [
+        "ACB"
+      ],
+      "notes": "corticosteroid",
+      "source": "Boustani 2008"
     },
     {
       "name": "hydroxyzine",
       "aliases": [
         "atarax",
-        "urezax"
+        "ucerax"
       ],
       "scales": {
         "acb": {
           "score": 3
         }
       },
-      "categories": [
-        "local:sedating antihistamine",
-        "local:cns depressant"
-      ],
+      "categories": [],
       "badges": [
         "ACB"
       ],
-      "notes": "High burden sedating antihistamine.",
-      "ingredients": []
+      "notes": "first-generation antihistamine / anxiolytic",
+      "source": "Boustani 2008 (site override retained)"
     },
     {
-      "name": "hyoscine hydrobromide",
+      "name": "hyoscine",
       "aliases": [
+        "buscopan",
+        "hyoscine hydrobromide",
+        "joy-rides",
         "kwells",
         "scopoderm"
       ],
@@ -496,8 +790,240 @@
       "badges": [
         "ACB"
       ],
-      "notes": "Antimuscarinic with high burden.",
-      "ingredients": []
+      "notes": "antimuscarinic for motion sickness / antispasmodic (published scale uses 'scopolamine'; UK INN is hyoscine)",
+      "source": "Boustani 2008 (site override retained)"
+    },
+    {
+      "name": "imipramine",
+      "aliases": [
+        "tofranil"
+      ],
+      "scales": {
+        "acb": {
+          "score": 3
+        }
+      },
+      "categories": [],
+      "badges": [
+        "ACB"
+      ],
+      "notes": "tricyclic antidepressant",
+      "source": "Boustani 2008 (site override retained)"
+    },
+    {
+      "name": "isosorbide mononitrate",
+      "aliases": [
+        "imdur",
+        "ismo",
+        "isotard",
+        "monomax",
+        "monosorb"
+      ],
+      "scales": {
+        "acb": {
+          "score": 1
+        }
+      },
+      "categories": [],
+      "badges": [
+        "ACB"
+      ],
+      "notes": "nitrate for angina (published scale lists 'isosorbide'; UK uses mononitrate/dinitrate)",
+      "source": "Boustani 2008"
+    },
+    {
+      "name": "levocetirizine",
+      "aliases": [
+        "xyzal"
+      ],
+      "scales": {
+        "acb": {
+          "score": 1
+        }
+      },
+      "categories": [],
+      "badges": [
+        "ACB"
+      ],
+      "notes": "second-generation antihistamine",
+      "source": "Boustani 2012"
+    },
+    {
+      "name": "levomepromazine",
+      "aliases": [
+        "nozinan"
+      ],
+      "scales": {
+        "acb": {
+          "score": 3
+        }
+      },
+      "categories": [],
+      "badges": [
+        "ACB"
+      ],
+      "notes": "phenothiazine antipsychotic (published scale lists 'methotrimeprazine'; UK INN is levomepromazine)",
+      "source": "Boustani 2008 (site override retained)"
+    },
+    {
+      "name": "loperamide",
+      "aliases": [
+        "imodium"
+      ],
+      "scales": {
+        "acb": {
+          "score": 1
+        }
+      },
+      "categories": [],
+      "badges": [
+        "ACB"
+      ],
+      "notes": "antidiarrhoeal opioid",
+      "source": "Boustani 2008"
+    },
+    {
+      "name": "loratadine",
+      "aliases": [
+        "clarityn"
+      ],
+      "scales": {
+        "acb": {
+          "score": 1
+        }
+      },
+      "categories": [],
+      "badges": [
+        "ACB"
+      ],
+      "notes": "second-generation antihistamine",
+      "source": "Boustani 2012"
+    },
+    {
+      "name": "lorazepam",
+      "aliases": [
+        "ativan"
+      ],
+      "scales": {
+        "acb": {
+          "score": 1
+        }
+      },
+      "categories": [],
+      "badges": [
+        "ACB"
+      ],
+      "notes": "Retained from prior site dictionary; not in Boustani 2012 list.",
+      "source": "Site dictionary (no Boustani primary source)"
+    },
+    {
+      "name": "metoprolol",
+      "aliases": [
+        "betaloc",
+        "lopresor"
+      ],
+      "scales": {
+        "acb": {
+          "score": 1
+        }
+      },
+      "categories": [],
+      "badges": [
+        "ACB"
+      ],
+      "notes": "beta-blocker",
+      "source": "Boustani 2008"
+    },
+    {
+      "name": "mirtazapine",
+      "aliases": [
+        "zispin"
+      ],
+      "scales": {
+        "acb": {
+          "score": 1
+        }
+      },
+      "categories": [],
+      "badges": [
+        "ACB"
+      ],
+      "notes": "Retained from prior site dictionary; not in Boustani 2012 list.",
+      "source": "Site dictionary (no Boustani primary source)"
+    },
+    {
+      "name": "morphine",
+      "aliases": [
+        "mst continus",
+        "oramorph",
+        "sevredol",
+        "zomorph"
+      ],
+      "scales": {
+        "acb": {
+          "score": 0
+        }
+      },
+      "categories": [],
+      "badges": [
+        "ACB"
+      ],
+      "notes": "opioid analgesic",
+      "source": "Boustani 2008 (site override retained)"
+    },
+    {
+      "name": "nefopam",
+      "aliases": [
+        "acupan"
+      ],
+      "scales": {
+        "acb": {
+          "score": 2
+        }
+      },
+      "categories": [],
+      "badges": [
+        "ACB"
+      ],
+      "notes": "non-opioid analgesic",
+      "source": "Boustani 2012"
+    },
+    {
+      "name": "nifedipine",
+      "aliases": [
+        "adalat",
+        "adipine",
+        "coracten",
+        "fortipine"
+      ],
+      "scales": {
+        "acb": {
+          "score": 1
+        }
+      },
+      "categories": [],
+      "badges": [
+        "ACB"
+      ],
+      "notes": "calcium channel blocker",
+      "source": "Boustani 2008"
+    },
+    {
+      "name": "nitrazepam",
+      "aliases": [
+        "mogadon"
+      ],
+      "scales": {
+        "acb": {
+          "score": 1
+        }
+      },
+      "categories": [],
+      "badges": [
+        "ACB"
+      ],
+      "notes": "Retained from prior site dictionary; not in Boustani 2012 list.",
+      "source": "Site dictionary (no Boustani primary source)"
     },
     {
       "name": "nortriptyline",
@@ -509,19 +1035,18 @@
           "score": 3
         }
       },
-      "categories": [
-        "local:sedating antidepressant"
-      ],
+      "categories": [],
       "badges": [
         "ACB"
       ],
-      "notes": "Tricyclic antidepressant with high burden.",
-      "ingredients": []
+      "notes": "tricyclic antidepressant",
+      "source": "Boustani 2008 (site override retained)"
     },
     {
-      "name": "olopatadine",
+      "name": "olanzapine",
       "aliases": [
-        "opatanol"
+        "zalasta",
+        "zyprexa"
       ],
       "scales": {
         "acb": {
@@ -532,8 +1057,83 @@
       "badges": [
         "ACB"
       ],
-      "notes": "Listed in ACB update additions.",
-      "ingredients": []
+      "notes": "atypical antipsychotic",
+      "source": "Boustani 2008 (site override retained)"
+    },
+    {
+      "name": "orphenadrine",
+      "aliases": [
+        "biorphen",
+        "disipal",
+        "norgesic"
+      ],
+      "scales": {
+        "acb": {
+          "score": 3
+        }
+      },
+      "categories": [],
+      "badges": [
+        "ACB"
+      ],
+      "notes": "antiparkinsonian antimuscarinic",
+      "source": "Boustani 2008 (site override retained)"
+    },
+    {
+      "name": "oxcarbazepine",
+      "aliases": [
+        "trileptal"
+      ],
+      "scales": {
+        "acb": {
+          "score": 2
+        }
+      },
+      "categories": [],
+      "badges": [
+        "ACB"
+      ],
+      "notes": "antiepileptic",
+      "source": "Boustani 2008"
+    },
+    {
+      "name": "oxybutynin",
+      "aliases": [
+        "cystrin",
+        "ditropan",
+        "kentera",
+        "lyrinel xl"
+      ],
+      "scales": {
+        "acb": {
+          "score": 3
+        }
+      },
+      "categories": [],
+      "badges": [
+        "ACB"
+      ],
+      "notes": "antimuscarinic for overactive bladder",
+      "source": "Boustani 2008 (site override retained)"
+    },
+    {
+      "name": "paliperidone",
+      "aliases": [
+        "invega",
+        "trevicta",
+        "xeplion"
+      ],
+      "scales": {
+        "acb": {
+          "score": 1
+        }
+      },
+      "categories": [],
+      "badges": [
+        "ACB"
+      ],
+      "notes": "atypical antipsychotic",
+      "source": "Boustani 2012"
     },
     {
       "name": "paroxetine",
@@ -545,34 +1145,255 @@
           "score": 3
         }
       },
-      "categories": [
-        "local:antidepressant"
-      ],
+      "categories": [],
       "badges": [
         "ACB"
       ],
-      "notes": "SSRI with notable anticholinergic burden compared with other SSRIs.",
-      "ingredients": []
+      "notes": "SSRI antidepressant",
+      "source": "Boustani 2008 (site override retained)"
     },
     {
-      "name": "prochlorperazine",
+      "name": "perphenazine",
       "aliases": [
-        "stemetil"
+        "fentazin"
       ],
       "scales": {
         "acb": {
           "score": 3
         }
       },
-      "categories": [
-        "local:antipsychotic",
-        "local:cns depressant"
-      ],
+      "categories": [],
       "badges": [
         "ACB"
       ],
-      "notes": "Phenothiazine antiemetic with anticholinergic burden.",
-      "ingredients": []
+      "notes": "first-generation antipsychotic / phenothiazine",
+      "source": "Boustani 2008"
+    },
+    {
+      "name": "pimozide",
+      "aliases": [
+        "orap"
+      ],
+      "scales": {
+        "acb": {
+          "score": 2
+        }
+      },
+      "categories": [],
+      "badges": [
+        "ACB"
+      ],
+      "notes": "first-generation antipsychotic",
+      "source": "Boustani 2008"
+    },
+    {
+      "name": "prednisolone",
+      "aliases": [
+        "deltacortril",
+        "dilacort"
+      ],
+      "scales": {
+        "acb": {
+          "score": 1
+        }
+      },
+      "categories": [],
+      "badges": [
+        "ACB"
+      ],
+      "notes": "corticosteroid (published scale lists 'prednisone'; UK equivalent is prednisolone)",
+      "source": "Boustani 2008"
+    },
+    {
+      "name": "promethazine",
+      "aliases": [
+        "phenergan",
+        "sominex"
+      ],
+      "scales": {
+        "acb": {
+          "score": 3
+        }
+      },
+      "categories": [],
+      "badges": [
+        "ACB"
+      ],
+      "notes": "first-generation antihistamine / phenothiazine",
+      "source": "Boustani 2008 (site override retained)"
+    },
+    {
+      "name": "propantheline",
+      "aliases": [
+        "pro-banthine"
+      ],
+      "scales": {
+        "acb": {
+          "score": 3
+        }
+      },
+      "categories": [],
+      "badges": [
+        "ACB"
+      ],
+      "notes": "antimuscarinic antispasmodic",
+      "source": "Boustani 2008"
+    },
+    {
+      "name": "propiverine",
+      "aliases": [
+        "detrunorm"
+      ],
+      "scales": {
+        "acb": {
+          "score": 3
+        }
+      },
+      "categories": [],
+      "badges": [
+        "ACB"
+      ],
+      "notes": "antimuscarinic for overactive bladder",
+      "source": "Boustani 2012 (site override retained)"
+    },
+    {
+      "name": "quetiapine",
+      "aliases": [
+        "atrolak",
+        "biquelle",
+        "mintreleq",
+        "seroquel"
+      ],
+      "scales": {
+        "acb": {
+          "score": 3
+        }
+      },
+      "categories": [],
+      "badges": [
+        "ACB"
+      ],
+      "notes": "atypical antipsychotic",
+      "source": "Boustani 2008 (site override retained)"
+    },
+    {
+      "name": "ranitidine",
+      "aliases": [],
+      "scales": {
+        "acb": {
+          "score": 1
+        }
+      },
+      "categories": [],
+      "badges": [
+        "ACB"
+      ],
+      "notes": "H2-receptor antagonist (withdrawn in UK 2020 due to NDMA contamination; included as historically prescribed)",
+      "source": "Boustani 2008"
+    },
+    {
+      "name": "risperidone",
+      "aliases": [
+        "risperdal",
+        "risperdal consta"
+      ],
+      "scales": {
+        "acb": {
+          "score": 1
+        }
+      },
+      "categories": [],
+      "badges": [
+        "ACB"
+      ],
+      "notes": "atypical antipsychotic",
+      "source": "Boustani 2008 (site override retained)"
+    },
+    {
+      "name": "solifenacin",
+      "aliases": [
+        "vesicare"
+      ],
+      "scales": {
+        "acb": {
+          "score": 3
+        }
+      },
+      "categories": [],
+      "badges": [
+        "ACB"
+      ],
+      "notes": "antimuscarinic for overactive bladder",
+      "source": "Boustani 2012 (site override retained)"
+    },
+    {
+      "name": "temazepam",
+      "aliases": [
+        "normison",
+        "tenox"
+      ],
+      "scales": {
+        "acb": {
+          "score": 1
+        }
+      },
+      "categories": [],
+      "badges": [
+        "ACB"
+      ],
+      "notes": "Retained from prior site dictionary; not in Boustani 2012 list.",
+      "source": "Site dictionary (no Boustani primary source)"
+    },
+    {
+      "name": "theophylline",
+      "aliases": [
+        "nuelin sa",
+        "slo-phyllin",
+        "uniphyllin continus"
+      ],
+      "scales": {
+        "acb": {
+          "score": 1
+        }
+      },
+      "categories": [],
+      "badges": [
+        "ACB"
+      ],
+      "notes": "xanthine bronchodilator",
+      "source": "Boustani 2008"
+    },
+    {
+      "name": "thioridazine",
+      "aliases": [],
+      "scales": {
+        "acb": {
+          "score": 3
+        }
+      },
+      "categories": [],
+      "badges": [
+        "ACB"
+      ],
+      "notes": "first-generation antipsychotic / phenothiazine (restricted use in UK)",
+      "source": "Boustani 2008"
+    },
+    {
+      "name": "tolterodine",
+      "aliases": [
+        "detrusitol"
+      ],
+      "scales": {
+        "acb": {
+          "score": 3
+        }
+      },
+      "categories": [],
+      "badges": [
+        "ACB"
+      ],
+      "notes": "antimuscarinic for overactive bladder",
+      "source": "Boustani 2008 (site override retained)"
     },
     {
       "name": "trazodone",
@@ -584,15 +1405,146 @@
           "score": 1
         }
       },
-      "categories": [
-        "local:sedating antidepressant",
-        "local:cns depressant"
-      ],
+      "categories": [],
       "badges": [
         "ACB"
       ],
-      "notes": "Low burden but sedation relevance.",
-      "ingredients": []
+      "notes": "antidepressant / sedative",
+      "source": "Boustani 2008 (site override retained)"
+    },
+    {
+      "name": "trifluoperazine",
+      "aliases": [
+        "stelazine"
+      ],
+      "scales": {
+        "acb": {
+          "score": 3
+        }
+      },
+      "categories": [],
+      "badges": [
+        "ACB"
+      ],
+      "notes": "first-generation antipsychotic / phenothiazine",
+      "source": "Boustani 2008"
+    },
+    {
+      "name": "trihexyphenidyl",
+      "aliases": [
+        "broflex"
+      ],
+      "scales": {
+        "acb": {
+          "score": 3
+        }
+      },
+      "categories": [],
+      "badges": [
+        "ACB"
+      ],
+      "notes": "antiparkinsonian antimuscarinic (also known as benzhexol in UK)",
+      "source": "Boustani 2008"
+    },
+    {
+      "name": "trimipramine",
+      "aliases": [
+        "surmontil"
+      ],
+      "scales": {
+        "acb": {
+          "score": 3
+        }
+      },
+      "categories": [],
+      "badges": [
+        "ACB"
+      ],
+      "notes": "tricyclic antidepressant",
+      "source": "Boustani 2008 (site override retained)"
+    },
+    {
+      "name": "trospium",
+      "aliases": [
+        "regurin"
+      ],
+      "scales": {
+        "acb": {
+          "score": 3
+        }
+      },
+      "categories": [],
+      "badges": [
+        "ACB"
+      ],
+      "notes": "antimuscarinic for overactive bladder",
+      "source": "Boustani 2012 (site override retained)"
+    },
+    {
+      "name": "venlafaxine",
+      "aliases": [
+        "efexor xl"
+      ],
+      "scales": {
+        "acb": {
+          "score": 1
+        }
+      },
+      "categories": [],
+      "badges": [
+        "ACB"
+      ],
+      "notes": "SNRI antidepressant",
+      "source": "Boustani 2012"
+    },
+    {
+      "name": "warfarin",
+      "aliases": [],
+      "scales": {
+        "acb": {
+          "score": 1
+        }
+      },
+      "categories": [],
+      "badges": [
+        "ACB"
+      ],
+      "notes": "anticoagulant",
+      "source": "Boustani 2008"
+    },
+    {
+      "name": "zolpidem",
+      "aliases": [
+        "stilnoct"
+      ],
+      "scales": {
+        "acb": {
+          "score": 1
+        }
+      },
+      "categories": [],
+      "badges": [
+        "ACB"
+      ],
+      "notes": "Retained from prior site dictionary; not in Boustani 2012 list.",
+      "source": "Site dictionary (no Boustani primary source)"
+    },
+    {
+      "name": "zopiclone",
+      "aliases": [
+        "zimovane"
+      ],
+      "scales": {
+        "acb": {
+          "score": 1
+        }
+      },
+      "categories": [],
+      "badges": [
+        "ACB"
+      ],
+      "notes": "Retained from prior site dictionary; not in Boustani 2012 list.",
+      "source": "Site dictionary (no Boustani primary source)"
     }
   ]
 }

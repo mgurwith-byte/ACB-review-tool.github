@@ -1,10 +1,28 @@
 {
   "dataset": "aec-dataset",
+  "scale": "AEC",
+  "scale_long": "Anticholinergic Effect on Cognition",
+  "primary_source": {
+    "citation": "Bishara D, Harwood D, Sauer J, Taylor DM. Anticholinergic effect on cognition (AEC) of drugs commonly used in older people. International Journal of Geriatric Psychiatry 2017;32(6):650-656.",
+    "url": "https://doi.org/10.1002/gps.4507",
+    "nhs_url": "https://awttc.nhs.wales/files/national-prescribing-indicators/npis-2022-23-appendix-aec-score-pdf/"
+  },
+  "score_range": [
+    1,
+    2,
+    3
+  ],
+  "score_meaning": {
+    "1": "Low-level anticholinergic effect on cognition",
+    "2": "Moderate anticholinergic effect on cognition",
+    "3": "High anticholinergic effect on cognition"
+  },
   "medicines": [
     {
-      "name": "amitriptyline",
+      "name": "alimemazine",
       "aliases": [
-        "elavil"
+        "theralen",
+        "vallergan"
       ],
       "scales": {
         "aec": {
@@ -15,13 +33,147 @@
       "badges": [
         "AEC"
       ],
-      "notes": "AEC cognition-focused score.",
-      "ingredients": []
+      "notes": "first-generation antihistamine / sedating antihistamine (trimeprazine)",
+      "source": "Bishara 2017"
     },
     {
-      "name": "quetiapine",
+      "name": "amantadine",
+      "aliases": [],
+      "scales": {
+        "aec": {
+          "score": 2
+        }
+      },
+      "categories": [],
+      "badges": [
+        "AEC"
+      ],
+      "notes": "antiparkinsonian / antiviral",
+      "source": "Bishara 2017"
+    },
+    {
+      "name": "amiodarone",
       "aliases": [
-        "seroquel"
+        "cordarone x"
+      ],
+      "scales": {
+        "aec": {
+          "score": 1
+        }
+      },
+      "categories": [],
+      "badges": [
+        "AEC"
+      ],
+      "notes": "antiarrhythmic",
+      "source": "Bishara 2017"
+    },
+    {
+      "name": "amitriptyline",
+      "aliases": [
+        "elavil",
+        "triptafen"
+      ],
+      "scales": {
+        "aec": {
+          "score": 3
+        }
+      },
+      "categories": [],
+      "badges": [
+        "AEC"
+      ],
+      "notes": "tricyclic antidepressant",
+      "source": "Bishara 2017"
+    },
+    {
+      "name": "aripiprazole",
+      "aliases": [
+        "abilify",
+        "aripiprazole otsuka"
+      ],
+      "scales": {
+        "aec": {
+          "score": 1
+        }
+      },
+      "categories": [],
+      "badges": [
+        "AEC"
+      ],
+      "notes": "atypical antipsychotic",
+      "source": "Bishara 2017"
+    },
+    {
+      "name": "atropine",
+      "aliases": [],
+      "scales": {
+        "aec": {
+          "score": 3
+        }
+      },
+      "categories": [],
+      "badges": [
+        "AEC"
+      ],
+      "notes": "antimuscarinic alkaloid",
+      "source": "Bishara 2017"
+    },
+    {
+      "name": "benztropine",
+      "aliases": [
+        "cogentin"
+      ],
+      "scales": {
+        "aec": {
+          "score": 3
+        }
+      },
+      "categories": [],
+      "badges": [
+        "AEC"
+      ],
+      "notes": "antiparkinsonian antimuscarinic",
+      "source": "Bishara 2017"
+    },
+    {
+      "name": "bromocriptine",
+      "aliases": [
+        "parlodel"
+      ],
+      "scales": {
+        "aec": {
+          "score": 1
+        }
+      },
+      "categories": [],
+      "badges": [
+        "AEC"
+      ],
+      "notes": "dopamine agonist",
+      "source": "Bishara 2017"
+    },
+    {
+      "name": "carbamazepine",
+      "aliases": [
+        "tegretol"
+      ],
+      "scales": {
+        "aec": {
+          "score": 1
+        }
+      },
+      "categories": [],
+      "badges": [
+        "AEC"
+      ],
+      "notes": "antiepileptic",
+      "source": "Bishara 2017"
+    },
+    {
+      "name": "chlorphenamine",
+      "aliases": [
+        "piriton"
       ],
       "scales": {
         "aec": {
@@ -32,12 +184,460 @@
       "badges": [
         "AEC"
       ],
-      "notes": "AEC cognition-focused score.",
-      "ingredients": []
+      "notes": "first-generation antihistamine",
+      "source": "Bishara 2017"
+    },
+    {
+      "name": "chlorpromazine",
+      "aliases": [
+        "largactil"
+      ],
+      "scales": {
+        "aec": {
+          "score": 3
+        }
+      },
+      "categories": [],
+      "badges": [
+        "AEC"
+      ],
+      "notes": "first-generation antipsychotic / phenothiazine",
+      "source": "Bishara 2017"
+    },
+    {
+      "name": "citalopram",
+      "aliases": [
+        "cipramil"
+      ],
+      "scales": {
+        "aec": {
+          "score": 1
+        }
+      },
+      "categories": [],
+      "badges": [
+        "AEC"
+      ],
+      "notes": "SSRI antidepressant",
+      "source": "Bishara 2017"
+    },
+    {
+      "name": "clemastine",
+      "aliases": [],
+      "scales": {
+        "aec": {
+          "score": 3
+        }
+      },
+      "categories": [],
+      "badges": [
+        "AEC"
+      ],
+      "notes": "first-generation antihistamine",
+      "source": "Bishara 2017"
+    },
+    {
+      "name": "clomipramine",
+      "aliases": [
+        "anafranil"
+      ],
+      "scales": {
+        "aec": {
+          "score": 3
+        }
+      },
+      "categories": [],
+      "badges": [
+        "AEC"
+      ],
+      "notes": "tricyclic antidepressant",
+      "source": "Bishara 2017"
+    },
+    {
+      "name": "clozapine",
+      "aliases": [
+        "clozaril",
+        "denzapine",
+        "zaponex"
+      ],
+      "scales": {
+        "aec": {
+          "score": 3
+        }
+      },
+      "categories": [],
+      "badges": [
+        "AEC"
+      ],
+      "notes": "atypical antipsychotic",
+      "source": "Bishara 2017"
+    },
+    {
+      "name": "cyproheptadine",
+      "aliases": [],
+      "scales": {
+        "aec": {
+          "score": 3
+        }
+      },
+      "categories": [],
+      "badges": [
+        "AEC"
+      ],
+      "notes": "first-generation antihistamine",
+      "source": "Bishara 2017"
+    },
+    {
+      "name": "desipramine",
+      "aliases": [],
+      "scales": {
+        "aec": {
+          "score": 2
+        }
+      },
+      "categories": [],
+      "badges": [
+        "AEC"
+      ],
+      "notes": "tricyclic antidepressant (named patient / limited UK availability; included as listed in Bishara 2017 which is UK-authored)",
+      "source": "Bishara 2017"
+    },
+    {
+      "name": "diazepam",
+      "aliases": [
+        "valium"
+      ],
+      "scales": {
+        "aec": {
+          "score": 1
+        }
+      },
+      "categories": [],
+      "badges": [
+        "AEC"
+      ],
+      "notes": "benzodiazepine",
+      "source": "Bishara 2017"
+    },
+    {
+      "name": "dicycloverine",
+      "aliases": [
+        "merbentyl"
+      ],
+      "scales": {
+        "aec": {
+          "score": 2
+        }
+      },
+      "categories": [],
+      "badges": [
+        "AEC"
+      ],
+      "notes": "antispasmodic antimuscarinic",
+      "source": "Bishara 2017"
+    },
+    {
+      "name": "dimenhydrinate",
+      "aliases": [],
+      "scales": {
+        "aec": {
+          "score": 2
+        }
+      },
+      "categories": [],
+      "badges": [
+        "AEC"
+      ],
+      "notes": "antihistamine / antiemetic (not currently available in UK; included as listed in original scale)",
+      "source": "Bishara 2017"
+    },
+    {
+      "name": "diphenhydramine",
+      "aliases": [
+        "benadryl allergy",
+        "nytol"
+      ],
+      "scales": {
+        "aec": {
+          "score": 2
+        }
+      },
+      "categories": [],
+      "badges": [
+        "AEC"
+      ],
+      "notes": "first-generation antihistamine / sedative",
+      "source": "Bishara 2017"
+    },
+    {
+      "name": "disopyramide",
+      "aliases": [
+        "rythmodan"
+      ],
+      "scales": {
+        "aec": {
+          "score": 2
+        }
+      },
+      "categories": [],
+      "badges": [
+        "AEC"
+      ],
+      "notes": "class Ia antiarrhythmic",
+      "source": "Bishara 2017"
+    },
+    {
+      "name": "domperidone",
+      "aliases": [
+        "motilium"
+      ],
+      "scales": {
+        "aec": {
+          "score": 1
+        }
+      },
+      "categories": [],
+      "badges": [
+        "AEC"
+      ],
+      "notes": "dopamine antagonist / antiemetic",
+      "source": "Bishara 2017"
+    },
+    {
+      "name": "dosulepin",
+      "aliases": [
+        "prothiaden"
+      ],
+      "scales": {
+        "aec": {
+          "score": 3
+        }
+      },
+      "categories": [],
+      "badges": [
+        "AEC"
+      ],
+      "notes": "tricyclic antidepressant (dothiepin)",
+      "source": "Bishara 2017"
+    },
+    {
+      "name": "doxepin",
+      "aliases": [
+        "sinepin",
+        "xepin"
+      ],
+      "scales": {
+        "aec": {
+          "score": 3
+        }
+      },
+      "categories": [],
+      "badges": [
+        "AEC"
+      ],
+      "notes": "tricyclic antidepressant",
+      "source": "Bishara 2017"
+    },
+    {
+      "name": "fentanyl",
+      "aliases": [
+        "abstral",
+        "actiq",
+        "durogesic"
+      ],
+      "scales": {
+        "aec": {
+          "score": 1
+        }
+      },
+      "categories": [],
+      "badges": [
+        "AEC"
+      ],
+      "notes": "opioid analgesic",
+      "source": "Bishara 2017"
+    },
+    {
+      "name": "fluoxetine",
+      "aliases": [
+        "prozac"
+      ],
+      "scales": {
+        "aec": {
+          "score": 1
+        }
+      },
+      "categories": [],
+      "badges": [
+        "AEC"
+      ],
+      "notes": "SSRI antidepressant",
+      "source": "Bishara 2017"
+    },
+    {
+      "name": "fluphenazine",
+      "aliases": [
+        "modecate"
+      ],
+      "scales": {
+        "aec": {
+          "score": 1
+        }
+      },
+      "categories": [],
+      "badges": [
+        "AEC"
+      ],
+      "notes": "first-generation antipsychotic / phenothiazine",
+      "source": "Bishara 2017"
+    },
+    {
+      "name": "hydroxyzine",
+      "aliases": [
+        "atarax",
+        "ucerax"
+      ],
+      "scales": {
+        "aec": {
+          "score": 1
+        }
+      },
+      "categories": [],
+      "badges": [
+        "AEC"
+      ],
+      "notes": "first-generation antihistamine / anxiolytic (AEC 1 per Bishara 2017; note discrepancy with some secondary sources)",
+      "source": "Bishara 2017"
+    },
+    {
+      "name": "hyoscine",
+      "aliases": [
+        "buscopan",
+        "joy-rides",
+        "kwells",
+        "scopoderm"
+      ],
+      "scales": {
+        "aec": {
+          "score": 3
+        }
+      },
+      "categories": [],
+      "badges": [
+        "AEC"
+      ],
+      "notes": "antimuscarinic (hyoscine hydrobromide for motion sickness; hyoscine butylbromide for IBS)",
+      "source": "Bishara 2017"
+    },
+    {
+      "name": "imipramine",
+      "aliases": [
+        "tofranil"
+      ],
+      "scales": {
+        "aec": {
+          "score": 3
+        }
+      },
+      "categories": [],
+      "badges": [
+        "AEC"
+      ],
+      "notes": "tricyclic antidepressant",
+      "source": "Bishara 2017"
+    },
+    {
+      "name": "levomepromazine",
+      "aliases": [
+        "nozinan"
+      ],
+      "scales": {
+        "aec": {
+          "score": 2
+        }
+      },
+      "categories": [],
+      "badges": [
+        "AEC"
+      ],
+      "notes": "phenothiazine antipsychotic (methotrimeprazine)",
+      "source": "Bishara 2017"
+    },
+    {
+      "name": "lithium",
+      "aliases": [
+        "camcolit",
+        "liskonum",
+        "priadel"
+      ],
+      "scales": {
+        "aec": {
+          "score": 1
+        }
+      },
+      "categories": [],
+      "badges": [
+        "AEC"
+      ],
+      "notes": "mood stabiliser",
+      "source": "Bishara 2017"
+    },
+    {
+      "name": "lofepramine",
+      "aliases": [
+        "gamanil"
+      ],
+      "scales": {
+        "aec": {
+          "score": 3
+        }
+      },
+      "categories": [],
+      "badges": [
+        "AEC"
+      ],
+      "notes": "tricyclic antidepressant",
+      "source": "Bishara 2017"
+    },
+    {
+      "name": "mirtazapine",
+      "aliases": [
+        "remeron",
+        "zispin soltab"
+      ],
+      "scales": {
+        "aec": {
+          "score": 1
+        }
+      },
+      "categories": [],
+      "badges": [
+        "AEC"
+      ],
+      "notes": "noradrenergic and specific serotonergic antidepressant (NaSSA)",
+      "source": "Bishara 2017"
+    },
+    {
+      "name": "nortriptyline",
+      "aliases": [
+        "allegron"
+      ],
+      "scales": {
+        "aec": {
+          "score": 3
+        }
+      },
+      "categories": [],
+      "badges": [
+        "AEC"
+      ],
+      "notes": "tricyclic antidepressant",
+      "source": "Bishara 2017"
     },
     {
       "name": "olanzapine",
       "aliases": [
+        "zalasta",
         "zyprexa"
       ],
       "scales": {
@@ -49,82 +649,249 @@
       "badges": [
         "AEC"
       ],
-      "notes": "AEC cognition-focused score.",
-      "ingredients": []
+      "notes": "atypical antipsychotic",
+      "source": "Bishara 2017"
     },
     {
-      "name": "lorazepam",
+      "name": "orphenadrine",
       "aliases": [
-        "ativan"
+        "biorphen",
+        "disipal"
       ],
       "scales": {
         "aec": {
-          "score": 0
+          "score": 3
         }
       },
       "categories": [],
       "badges": [
         "AEC"
       ],
-      "notes": "Recognised medicine with AEC listing context.",
-      "ingredients": []
+      "notes": "antiparkinsonian antimuscarinic",
+      "source": "Bishara 2017"
     },
     {
-      "name": "morphine",
+      "name": "oxybutynin",
       "aliases": [
-        "oramorph",
-        "sevredol",
-        "mst",
-        "mst continus",
-        "zomorph"
+        "cystrin",
+        "ditropan",
+        "kentera",
+        "lyrinel xl"
       ],
       "scales": {
         "aec": {
-          "score": 0
+          "score": 3
         }
       },
       "categories": [],
       "badges": [
         "AEC"
       ],
-      "notes": "Recognised medicine with AEC listing context.",
-      "ingredients": []
+      "notes": "antimuscarinic for overactive bladder",
+      "source": "Bishara 2017"
     },
     {
-      "name": "gabapentin",
+      "name": "paroxetine",
       "aliases": [
-        "neurontin"
+        "seroxat"
       ],
       "scales": {
         "aec": {
-          "score": 0
+          "score": 2
         }
       },
       "categories": [],
       "badges": [
         "AEC"
       ],
-      "notes": "Recognised medicine with AEC listing context.",
-      "ingredients": []
+      "notes": "SSRI antidepressant",
+      "source": "Bishara 2017"
     },
     {
-      "name": "mirtazapine",
+      "name": "perphenazine",
       "aliases": [
-        "remeron"
+        "fentazin"
       ],
       "scales": {
         "aec": {
           "score": 1
         }
       },
-      "categories": [
-        "local:sedating antidepressant"
-      ],
+      "categories": [],
       "badges": [
         "AEC"
       ],
-      "notes": "Lower AEC entry with sedation relevance.",
-      "ingredients": []
+      "notes": "first-generation antipsychotic / phenothiazine",
+      "source": "Bishara 2017"
+    },
+    {
+      "name": "pethidine",
+      "aliases": [],
+      "scales": {
+        "aec": {
+          "score": 2
+        }
+      },
+      "categories": [],
+      "badges": [
+        "AEC"
+      ],
+      "notes": "opioid analgesic (meperidine in US)",
+      "source": "Bishara 2017"
+    },
+    {
+      "name": "pimozide",
+      "aliases": [
+        "orap"
+      ],
+      "scales": {
+        "aec": {
+          "score": 2
+        }
+      },
+      "categories": [],
+      "badges": [
+        "AEC"
+      ],
+      "notes": "first-generation antipsychotic",
+      "source": "Bishara 2017"
+    },
+    {
+      "name": "prednisolone",
+      "aliases": [
+        "deltacortril",
+        "dilacort"
+      ],
+      "scales": {
+        "aec": {
+          "score": 1
+        }
+      },
+      "categories": [],
+      "badges": [
+        "AEC"
+      ],
+      "notes": "corticosteroid",
+      "source": "Bishara 2017"
+    },
+    {
+      "name": "prochlorperazine",
+      "aliases": [
+        "buccastem",
+        "stemetil"
+      ],
+      "scales": {
+        "aec": {
+          "score": 2
+        }
+      },
+      "categories": [],
+      "badges": [
+        "AEC"
+      ],
+      "notes": "phenothiazine antipsychotic / antiemetic",
+      "source": "Bishara 2017"
+    },
+    {
+      "name": "procyclidine",
+      "aliases": [
+        "kemadrin"
+      ],
+      "scales": {
+        "aec": {
+          "score": 3
+        }
+      },
+      "categories": [],
+      "badges": [
+        "AEC"
+      ],
+      "notes": "antiparkinsonian antimuscarinic",
+      "source": "Bishara 2017"
+    },
+    {
+      "name": "promazine",
+      "aliases": [],
+      "scales": {
+        "aec": {
+          "score": 2
+        }
+      },
+      "categories": [],
+      "badges": [
+        "AEC"
+      ],
+      "notes": "phenothiazine antipsychotic (sedative)",
+      "source": "Bishara 2017"
+    },
+    {
+      "name": "promethazine",
+      "aliases": [
+        "phenergan",
+        "sominex"
+      ],
+      "scales": {
+        "aec": {
+          "score": 3
+        }
+      },
+      "categories": [],
+      "badges": [
+        "AEC"
+      ],
+      "notes": "first-generation antihistamine / phenothiazine",
+      "source": "Bishara 2017"
+    },
+    {
+      "name": "propantheline",
+      "aliases": [
+        "pro-banthine"
+      ],
+      "scales": {
+        "aec": {
+          "score": 2
+        }
+      },
+      "categories": [],
+      "badges": [
+        "AEC"
+      ],
+      "notes": "antimuscarinic antispasmodic",
+      "source": "Bishara 2017"
+    },
+    {
+      "name": "quetiapine",
+      "aliases": [
+        "atrolak",
+        "biquelle",
+        "seroquel"
+      ],
+      "scales": {
+        "aec": {
+          "score": 2
+        }
+      },
+      "categories": [],
+      "badges": [
+        "AEC"
+      ],
+      "notes": "atypical antipsychotic",
+      "source": "Bishara 2017"
+    },
+    {
+      "name": "quinidine",
+      "aliases": [],
+      "scales": {
+        "aec": {
+          "score": 1
+        }
+      },
+      "categories": [],
+      "badges": [
+        "AEC"
+      ],
+      "notes": "class Ia antiarrhythmic (limited UK availability)",
+      "source": "Bishara 2017"
     },
     {
       "name": "sertraline",
@@ -140,84 +907,25 @@
       "badges": [
         "AEC"
       ],
-      "notes": "Lower AEC entry.",
-      "ingredients": []
+      "notes": "SSRI antidepressant",
+      "source": "Bishara 2017"
     },
     {
-      "name": "alprazolam",
+      "name": "solifenacin",
       "aliases": [
-        "xanax"
-      ],
-      "scales": {
-        "aec": {
-          "score": 3
-        }
-      },
-      "categories": [
-        "local:benzodiazepine"
-      ],
-      "badges": [
-        "AEC"
-      ],
-      "notes": "AEC high score example.",
-      "ingredients": []
-    },
-    {
-      "name": "cetirizine",
-      "aliases": [
-        "zyrtec"
-      ],
-      "scales": {
-        "aec": {
-          "score": 3
-        }
-      },
-      "categories": [
-        "local:sedating antihistamine"
-      ],
-      "badges": [
-        "AEC"
-      ],
-      "notes": "AEC high score example.",
-      "ingredients": []
-    },
-    {
-      "name": "chlordiazepoxide",
-      "aliases": [
-        "librium"
-      ],
-      "scales": {
-        "aec": {
-          "score": 3
-        }
-      },
-      "categories": [
-        "local:benzodiazepine"
-      ],
-      "badges": [
-        "AEC"
-      ],
-      "notes": "AEC high score example.",
-      "ingredients": []
-    },
-    {
-      "name": "diazepam",
-      "aliases": [
-        "valium"
+        "vesicare"
       ],
       "scales": {
         "aec": {
           "score": 1
         }
       },
-      "categories": [
-        "local:benzodiazepine"
-      ],
+      "categories": [],
       "badges": [
         "AEC"
       ],
-      "notes": "Recognised medicine with lower AEC entry.",
-      "ingredients": []
+      "notes": "antimuscarinic for overactive bladder (AEC 1 per Bishara 2017; note discrepancy with ACB scale which rates this 3)",
+      "source": "Bishara 2017"
     },
     {
       "name": "temazepam",
@@ -229,267 +937,80 @@
           "score": 1
         }
       },
-      "categories": [
-        "local:benzodiazepine"
-      ],
+      "categories": [],
       "badges": [
         "AEC"
       ],
-      "notes": "Recognised medicine with lower AEC entry.",
-      "ingredients": []
+      "notes": "benzodiazepine hypnotic",
+      "source": "Bishara 2017"
     },
     {
-      "name": "codeine",
-      "aliases": [],
-      "scales": {
-        "aec": {
-          "score": 0
-        }
-      },
-      "categories": [
-        "local:opioid"
-      ],
-      "badges": [
-        "AEC"
-      ],
-      "notes": "Recognised in cognition-focused list context.",
-      "ingredients": []
-    },
-    {
-      "name": "oxycodone",
+      "name": "tolterodine",
       "aliases": [
-        "oxynorm",
-        "oxycontin",
-        "longtec",
-        "shortec"
+        "detrusitol"
       ],
       "scales": {
         "aec": {
-          "score": 0
+          "score": 2
         }
       },
-      "categories": [
-        "local:opioid"
-      ],
+      "categories": [],
       "badges": [
         "AEC"
       ],
-      "notes": "Recognised in cognition-focused list context.",
-      "ingredients": []
+      "notes": "antimuscarinic for overactive bladder",
+      "source": "Bishara 2017"
     },
     {
-      "name": "tramadol",
+      "name": "trifluoperazine",
       "aliases": [
-        "zydol",
-        "zamadol"
+        "stelazine"
       ],
       "scales": {
         "aec": {
-          "score": 0
+          "score": 2
         }
       },
-      "categories": [
-        "local:opioid",
-        "local:cns depressant"
-      ],
+      "categories": [],
       "badges": [
         "AEC"
       ],
-      "notes": "Recognised in cognition-focused list context.",
-      "ingredients": []
+      "notes": "first-generation antipsychotic / phenothiazine",
+      "source": "Bishara 2017"
     },
     {
-      "name": "alimemazine",
+      "name": "trihexyphenidyl",
       "aliases": [
-        "theralen"
+        "broflex"
       ],
       "scales": {
         "aec": {
           "score": 3
         }
       },
-      "categories": [
-        "local:sedating antihistamine"
-      ],
+      "categories": [],
       "badges": [
         "AEC"
       ],
-      "notes": "High AEC example relevant to older-adult psychopharmacology.",
-      "ingredients": []
+      "notes": "antiparkinsonian antimuscarinic (benzhexol)",
+      "source": "Bishara 2017"
     },
     {
-      "name": "chlorphenamine",
+      "name": "trimipramine",
       "aliases": [
-        "piriton"
+        "surmontil"
       ],
       "scales": {
         "aec": {
           "score": 3
         }
       },
-      "categories": [
-        "local:sedating antihistamine"
-      ],
+      "categories": [],
       "badges": [
         "AEC"
       ],
-      "notes": "High AEC example.",
-      "ingredients": []
-    },
-    {
-      "name": "clomipramine",
-      "aliases": [
-        "anafranil"
-      ],
-      "scales": {
-        "aec": {
-          "score": 3
-        }
-      },
-      "categories": [
-        "local:sedating antidepressant"
-      ],
-      "badges": [
-        "AEC"
-      ],
-      "notes": "High AEC example.",
-      "ingredients": []
-    },
-    {
-      "name": "diphenhydramine",
-      "aliases": [
-        "nytol",
-        "benadryl allergy"
-      ],
-      "scales": {
-        "aec": {
-          "score": 3
-        }
-      },
-      "categories": [
-        "local:sedating antihistamine"
-      ],
-      "badges": [
-        "AEC"
-      ],
-      "notes": "High AEC example.",
-      "ingredients": []
-    },
-    {
-      "name": "paroxetine",
-      "aliases": [
-        "seroxat"
-      ],
-      "scales": {
-        "aec": {
-          "score": 3
-        }
-      },
-      "categories": [
-        "local:antidepressant"
-      ],
-      "badges": [
-        "AEC"
-      ],
-      "notes": "High AEC example.",
-      "ingredients": []
-    },
-    {
-      "name": "trazodone",
-      "aliases": [
-        "molipaxin"
-      ],
-      "scales": {
-        "aec": {
-          "score": 1
-        }
-      },
-      "categories": [
-        "local:sedating antidepressant"
-      ],
-      "badges": [
-        "AEC"
-      ],
-      "notes": "Lower AEC entry with sedation relevance.",
-      "ingredients": []
-    },
-    {
-      "name": "haloperidol",
-      "aliases": [
-        "serenace",
-        "haldol"
-      ],
-      "scales": {
-        "aec": {
-          "score": 1
-        }
-      },
-      "categories": [
-        "local:antipsychotic"
-      ],
-      "badges": [
-        "AEC"
-      ],
-      "notes": "Recognised for cognition-focused review context.",
-      "ingredients": []
-    },
-    {
-      "name": "risperidone",
-      "aliases": [
-        "risperdal"
-      ],
-      "scales": {
-        "aec": {
-          "score": 0
-        }
-      },
-      "categories": [
-        "local:antipsychotic"
-      ],
-      "badges": [
-        "AEC"
-      ],
-      "notes": "Recognised for cognition-focused review context.",
-      "ingredients": []
-    },
-    {
-      "name": "zolpidem",
-      "aliases": [
-        "stilnoct"
-      ],
-      "scales": {
-        "aec": {
-          "score": 0
-        }
-      },
-      "categories": [
-        "local:z-drug"
-      ],
-      "badges": [
-        "AEC"
-      ],
-      "notes": "Recognised for cognition-focused review context.",
-      "ingredients": []
-    },
-    {
-      "name": "zopiclone",
-      "aliases": [
-        "zimovane",
-        "imovane"
-      ],
-      "scales": {
-        "aec": {
-          "score": 0
-        }
-      },
-      "categories": [
-        "local:z-drug"
-      ],
-      "badges": [
-        "AEC"
-      ],
-      "notes": "Recognised for cognition-focused review context.",
-      "ingredients": []
+      "notes": "tricyclic antidepressant",
+      "source": "Bishara 2017"
     }
   ]
 }
