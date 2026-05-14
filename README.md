@@ -1,25 +1,30 @@
-# Cognitive Risk Dashboard v3
+# ACB Medication Reviewer
 
-Static GitHub Pages app for pasted medication-list review.
+Static GitHub Pages site for medication-list review with:
+- per-drug ACB scoring where recognised,
+- total ACB calculation,
+- high cognitive-risk class flags,
+- contextual STOPP-relevant prompts,
+- misspelling suggestions,
+- explicit user review warning.
 
-## Add these files
+## Files
 
-Place these in `data/`:
-- `acb-dataset.json`
-- `aec-dataset.json`
-- `local-rules.json`
-- `uk-products.json`
-- `stopp_relevant_medicines_uk.json`
+- `acb-medication-reviewer.html` — main site file
+- `data/stopp_relevant_medicines_uk.json` — contextual UK STOPP-relevant medicine dataset
+- `.nojekyll` — recommended for GitHub Pages static hosting
+- `docs/test-pack.md` — formal functional test pack
+- `tests/sample-test-cases.json` — machine-readable regression cases
 
-## Behaviour
+## GitHub Pages setup
 
-The app now uses a three-state matching model:
-- Matched and flagged
-- Matched, no current flag
-- No flag from current reference set
+1. Create a new public repository.
+2. Upload `acb-medication-reviewer.html` and the `data` folder to the repository root.
+3. Add an empty file named `.nojekyll` to the repository root.
+4. In GitHub repository settings, enable Pages from the main branch root.
+5. Open the published site URL after deployment.
 
-This wording is intended to avoid implying that an unmatched medicine is invalid or nonexistent.
+## Notes
 
-## Hosting
-
-Upload `index.html` and the `data/` folder to a GitHub repository and enable GitHub Pages.
+- STOPP prompts are contextual only and should not be presented as automatic breaches.
+- Any output must be reviewed by the user.
