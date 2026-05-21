@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cognitive Burden Medication Review</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg:#f7f6f2; --surface:#fbfbf9; --surface-2:#f2efe8; --text:#1f1f1b; --muted:#66645f;
+      --border:#d9d5cc; --primary:#0f6a70; --warn:#8e4a17; --warn-bg:#f6e5d8; --danger:#8d1f57;
+      --danger-bg:#f6dde8; --ok:#2f6e27; --ok-bg:#dfead9; --info:#2f5a8e; --info-bg:#dde8f6;
+      --shadow:0 10px 30px rgba(0,0,0,.07); --radius:16px;
+    }
+    [data-theme="dark"] {
+      --bg:#171614; --surface:#1f1d1b; --surface-2:#262320; --text:#ece8de; --muted:#a09c94;
+      --border:#3b3732; --primary:#56a0a6; --warn:#d69455; --warn-bg:#4a3728; --danger:#e17ab1;
+      --danger-bg:#4e2940; --ok:#8bc07c; --ok-bg:#29452c; --info:#7aa6e1; --info-bg:#243a55;
+      --shadow:0 10px 30px rgba(0,0,0,.35);
+    }
+    * { box-sizing:border-box; }
+    body { margin:0; font-family:Inter,system-ui,sans-serif; background:var(--bg); color:var(--text); line-height:1.5; }
+    .wrap { max-width:1100px; margin:0 auto; padding:24px; }
+    .topbar { display:flex; justify-content:space-between; align-items:center; gap:16px; margin-bottom:24px; }
+    .brand { display:flex; align-items:center; gap:12px; font-weight:700; letter-spacing:-0.02em; }
+    .logo { width:36px; height:36px; border-radius:12px; background:linear-gradient(135deg,var(--primary),#88b8bb); display:grid; place-items:center; color:white; box-shadow:var(--shadow); }
+    .theme-toggle { border:1px solid var(--border); background:var(--surface); color:var(--text); border-radius:12px; padding:10px 12px; cursor:pointer; }
+    .card { background:var(--surface); border:1px solid var(--border); border-radius:var(--radius); box-shadow:var(--shadow); }
+    .hero { padding:24px; margin-bottom:20px; }
+    h1 { margin:0 0 12px; font-size:clamp(1.8rem, 2vw, 2.6rem); letter-spacing:-0.03em; }
+    h2 { margin:0 0 10px; font-size:1.2rem; }
+    h3 { margin:0 0 8px; font-size:1rem; }
+    p { margin:0 0 12px; color:var(--muted); }
+    .notice { display:flex; gap:10px; padding:12px 14px; border-radius:14px; background:var(--warn-bg); color:var(--warn); border:1px solid color-mix(in srgb, var(--warn) 25%, var(--warn-bg)); }
+    .grid { display:grid; grid-template-columns: 1fr 320px; gap:20px; align-items:start; }
+    .panel { padding:20px; }
+    textarea { width:100%; min-height:220px; resize:vertical; padding:16px; border-radius:14px; border:1px solid var(--border); background:var(--surface-2); color:var(--text); font:inherit; }
+    .controls { display:flex; flex-wrap:wrap; gap:12px; margin-top:14px; }
+    button { font:inherit; }
+    .btn { border-radius:14px; padding:12px 16px; cursor:pointer; border:1px solid transparent; font-weight:600; }
+    .btn-primary { background:var(--primary); color:white; }
+    .btn-secondary { background:var(--surface-2); color:var(--text); border-color:var(--border); }
+    .btn:disabled { opacity:.55; cursor:not-allowed; }
+    .stats { display:grid; gap:12px; }
+    .stat { background:var(--surface-2); border:1px solid var(--border); border-radius:14px; padding:14px; }
+    .stat .label { color:var(--muted); font-size:.88rem; }
+    .stat .value { font-size:1.6rem; font-weight:700; }
+    .meta { padding:12px 14px; background:var(--surface-2); border-radius:14px; border:1px solid var(--border); }
+    .result-list { display:grid; gap:12px; }
+    .report-box { white-space:pre-wrap; background:var(--surface); border:1px solid var(--border); border-radius:12px; padding:14px; }
+    .help, .data-status { font-size:.82rem; color:var(--muted); margin-top:8px; }
+    .data-status .ok { color:var(--ok); }
+    .data-status .err { color:var(--danger); }
+    .foot { padding:18px 20px; font-size:.9rem; color:var(--muted); }
+    .refs { font-size:.88rem; color:var(--muted); }
+    .refs a { color:var(--primary); }
+    .section-space { margin-top:20px; }
+    @media (max-width: 900px) { .grid { grid-template-columns:1fr; } }
+    @media (max-width: 640px) { .wrap { padding:14px; } }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="topbar">
+      <div class="brand">
+        <div class="logo" aria-hidden="true">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 3h12"/><path d="M9 3v6l-4 8a3 3 0 0 0 2.7 4.5h8.6A3 3 0 0 0 19 17l-4-8V3"/><path d="M8 14h8"/></svg>
+        </div>
+        <div>Cognitive Burden Medication Review</div>
+      </div>
+      <button class="theme-toggle" data-theme-toggle aria-label="Toggle theme">Theme</button>
+    </header>
+
+    <section class="card hero">
+      <h1>Paste a medication list and review medicines that may worsen cognition.</h1>
+      <p>This static tool focuses on anticholinergic burden, sedative medicines, and opioids. Optional contextual STOPP prompts are shown lower down the page rather than in the main output.</p>
+      <div class="notice"><strong>Review required:</strong><span>The output supports medication review and clinical documentation, but should not be used as an automatic prescribing rule engine. Individual scores are shown in the GP paragraph so the reasoning behind the cumulative conclusion is visible.</span></div>
+    </section>
+
+    <section class="grid">
+      <div class="card panel">
+        <label for="meds"><strong>Medication list</strong></label>
+        <p>Paste one item per line, or a comma-separated list. Brand names and common misspellings are partially supported.</p>
+        <textarea id="meds" placeholder="e.g.
+Donepezil
+Amitriptyline
+Zopiclone
+Oxycontin
+Risperdal"></textarea>
+        <div class="controls">
+          <button class="btn btn-primary" id="analyseBtn">Analyse medicines</button>
+          <button class="btn btn-secondary" id="clearBtn">Clear</button>
+        </div>
+        <div class="help">The main output is simplified. The STOPP section appears at the bottom of the page.</div>
+        <div class="data-status" id="dataStatus">Loading datasets…</div>
+
+        <div id="results" class="result-list section-space"></div>
+
+        <div class="card section-space" style="padding:18px; background:var(--surface-2);">
+          <h3>Copy text for GP letter or report</h3>
+          <p>This text is designed for direct use in a report plan or clinic letter.</p>
+          <div id="gpParagraph" class="report-box">No output yet.</div>
+          <div id="gpReference" class="refs section-space"></div>
+          <div class="controls" style="margin-top:12px;">
+            <button class="btn btn-primary" id="copyGpBtn" disabled>Copy GP text</button>
+          </div>
+        </div>
+      </div>
+
+      <aside class="card panel">
+        <div class="stats">
+          <div class="stat"><div class="label">Recognised medicines of interest</div><div class="value" id="recognisedCount">0</div></div>
+          <div class="stat"><div class="label">Anticholinergic medicines</div><div class="value" id="acbMedCount">0</div></div>
+          <div class="stat"><div class="label">Total anticholinergic burden</div><div class="value" id="totalAcb">0</div></div>
+          <div class="stat"><div class="label">Sedative medicines</div><div class="value" id="sedativeCount">0</div></div>
+          <div class="stat"><div class="label">Opioids</div><div class="value" id="opioidCount">0</div></div>
+        </div>
+      </aside>
+    </section>
+
+    <section class="card panel section-space">
+      <h2>Optional STOPP prompts</h2>
+      <p>These are contextual prompts only and depend on indication, dose, duration, diagnosis, renal function, falls risk and other clinical factors.</p>
+      <div id="stoppResults" class="result-list"></div>
+    </section>
+
+    <section class="card panel section-space">
+      <h2>References used in the site</h2>
+      <div class="refs">
+        <p><a href="https://www.hii.iu.edu/resources/anticholinergic-cognitive-burden-scale.pdf" target="_blank" rel="noopener noreferrer">Anticholinergic Cognitive Burden Scale 2012 PDF</a>; <a href="https://nhssomerset.nhs.uk/wp-content/uploads/sites/2/Anticholinergic-Cognitive-Burden-ACB-Scale-2012.pdf" target="_blank" rel="noopener noreferrer">NHS Somerset mirror</a>.</p>
+        <p><a href="https://prescqipp.info/media/5209/253-anticholinergic-burden-20.pdf" target="_blank" rel="noopener noreferrer">PrescQIPP anticholinergic burden bulletin</a>.</p>
+        <p><a href="https://www.hweclinicalguidance.nhs.uk/all-clinical-areas-documents/download?checksum=226d1f15ecd35f784d2a20c3ecf56d7f" target="_blank" rel="noopener noreferrer">Hints and tips for anticholinergic burden medication reviews</a>.</p>
+        <p><a href="https://www.northeastnorthcumbria.nhs.uk/media/lrtpdqx3/anticholinergic_guidance_for_clinicians.pdf" target="_blank" rel="noopener noreferrer">Anticholinergic guidance for clinicians</a>.</p>
+        <p><a href="https://nhssomerset.nhs.uk/wp-content/uploads/sites/2/STOPP-START-V3.pdf" target="_blank" rel="noopener noreferrer">STOPP/START v3</a>.</p>
+      </div>
+    </section>
+
+    <footer class="card foot section-space">
+      Static web app for local review use. No medication changes should be made on the basis of this tool alone. Drugs not listed in the ACB scale are not necessarily anticholinergic-free.
+    </footer>
+  </div>
+
+<script>
+const state = { theme: matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light' };
+document.documentElement.setAttribute('data-theme', state.theme);
+document.querySelector('[data-theme-toggle]').addEventListener('click', () => {
+  state.theme = state.theme === 'dark' ? 'light' : 'dark';
+  document.documentElement.setAttribute('data-theme', state.theme);
+});
+
+const RISK_CLASS_MEMBERS = {
+  "antipsychotic": ["chlorpromazine", "haloperidol", "levomepromazine", "methotrimeprazine", "trifluoperazine", "flupentixol", "flupenthixol", "zuclopenthixol", "sulpiride", "pimozide", "benperidol", "prochlorperazine", "promazine", "pipotiazine", "perphenazine", "fluphenazine", "olanzapine", "quetiapine", "risperidone", "paliperidone", "aripiprazole", "clozapine", "amisulpride", "asenapine", "lurasidone", "cariprazine", "brexpiprazole"],
+  "benzodiazepine": ["diazepam", "lorazepam", "temazepam", "oxazepam", "nitrazepam", "chlordiazepoxide", "clonazepam", "clobazam", "midazolam", "alprazolam", "bromazepam", "flurazepam", "loprazolam", "lormetazepam"],
+  "z-drug": ["zopiclone", "zolpidem", "zaleplon", "eszopiclone"],
+  "opioid": ["morphine", "oxycodone", "fentanyl", "buprenorphine", "tramadol", "codeine", "dihydrocodeine", "hydromorphone", "methadone", "pethidine", "tapentadol", "diamorphine", "alfentanil", "remifentanil", "oxymorphone"],
+  "gabapentinoid": ["gabapentin", "pregabalin"],
+  "tricyclic antidepressant": ["amitriptyline", "nortriptyline", "imipramine", "clomipramine", "dosulepin", "dothiepin", "doxepin", "trimipramine", "lofepramine", "desipramine", "protriptyline"],
+  "sedating antidepressant": ["mirtazapine", "trazodone", "mianserin", "agomelatine"],
+  "sedating antihistamine": ["chlorphenamine", "chlorpheniramine", "promethazine", "hydroxyzine", "diphenhydramine", "cyclizine", "cinnarizine", "alimemazine", "trimeprazine", "meclizine", "meclozine", "clemastine", "triprolidine", "doxylamine", "cyproheptadine", "brompheniramine"],
+  "antimuscarinic (OAB)": ["oxybutynin", "tolterodine", "solifenacin", "trospium", "darifenacin", "fesoterodine", "propiverine", "flavoxate"],
+  "antimuscarinic (Parkinson's)": ["trihexyphenidyl", "benzhexol", "procyclidine", "orphenadrine", "benztropine"]
+};
+
+const RISK_NOTES_RULES = [
+  { match: /antipsychotic/i, flag: "antipsychotic" },
+  { match: /benzodiazepine/i, flag: "benzodiazepine" },
+  { match: /z[- ]?drug/i, flag: "z-drug" },
+  { match: /\bopioid\b|opioid analgesic/i, flag: "opioid" },
+  { match: /gabapentinoid/i, flag: "gabapentinoid" },
+  { match: /tricyclic|\btca\b/i, flag: "tricyclic antidepressant" },
+  { match: /first[- ]generation antihistamine|sedating antihistamine/i, flag: "sedating antihistamine" },
+  { match: /antimuscarinic|\boab\b/i, flag: "antimuscarinic (OAB)" }
+];
+
+let acbEntries = [], stoppEntries = [], recognisedUnscored = [];
+let acbLoaded = false, stoppLoaded = false, recLoaded = false;
+
+function refreshDataStatus() {
+  const parts = [
+    `ACB: ${acbLoaded ? `<span class="ok">${acbEntries.length}</span>` : `<span class="err">not loaded</span>`}`,
+    `STOPP: ${stoppLoaded ? `<span class="ok">${stoppEntries.length}</span>` : `<span class="err">not loaded</span>`}`,
+    `Other UK drugs: ${recLoaded ? `<span class="ok">${recognisedUnscored.length}</span>` : `<span class="err">not loaded</span>`}`,
+  ];
+  document.getElementById('dataStatus').innerHTML = parts.join(' · ');
+}
+
+function loadDataset(url, onLoad) {
+  return fetch(url)
+    .then(r => r.ok ? r.json() : Promise.reject('HTTP ' + r.status))
+    .then(data => {
+      const raw = Array.isArray(data) ? data : (Array.isArray(data.medicines) ? data.medicines : (Array.isArray(data.entries) ? data.entries : []));
+      onLoad(raw.filter(e => e && typeof e === 'object'));
+    })
+    .catch(err => { console.warn('Failed to load', url, err); onLoad([]); });
+}
+
+Promise.all([
+  loadDataset('./data/acb-dataset.json', d => { acbEntries = d; acbLoaded = true; }),
+  loadDataset('./data/stopp_relevant_medicines_uk.json', d => { stoppEntries = d; stoppLoaded = true; }),
+  loadDataset('./data/recognised-unscored.json', d => { recognisedUnscored = d; recLoaded = true; }),
+]).then(refreshDataStatus);
+
+function normalize(text) {
+  if (typeof text !== 'string') return '';
+  return text.toLowerCase()
+    .replace(/\([^)]*\)/g, ' ')
+    .replace(/\b(mr|xl|sr|cr|ec|capsules?|tablets?|tab|cap|mg|micrograms?|mcg|ml|patch|patches|oral|solution|modified release|prolonged release)\b/g, ' ')
+    .replace(/[^a-z0-9\s-]/g, ' ')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+function splitInput(value) { return value.split(/[\n,;]+/).map(v => v.trim()).filter(Boolean); }
+function toArrayLike(value) {
+  if (Array.isArray(value)) return value;
+  if (typeof value === 'string') return value.split(/[,;]+/).map(s => s.trim()).filter(Boolean);
+  return [];
+}
+function buildScaleLookup(entries, scaleKey) {
+  const map = new Map();
+  entries.forEach(entry => {
+    if (!entry || typeof entry !== 'object') return;
+    const canonical = entry.name || entry.canonical;
+    if (typeof canonical !== 'string' || !canonical.trim()) return;
+    const scoreSrc = entry.scales && entry.scales[scaleKey];
+    let score = null;
+    if (scoreSrc && scoreSrc.score !== undefined) score = Number(scoreSrc.score);
+    else if (entry.score !== undefined) score = Number(entry.score);
+    const record = { canonical: canonical.toLowerCase(), score: Number.isFinite(score) ? score : null, notes: entry.notes || '' };
+    map.set(normalize(canonical), record);
+    toArrayLike(entry.aliases).forEach(a => { if (typeof a === 'string' && a.trim()) map.set(normalize(a), record); });
+  });
+  return map;
+}
+function buildRecognisedLookup() {
+  const map = new Map();
+  recognisedUnscored.forEach(entry => {
+    if (!entry || typeof entry !== 'object') return;
+    const canonical = entry.name;
+    if (typeof canonical !== 'string' || !canonical.trim()) return;
+    const record = { canonical: canonical.toLowerCase(), notes: entry.notes || '' };
+    map.set(normalize(canonical), record);
+    toArrayLike(entry.aliases).forEach(a => { if (typeof a === 'string' && a.trim()) map.set(normalize(a), record); });
+  });
+  return map;
+}
+function buildStoppLookup() {
+  const map = new Map();
+  stoppEntries.forEach(entry => {
+    if (!entry || typeof entry !== 'object') return;
+    const canonical = entry.canonical || entry.name;
+    if (typeof canonical === 'string' && canonical.trim()) map.set(normalize(canonical), entry);
+    toArrayLike(entry.aliases).forEach(a => { if (typeof a === 'string' && a.trim()) map.set(normalize(a), entry); });
+  });
+  return map;
+}
+function levenshtein(a, b) {
+  const m = Array.from({length: a.length + 1}, () => Array(b.length + 1).fill(0));
+  for (let i = 0; i <= a.length; i++) m[i][0] = i;
+  for (let j = 0; j <= b.length; j++) m[0][j] = j;
+  for (let i = 1; i <= a.length; i++) for (let j = 1; j <= b.length; j++) {
+    const cost = a[i-1] === b[j-1] ? 0 : 1;
+    m[i][j] = Math.min(m[i-1][j] + 1, m[i][j-1] + 1, m[i-1][j-1] + cost);
+  }
+  return m[a.length][b.length];
+}
+function suggest(term, keys) {
+  const n = normalize(term); if (!n) return null;
+  let best = null;
+  for (const key of keys) {
+    if (!key) continue;
+    const d = levenshtein(n, key);
+    const tolerance = Math.max(2, Math.floor(key.length * 0.22));
+    if (d <= tolerance && (!best || d < best.d)) best = { key, d };
+  }
+  return best ? best.key : null;
+}
+function deriveRisks(canonical, rawInput, notesA) {
+  const flags = new Set();
+  const names = [canonical, rawInput].filter(Boolean).map(s => normalize(s));
+  Object.entries(RISK_CLASS_MEMBERS).forEach(([flag, members]) => {
+    if (members.some(m => names.includes(normalize(m)))) flags.add(flag);
+  });
+  const combined = `${notesA || ''}`;
+  RISK_NOTES_RULES.forEach(r => { if (r.match.test(combined)) flags.add(r.flag); });
+  return Array.from(flags);
+}
+function uniqByName(items) {
+  const seen = new Set();
+  return (items || []).filter(item => {
+    const key = `${item.name}|${item.score ?? ''}`;
+    if (seen.has(key)) return false;
+    seen.add(key);
+    return true;
+  });
+}
+function formatScoredList(items) {
+  const unique = uniqByName(items);
+  const formatted = unique.map(item => item.score !== null && item.score !== undefined ? `${item.name} (ACB ${item.score})` : item.name);
+  if (formatted.length === 0) return '';
+  if (formatted.length === 1) return formatted[0];
+  if (formatted.length === 2) return `${formatted[0]} and ${formatted[1]}`;
+  return `${formatted.slice(0, -1).join(', ')} and ${formatted[formatted.length - 1]}`;
+}
+function formatMedicineList(items) {
+  const unique = [...new Set((items || []).filter(Boolean))];
+  if (unique.length === 0) return '';
+  if (unique.length === 1) return unique[0];
+  if (unique.length === 2) return `${unique[0]} and ${unique[1]}`;
+  return `${unique.slice(0, -1).join(', ')} and ${unique[unique.length - 1]}`;
+}
+function subtractList(source, exclusions) {
+  const exclude = new Set(exclusions || []);
+  return [...new Set((source || []).filter(item => !exclude.has(item)))];
+}
+function buildOtherCategoriesText({ sedatives = [], opioids = [] }) {
+  const sedText = formatMedicineList(sedatives);
+  const opioidText = formatMedicineList(opioids);
+  if (sedText && opioidText) return ` Other medicines that may also be clinically relevant include sedative medicines (${sedText}) and opioids (${opioText}).`;
+  if (sedText) return ` Other medicines that may also be clinically relevant include sedative medicines (${sedText}).`;
+  if (opioidText) return ` Other medicines that may also be clinically relevant include opioids (${opioidText}).`;
+  return '';
+}
+function buildGpParagraph({ acb3 = [], acb12 = [], sedatives = [], opioids = [], totalAcb = 0 }) {
+  const acb3Text = formatScoredList(acb3);
+  const acb12Text = formatScoredList(acb12);
+  const acbAllNames = [...uniqByName(acb3), ...uniqByName(acb12)].map(x => x.name);
+  const sedativesOnly = subtractList(sedatives, acbAllNames);
+  const opioidsOnly = subtractList(opioids, acbAllNames);
+  const otherCategories = buildOtherCategoriesText({ sedatives: sedativesOnly, opioids: opioidsOnly });
+  if (acb3.length > 0 && acb12.length === 0) {
+    return `The current medication list includes the following strongly anticholinergic medicine(s): ${acb3Text}. These medicines may contribute to cognitive impairment and other adverse effects in older adults.${otherCategories} Please consider whether any of these medicines could be reduced, stopped, or changed to lower-burden alternatives where clinically appropriate.`;
+  }
+  if (acb3.length === 0 && totalAcb >= 3 && acb12.length > 0) {
+    return `The patient’s total cumulative anticholinergic burden is raised because several lower-scoring medicines contribute additively: ${acb12Text}.${otherCategories} Please consider whether any of these medicines could be reduced, stopped, or changed to lower-burden alternatives where clinically appropriate.`;
+  }
+  if (acb3.length > 0 && acb12.length > 0) {
+    return `The current medication list includes strongly anticholinergic medicine(s) ${acb3Text} and additional lower-scoring medicines ${acb12Text} that further increase the cumulative anticholinergic burden.${otherCategories} Please consider whether any of these medicines could be reduced, stopped, or changed to lower-burden alternatives where clinically appropriate.`;
+  }
+  const sedativeOpioidOnlyList = formatMedicineList([...new Set([...sedativesOnly, ...opioidsOnly])]);
+  if (sedativeOpioidOnlyList) {
+    return `The current medication list includes other medicines that may still be relevant to cognition, alertness, or falls risk: ${sedativeOpioidOnlyList}. Please consider whether any of these medicines could be reduced, stopped, or changed where clinically appropriate.`;
+  }
+  return 'No medicines with anticholinergic effects or other flagged cognitive-burden medicines were identified from the current list.';
+}
+function buildGpReference({ acb3 = [], acb12 = [], totalAcb = 0 }) {
+  if (acb3.length === 0 && totalAcb >= 3 && acb12.length > 1) {
+    return 'Reference for considering deprescribing in cumulative ACB burden: PrescQIPP advises use of an anticholinergic burden scale in older people and review of medicines with a view to stopping or altering treatment to reduce burden where appropriate. Regional NHS clinician guidance similarly advises reviewing anticholinergic medicines and considering withdrawing, reducing, or switching to a medicine with no or lower ACB score, prioritising higher-scoring medicines where clinically appropriate. See the PrescQIPP bulletin and Anticholinergic guidance for clinicians links below.';
+  }
+  return '';
+}
+
+let lastGpParagraph = '';
+
+function analyse() {
+  const acbLookup = buildScaleLookup(acbEntries, 'acb');
+  const stoppLookup = buildStoppLookup();
+  const recLookup = buildRecognisedLookup();
+  const allKeys = new Set([...acbLookup.keys(), ...stoppLookup.keys(), ...recLookup.keys()]);
+  const rawItems = splitInput(document.getElementById('meds').value);
+  const results = [];
+  let totalAcb = 0, recognised = 0;
+
+  rawItems.forEach(original => {
+    const normalized = normalize(original);
+    const acb = acbLookup.get(normalized);
+    const stopp = stoppLookup.get(normalized);
+    const recOnly = recLookup.get(normalized);
+    const acbScore = acb && Number.isFinite(acb.score) ? acb.score : null;
+    const canonical = (acb && acb.canonical) || (stopp && (stopp.canonical || stopp.name)) || (recOnly && recOnly.canonical) || null;
+    const isKnown = acbScore !== null || !!stopp || !!recOnly;
+    if (acbScore !== null && acbScore > 0) totalAcb += acbScore;
+    if (isKnown) recognised += 1;
+    const risks = deriveRisks(canonical, original, acb && acb.notes);
+    const suggestion = !isKnown ? suggest(original, allKeys) : null;
+    results.push({ input: original, canonical, acb: acbScore, stopp: stopp || null, risks, suggestion });
+  });
+
+  const acbMeds = results.filter(r => r.acb !== null && r.acb > 0);
+  const acb3 = results.filter(r => r.acb === 3).map(r => ({ name: r.canonical || r.input, score: r.acb }));
+  const acb12 = results.filter(r => r.acb === 1 || r.acb === 2).map(r => ({ name: r.canonical || r.input, score: r.acb }));
+  const sedatives = results.filter(r => r.risks.some(x => ['benzodiazepine','z-drug','gabapentinoid','sedating antidepressant','sedating antihistamine','antipsychotic','tricyclic antidepressant'].includes(x))).map(r => r.canonical || r.input);
+  const opioids = results.filter(r => r.risks.includes('opioid')).map(r => r.canonical || r.input);
+  const acbAllNames = [...uniqByName(acb3), ...uniqByName(acb12)].map(x => x.name);
+  const sedativesOnly = subtractList(sedatives, acbAllNames);
+  const opioidsOnly = subtractList(opioids, acbAllNames);
+
+  document.getElementById('recognisedCount').textContent = recognised;
+  document.getElementById('acbMedCount').textContent = acbMeds.length;
+  document.getElementById('totalAcb').textContent = totalAcb;
+  document.getElementById('sedativeCount').textContent = sedativesOnly.length;
+  document.getElementById('opioidCount').textContent = opioidsOnly.length;
+
+  const mainRows = [];
+  if (acb3.length) mainRows.push(`<div class="meta"><strong>Strongly anticholinergic medicines</strong><br><span>${formatScoredList(acb3)}</span></div>`);
+  if (acb12.length) mainRows.push(`<div class="meta"><strong>Additional medicines contributing to cumulative anticholinergic burden</strong><br><span>${formatScoredList(acb12)}</span></div>`);
+  if (sedativesOnly.length) mainRows.push(`<div class="meta"><strong>Sedative medicines</strong><br><span>${formatMedicineList(sedativesOnly)}</span></div>`);
+  if (opioidsOnly.length) mainRows.push(`<div class="meta"><strong>Opioids</strong><br><span>${formatMedicineList(opioidsOnly)}</span></div>`);
+  const unknowns = results.filter(r => !r.canonical && r.suggestion);
+  if (unknowns.length) mainRows.push(`<div class="meta"><strong>Possible spelling suggestions</strong><br><span>${unknowns.map(r => `${r.input} → ${r.suggestion}`).join('<br>')}</span></div>`);
+  if (!mainRows.length) mainRows.push(`<div class="meta"><strong>No medicines of interest recognised</strong><br><span>No anticholinergic, sedative or opioid medicines were identified from the current list.</span></div>`);
+  document.getElementById('results').innerHTML = mainRows.join('');
+
+  lastGpParagraph = buildGpParagraph({ acb3, acb12, sedatives, opioids, totalAcb });
+  document.getElementById('gpParagraph').textContent = lastGpParagraph;
+  document.getElementById('gpReference').textContent = buildGpReference({ acb3, acb12, totalAcb });
+  document.getElementById('copyGpBtn').disabled = false;
+
+  const stoppHits = results.filter(r => r.stopp);
+  document.getElementById('stoppResults').innerHTML = stoppHits.length
+    ? stoppHits.map(r => {
+        const summary = r.stopp.criterionSummary || r.stopp.summary || 'STOPP-relevant';
+        const ctx = toArrayLike(r.stopp.contextToCheck || r.stopp.context);
+        return `<div class="meta"><strong>${r.canonical || r.input}</strong><br><span>${summary}${ctx.length ? '<br>Check: ' + ctx.join(', ') : ''}</span></div>`;
+      }).join('')
+    : `<div class="meta"><strong>No optional STOPP prompts generated</strong><br><span>No contextual STOPP prompts were triggered for the current list.</span></div>`;
+}
+
+document.getElementById('analyseBtn').addEventListener('click', analyse);
+document.getElementById('clearBtn').addEventListener('click', () => {
+  document.getElementById('meds').value = '';
+  document.getElementById('results').innerHTML = '';
+  document.getElementById('stoppResults').innerHTML = '';
+  document.getElementById('gpParagraph').textContent = 'No output yet.';
+  document.getElementById('gpReference').textContent = '';
+  ['recognisedCount','acbMedCount','totalAcb','sedativeCount','opioidCount'].forEach(id => document.getElementById(id).textContent = '0');
+  document.getElementById('copyGpBtn').disabled = true;
+  lastGpParagraph = '';
+});
+
+document.getElementById('copyGpBtn').addEventListener('click', async () => {
+  if (!lastGpParagraph) return;
+  try {
+    await navigator.clipboard.writeText(lastGpParagraph + (document.getElementById('gpReference').textContent ? '\n\n' + document.getElementById('gpReference').textContent : ''));
+    const btn = document.getElementById('copyGpBtn');
+    const original = btn.textContent;
+    btn.textContent = 'Copied ✓';
+    setTimeout(() => btn.textContent = original, 1500);
+  } catch (err) {
+    alert('Copy failed. Please copy the text manually.');
+  }
+});
+</script>
+</body>
+</html>
