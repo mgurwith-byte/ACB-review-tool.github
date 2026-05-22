@@ -89,7 +89,7 @@
     <section class="grid">
       <div class="card panel">
         <label for="meds"><strong>Medication list</strong></label>
-        <p>Paste one item per line, or a comma-separated list. Brand names and common misspellings are partially supported.</p>
+        <p>Paste one item per line, or a comma-separated list. Brand names, common misspellings, and lines containing doses or formulations are partially supported.</p>
         <textarea id="meds" placeholder="e.g.
 Donepezil
 Amitriptyline
@@ -216,10 +216,26 @@ function normalize(text) {
   if (typeof text !== 'string') return '';
   return text.toLowerCase()
     .replace(/\([^)]*\)/g, ' ')
-    .replace(/\b(mr|xl|sr|cr|ec|capsules?|tablets?|tab|cap|mg|micrograms?|mcg|ml|patch|patches|oral|solution|modified release|prolonged release)\b/g, ' ')
+    .replace(/\b(mr|xl|sr|cr|ec|od|bd|tds|qds|nocte|prn|om|on|mane|capsules?|tablets?|tablet|tabs|tab|caps|cap|mg|g|grams?|micrograms?|mcg|nanograms?|ng|ml|mcl|units?|iu|patch|patches|weekly|daily|twice|once|three\s+times|four\s+times|oral|solution|suspension|liquid|cream|ointment|gel|spray|drops|inhaler|nebs?|nebules?|ampoules?|modified\s+release|prolonged\s+release|immediate\s+release|gastro-resistant|enteric\s+coated)\b/g, ' ')
+    .replace(/\b\d+(?:\.\d+)?\b/g, ' ')
     .replace(/[^a-z0-9\s-]/g, ' ')
     .replace(/\s+/g, ' ')
     .trim();
+}
+function candidateNames(text) {
+  const norm = normalize(text);
+  if (!norm) return [];
+  const parts = norm.split(' ').filter(Boolean);
+  const candidates = [];
+  for (let len = Math.min(4, parts.length); len >= 1; len--) {
+    candidates.push(parts.slice(0, len).join(' '));
+  }
+  for (let start = 1; start < Math.min(parts.length, 4); start++) {
+    for (let len = Math.min(3, parts.length - start); len >= 1; len--) {
+      candidates.push(parts.slice(start, start + len).join(' '));
+    }
+  }
+  return [...new Set(candidates.filter(Boolean))];
 }
 function splitInput(value) { return value.split(/[\n,;]+/).map(v => v.trim()).filter(Boolean); }
 function toArrayLike(value) {
@@ -334,10 +350,10 @@ function buildOtherCategoriesText({ sedatives = [], opioids = [] }) {
 }
 function buildGpParagraph({ acb3 = [], acb12 = [], sedatives = [], opioids = [], totalAcb = 0, suggestionRows = [], unrecognisedRows = [] }) {
   if (suggestionRows.length > 0 && acb3.length === 0 && acb12.length === 0) {
-    return 'One or more entries may be misspelt medicines that could match items in the dataset. Please check the suggested spellings before concluding that no recognised anticholinergic burden is present.';
+    return 'No substantive cognitive-burden findings were identified from the recognised medicines, so this result would not usually need to be sent to the GP. One or more entries may be misspelt medicines that could match items in the dataset, so please check the suggested spellings before concluding there is no recognised anticholinergic burden.';
   }
   if (unrecognisedRows.length > 0 && acb3.length === 0 && acb12.length === 0) {
-    return 'No recognised ACB-positive medicines were identified from the current list, but one or more entries were not recognised in the current dataset, so the tool cannot assign a recognised anticholinergic burden score for those medicines.';
+    return 'No medicines of concern were identified from the recognised medicines, so this result would not usually need GP attention. However, the tool did not recognise one or more of the medicines entered, so it could not assess those items for anticholinergic burden.';
   }
   const acb3Text = formatScoredList(acb3);
   const acb12Text = formatScoredList(acb12);
@@ -358,7 +374,7 @@ function buildGpParagraph({ acb3 = [], acb12 = [], sedatives = [], opioids = [],
   if (sedativeOpioidOnlyList) {
     return `The current medication list includes other medicines that may still be relevant to cognition, alertness, or falls risk: ${sedativeOpioidOnlyList}. Please consider whether any of these medicines could be reduced, stopped, or changed where clinically appropriate.`;
   }
-  return 'No recognised anticholinergic, sedative or opioid medicines were identified from the current list.';
+  return 'No medicines of concern were identified from the recognised list, so this result would not usually need GP attention.';
 }
 function buildGpReference({ acb3 = [], acb12 = [], totalAcb = 0 }) {
   if (acb3.length === 0 && totalAcb >= 3 && acb12.length > 1) {
@@ -425,17 +441,21 @@ function analyse() {
   let totalAcb = 0, recognised = 0;
 
   rawItems.forEach(original => {
-    const normalized = normalize(original);
-    const acb = acbLookup.get(normalized);
-    const stopp = stoppLookup.get(normalized);
-    const recOnly = recLookup.get(normalized);
+    const candidates = candidateNames(original);
+    let acb = null, stopp = null, recOnly = null, matchedKey = null;
+    for (const candidate of candidates) {
+      acb = acbLookup.get(candidate) || null;
+      stopp = stoppLookup.get(candidate) || null;
+      recOnly = recLookup.get(candidate) || null;
+      if (acb || stopp || recOnly) { matchedKey = candidate; break; }
+    }
     const acbScore = acb && Number.isFinite(acb.score) ? acb.score : null;
     const canonical = (acb && acb.canonical) || (stopp && (stopp.canonical || stopp.name)) || (recOnly && recOnly.canonical) || null;
     const isKnown = acbScore !== null || !!stopp || !!recOnly;
     if (acbScore !== null && acbScore > 0) totalAcb += acbScore;
     if (isKnown) recognised += 1;
-    const risks = deriveRisks(canonical, original, acb && acb.notes);
-    const suggestion = !isKnown ? suggest(original, allKeys) : null;
+    const risks = deriveRisks(canonical || matchedKey, original, acb && acb.notes);
+    const suggestion = !isKnown ? suggest(candidates[0] || original, allKeys) : null;
     results.push({ input: original, canonical, acb: acbScore, stopp: stopp || null, risks, suggestion });
   });
 
