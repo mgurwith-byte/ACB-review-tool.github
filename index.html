@@ -385,7 +385,7 @@ function buildGpReference({ acb3 = [], acb12 = [], totalAcb = 0 }) {
 function buildSummary({ recognised, acbCount, totalAcb, sedativeCount, opioidCount, unknowns, suggestions }) {
   if (acbCount > 0) {
     const burden = totalAcb >= 3 ? 'Raised cumulative burden' : 'ACB-positive medicines identified';
-    return { title: `${burden}: ${acbCount} ACB medicine${acbCount === 1 ? '' : 's'} identified, total ACB ${totalAcb}.`, detail: `${sedativeCount} sedative medicine${sedativeCount === 1 ? '' : 's'} and ${opioidCount} opioid medicine${opioidCount === 1 ? '' : 's'} flagged outside the ACB list.` };
+    return { title: `${burden}: ${acbCount} ACB medicine${acbCount === 1 ? '' : 's'} identified, total ACB ${totalAcb}.`, detail: `${sedativeCount} sedative medicine${sedativeCount === 1 ? '' : 's'} and ${opioidCount} opioid medicine${opioidCount === 1 ? '' : 's'} flagged as additional cognitive-risk medicines.` };
   }
   if (suggestions > 0) {
     return { title: `Possible misspelt medicine${suggestions === 1 ? '' : 's'} identified.`, detail: 'One or more entries may match medicines in the dataset, so the result should be checked before concluding there is no recognised anticholinergic burden.' };
@@ -464,9 +464,11 @@ function analyse() {
   const acb12 = results.filter(r => r.acb === 1 || r.acb === 2).map(r => ({ name: r.canonical || r.input, score: r.acb }));
   const sedatives = results.filter(r => r.risks.some(x => ['benzodiazepine','z-drug','gabapentinoid','sedating antidepressant','sedating antihistamine','antipsychotic','tricyclic antidepressant'].includes(x))).map(r => r.canonical || r.input);
   const opioids = results.filter(r => r.risks.includes('opioid')).map(r => r.canonical || r.input);
+  const benzodiazepines = results.filter(r => r.risks.includes('benzodiazepine')).map(r => r.canonical || r.input);
+  const zDrugs = results.filter(r => r.risks.includes('z-drug')).map(r => r.canonical || r.input);
   const acbAllNames = [...uniqByName(acb3), ...uniqByName(acb12)].map(x => x.name);
-  const sedativesOnly = subtractList(sedatives, acbAllNames);
-  const opioidsOnly = subtractList(opioids, acbAllNames);
+  const sedativesOnly = subtractList(sedatives, []);
+  const opioidsOnly = subtractList(opioids, []);
 
   document.getElementById('recognisedCount').textContent = recognised;
   document.getElementById('acbMedCount').textContent = acbMeds.length;
@@ -477,7 +479,9 @@ function analyse() {
   const mainRows = [];
   if (acb3.length) mainRows.push(`<div class="meta"><strong>Strongly anticholinergic medicines</strong><br><span>${formatScoredList(acb3)}</span></div>`);
   if (acb12.length) mainRows.push(`<div class="meta"><strong>Additional medicines contributing to cumulative anticholinergic burden</strong><br><span>${formatScoredList(acb12)}</span></div>`);
-  if (sedativesOnly.length) mainRows.push(`<div class="meta"><strong>Sedative medicines</strong><br><span>${formatMedicineList(sedativesOnly)}</span></div>`);
+  if (benzodiazepines.length) mainRows.push(`<div class="meta"><strong>Benzodiazepines</strong><br><span>${formatMedicineList(benzodiazepines)}</span><br><br><span>These medicines may worsen cognition, alertness and falls risk even where anticholinergic burden is low.</span></div>`);
+  if (zDrugs.length) mainRows.push(`<div class="meta"><strong>Z-drugs</strong><br><span>${formatMedicineList(zDrugs)}</span><br><br><span>These medicines may worsen cognition, alertness and falls risk even where anticholinergic burden is low.</span></div>`);
+  if (sedativesOnly.length) mainRows.push(`<div class="meta"><strong>Other sedative medicines</strong><br><span>${formatMedicineList(subtractList(sedativesOnly, [...new Set([...benzodiazepines, ...zDrugs])])) || 'None beyond those listed above'}</span></div>`);
   if (opioidsOnly.length) mainRows.push(`<div class="meta"><strong>Opioids</strong><br><span>${formatMedicineList(opioidsOnly)}</span></div>`);
 
   const suggestionRows = results.filter(r => !r.canonical && r.suggestion);
