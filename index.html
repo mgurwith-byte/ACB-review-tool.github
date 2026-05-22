@@ -173,6 +173,10 @@ const RISK_CLASS_MEMBERS = {
   "antimuscarinic (Parkinson's)": ["trihexyphenidyl", "benzhexol", "procyclidine", "orphenadrine", "benztropine"]
 };
 
+function isPsychotropicRisk(risks = []) {
+  return risks.some(x => ['antipsychotic','benzodiazepine','z-drug','tricyclic antidepressant','sedating antidepressant'].includes(x));
+}
+
 const RISK_NOTES_RULES = [
   { match: /antipsychotic/i, flag: "antipsychotic" },
   { match: /benzodiazepine/i, flag: "benzodiazepine" },
@@ -348,7 +352,7 @@ function buildOtherCategoriesText({ sedatives = [], opioids = [] }) {
   if (opioidText) return ` Other medicines that may also be clinically relevant include opioids (${opioidText}).`;
   return '';
 }
-function buildGpParagraph({ acb3 = [], acb12 = [], sedatives = [], opioids = [], totalAcb = 0, suggestionRows = [], unrecognisedRows = [] }) {
+function buildGpParagraph({ acb3 = [], acb12 = [], sedatives = [], opioids = [], psychotropics = [], totalAcb = 0, suggestionRows = [], unrecognisedRows = [] }) {
   if (suggestionRows.length > 0 && acb3.length === 0 && acb12.length === 0) {
     return 'No substantive cognitive-burden findings were identified from the recognised medicines, so this result would not usually need to be sent to the GP. One or more entries may be misspelt medicines that could match items in the dataset, so please check the suggested spellings before concluding there is no recognised anticholinergic burden.';
   }
@@ -365,18 +369,20 @@ function buildGpParagraph({ acb3 = [], acb12 = [], sedatives = [], opioids = [],
   const sedativesOnly = subtractList(sedatives, acbAllNames);
   const opioidsOnly = subtractList(opioids, acbAllNames);
   const otherCategories = buildOtherCategoriesText({ sedatives: sedativesOnly, opioids: opioidsOnly });
+  const psychotropicList = formatMedicineList(psychotropics);
+  const psychotropicTeamNote = psychotropicList ? ` As ${psychotropicList} ${psychotropics.length === 1 ? 'is' : 'are'} psychotropic medication${psychotropics.length === 1 ? '' : 's'}, this should be discussed in the MDT meeting before asking the GP to take action.` : '';
   if (acb3.length > 0 && acb12.length === 0) {
-    return `The current medication list includes the following strongly anticholinergic medicine(s): ${acb3Text}. These medicines may contribute to cognitive impairment and other adverse effects in older adults.${otherCategories} Please consider whether any of these medicines could be reduced, stopped, or changed to lower-burden alternatives where clinically appropriate.`;
+    return `The current medication list includes the following strongly anticholinergic medicine(s): ${acb3Text}. These medicines may contribute to cognitive impairment and other adverse effects in older adults.${otherCategories} Please consider whether any of these medicines could be reduced, stopped, or changed to lower-burden alternatives where clinically appropriate.${psychotropicTeamNote}`;
   }
   if (acb3.length === 0 && totalAcb >= 3 && acb12.length > 0) {
-    return `The patient’s total cumulative anticholinergic burden is raised because several lower-scoring medicines contribute additively: ${acb12Text}.${otherCategories} Please consider whether any of these medicines could be reduced, stopped, or changed to lower-burden alternatives where clinically appropriate.`;
+    return `The patient’s total cumulative anticholinergic burden is raised because several lower-scoring medicines contribute additively: ${acb12Text}.${otherCategories} Please consider whether any of these medicines could be reduced, stopped, or changed to lower-burden alternatives where clinically appropriate.${psychotropicTeamNote}`;
   }
   if (acb3.length > 0 && acb12.length > 0) {
-    return `The current medication list includes strongly anticholinergic medicine(s) ${acb3Text} and additional lower-scoring medicines ${acb12Text} that further increase the cumulative anticholinergic burden.${otherCategories} Please consider whether any of these medicines could be reduced, stopped, or changed to lower-burden alternatives where clinically appropriate.`;
+    return `The current medication list includes strongly anticholinergic medicine(s) ${acb3Text} and additional lower-scoring medicines ${acb12Text} that further increase the cumulative anticholinergic burden.${otherCategories} Please consider whether any of these medicines could be reduced, stopped, or changed to lower-burden alternatives where clinically appropriate.${psychotropicTeamNote}`;
   }
   const sedativeOpioidOnlyList = formatMedicineList([...new Set([...sedativesOnly, ...opioidsOnly])]);
   if (sedativeOpioidOnlyList) {
-    return `The current medication list includes medicines that may still be relevant to cognition, alertness, or falls risk: ${sedativeOpioidOnlyList}. Please consider whether any of these medicines could be reduced, stopped, or changed where clinically appropriate.`;
+    return `The current medication list includes medicines that may still be relevant to cognition, alertness, or falls risk: ${sedativeOpioidOnlyList}. Please consider whether any of these medicines could be reduced, stopped, or changed where clinically appropriate.${psychotropicTeamNote}`;
   }
   return 'No medicines of concern were identified from the recognised list, so this result would not usually need GP attention.';
 }
@@ -460,7 +466,7 @@ function analyse() {
     if (isKnown) recognised += 1;
     const risks = deriveRisks(canonical || matchedKey, original, acb && acb.notes);
     const suggestion = !isKnown ? suggest(candidates[0] || original, allKeys) : null;
-    results.push({ input: original, canonical, acb: acbScore, stopp: stopp || null, risks, suggestion });
+    results.push({ input: original, canonical, acb: acbScore, stopp: stopp || null, risks, suggestion, psychotropic: isPsychotropicRisk(risks) });
   });
 
   const acbMeds = results.filter(r => r.acb !== null && r.acb > 0);
@@ -498,7 +504,8 @@ function analyse() {
   const summary = buildSummary({ recognised, acbCount: acbMeds.length, totalAcb, sedativeCount: sedativesOnly.length, opioidCount: opioidsOnly.length, unknowns: unrecognisedRows.length, suggestions: suggestionRows.length });
   document.getElementById('summaryBar').innerHTML = `${summary.title}<span class="summary-sub">${summary.detail}</span>`;
 
-  lastGpParagraph = buildGpParagraph({ acb3, acb12, sedatives, opioids, totalAcb, suggestionRows, unrecognisedRows });
+  const psychotropics = results.filter(r => r.psychotropic).map(r => r.canonical || r.input);
+  lastGpParagraph = buildGpParagraph({ acb3, acb12, sedatives, opioids, psychotropics, totalAcb, suggestionRows, unrecognisedRows });
   document.getElementById('gpParagraph').textContent = lastGpParagraph;
   document.getElementById('gpReference').innerHTML = buildGpReference({ acb3, acb12, totalAcb });
   document.getElementById('copyGpBtn').disabled = false;
