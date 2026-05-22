@@ -353,6 +353,10 @@ function buildGpParagraph({ acb3 = [], acb12 = [], sedatives = [], opioids = [],
     return 'No substantive cognitive-burden findings were identified from the recognised medicines, so this result would not usually need to be sent to the GP. One or more entries may be misspelt medicines that could match items in the dataset, so please check the suggested spellings before concluding there is no recognised anticholinergic burden.';
   }
   if (unrecognisedRows.length > 0 && acb3.length === 0 && acb12.length === 0) {
+    const sedativeOpioidUnrecognisedList = formatMedicineList([...new Set([...sedatives, ...opioids])]);
+    if (sedativeOpioidUnrecognisedList) {
+      return `The current medication list includes medicines that may still be relevant to cognition, alertness, or falls risk: ${sedativeOpioidUnrecognisedList}. Please consider whether any of these medicines could be reduced, stopped, or changed where clinically appropriate. The tool did not recognise one or more other medicines entered, so it could not assess those items for anticholinergic burden.`;
+    }
     return 'The recognised medicines did not show anticholinergic burden concerns that would usually need GP attention. However, the tool did not recognise one or more of the medicines entered, so it could not assess those items for anticholinergic burden.';
   }
   const acb3Text = formatScoredList(acb3);
@@ -372,9 +376,9 @@ function buildGpParagraph({ acb3 = [], acb12 = [], sedatives = [], opioids = [],
   }
   const sedativeOpioidOnlyList = formatMedicineList([...new Set([...sedativesOnly, ...opioidsOnly])]);
   if (sedativeOpioidOnlyList) {
-    return `The current medication list includes other medicines that may still be relevant to cognition, alertness, or falls risk: ${sedativeOpioidOnlyList}. Please consider whether any of these medicines could be reduced, stopped, or changed where clinically appropriate.`;
+    return `The current medication list includes medicines that may still be relevant to cognition, alertness, or falls risk: ${sedativeOpioidOnlyList}. Please consider whether any of these medicines could be reduced, stopped, or changed where clinically appropriate.`;
   }
-  return sedativeOpioidOnlyList ? `The current medication list includes medicines that may still be relevant to cognition, alertness or falls risk: ${sedativeOpioidOnlyList}. Please consider whether any of these medicines could be reduced, stopped, or changed where clinically appropriate.` : 'No medicines of concern were identified from the recognised list, so this result would not usually need GP attention.';
+  return 'No medicines of concern were identified from the recognised list, so this result would not usually need GP attention.';
 }
 function buildGpReference({ acb3 = [], acb12 = [], totalAcb = 0 }) {
   if (acb3.length === 0 && totalAcb >= 3 && acb12.length > 1) {
